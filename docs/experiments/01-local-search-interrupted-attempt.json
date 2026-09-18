@@ -1,0 +1,35 @@
+{
+  "label": "01-local-search",
+  "date": "2026-09-18T01:22:41.961321+09:00",
+  "note": "子個体と初期個体に局所探索 (追加/削除/置換/2-opt/Or-opt、最良改善)。個体数・世代数は 00 と同じ",
+  "repo": "C:\\TCU\\ec-comp\\lab-competition-2026",
+  "seeds": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "status": "failed",
+  "runs": [],
+  "source_sha256": {
+    "build.bat": "27a468ce09073222b13080e7764e5e5c74ad70472faa89d3161e94ea40e997a1",
+    "const.h": "49c0dadacd815bba4bfc8fde663a84bf40923cd7c3bf4ec66e78850b6b9bfa79",
+    "csv_loader.cpp": "384f39bb60099a143010949bddbe94b5c46bece0352457f16c8ec2cb524e376a",
+    "csv_loader.h": "bb14c240b0513ada8c0f29d596cf6fa99637f72d1665b8c25c0700a6c6a1e5d7",
+    "evaluate.cpp": "bb56fbb7fa84d7b269563b9f663499ed57515c3359b9434c97ff84732ad561af",
+    "evaluate.h": "2bb7c7e0b29bddaa193e1112c8efafc4e1ffe62a4d015d9b66b83272d055003a",
+    "ga.cpp": "5f846ac4c083ec314a11838a7a6486f2d53321d1bd29dc55a198a5710fdade27",
+    "ga.h": "96a4d82670ab9b9ae33498d1faee2ac933227366a7d4e13c49ff0d62b5c9244c",
+    "graph.cpp": "7358bcb0af29528af54c2de8493e7d9f6944c769501f97ff9c4ead09f2bcc021",
+    "graph.h": "faa3be18584f5facb768394183ef5646c7505ef2da840dad1bf5e49e94375ef1",
+    "main.cpp": "0440839e40d9c7fba1764e9d069d59aa3cb46b364c71beed7810e0615ca3e601",
+    "test.bat": "fb56de7737b568cc1b2eb7cc8344632504b98825b470325bdeb871253d9be4e4"
+  },
+  "error": "seed=1 が30秒を超過。タイムアウトログの文字列処理で例外が起き、部分標準出力は保存されなかった。修正後に01-local-searchとして再測定。"
+}

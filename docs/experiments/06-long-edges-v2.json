@@ -1,0 +1,1129 @@
+{
+  "label": "06-long-edges-v2",
+  "date": "2026-09-18T02:58:22.920129+09:00",
+  "note": "06 頑健性(確定版のコードで再測定): 加工データ long-edges、既定設定(個体20・世代20・候補40・表示なし)",
+  "repo": "C:\\TCU\\ec-comp\\lab-competition-2026",
+  "workdir": "C:\\TCU\\ec-comp\\datasets\\long-edges",
+  "seeds": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "pop": null,
+  "gen": null,
+  "flags": [],
+  "status": "complete",
+  "runs": [
+    {
+      "seed": 1,
+      "E": 0.3226,
+      "ga_seconds": 0.08,
+      "total_seconds": 0.11,
+      "n_controls": 8,
+      "f_map": 0.0,
+      "f_dist": 3.103,
+      "f_time": 0.049,
+      "f_route": 0.0,
+      "course": {
+        "n_controls": 8,
+        "total_distance_m": 3507.5,
+        "total_gain_m": 38.0,
+        "estimated_time_min": 60.0,
+        "fitness": 0.3226,
+        "objectives": {
+          "f_map": 0.0,
+          "f_dist": 3.103,
+          "f_time": 0.049,
+          "f_route": 0.0
+        },
+        "weights": {
+          "f_map": 0.5,
+          "f_dist": 0.1,
+          "f_time": 0.25,
+          "f_route": 0.15
+        },
+        "controls": [
+          {
+            "name": "東京都市大学",
+            "feature": "university",
+            "lat": 35.5611321,
+            "lon": 139.5756784
+          },
+          {
+            "name": "学生食堂",
+            "feature": "restaurant",
+            "lat": 35.561503,
+            "lon": 139.5742961
+          },
+          {
+            "name": "大谷家",
+            "feature": "restaurant",
+            "lat": 35.5629012,
+            "lon": 139.5724454
+          },
+          {
+            "name": "牛久保西ひかりがおか公園",
+            "feature": "park",
+            "lat": 35.5642712,
+            "lon": 139.5720437
+          },
+          {
+            "name": "BAR DE ESPANA Zorro",
+            "feature": "restaurant",
+            "lat": 35.5641324,
+            "lon": 139.5698356
+          },
+          {
+            "name": "中川駅前交番",
+            "feature": "police",
+            "lat": 35.5628941,
+            "lon": 139.5704756
+          },
+          {
+            "name": "Atelier KiD",
+            "feature": "clothes",
+            "lat": 35.5622048,
+            "lon": 139.5721578
+          },
+          {
+            "name": "牛久保あやめ公園",
+            "feature": "park",
+            "lat": 35.5631773,
+            "lon": 139.5775581
+          }
+        ],
+        "course_nodes": [
+          7368660689,
+          13403237136,
+          2616953964,
+          2587513285,
+          6452310341,
+          2587567965,
+          1704650319,
+          1704650216,
+          7368658444,
+          7368660689
+        ]
+      },
+      "stdout": "データを読み込み中...\n  候補数: 113件 / ノード: 2267件 / エッジ: 6860件\n  最短経路を事前計算中...\n\n遺伝的アルゴリズムを実行中...\n  個体数: 20 / 世代数: 20\n\n  → output/best_course.json に保存しました\n  → output/fitness_history.csv に保存しました\n\n========== Step 5 (C++) 完了 ==========\n巡回順（最良個体）:\n  スタート : 正門\n  63 : 東京都市大学\n  10 : 学生食堂\n  82 : 大谷家\n  80 : 牛久保西ひかりがおか公園\n  20 : BAR DE ESPANA Zorro\n  73 : 中川駅前交番\n  19 : Atelier KiD\n  79 : 牛久保あやめ公園\n  ゴール   : 正門\n実行時間          : 0.08 秒\n最良解の fitness  : 0.3226\nコントロール数    : 8 件\n推定時間          : 60.0 分\n累積登り          : 38.0 m\nf_map             : 0.000\nf_dist            : 3.103\nf_time            : 0.049\nf_route           : 0.000\n==========================================\n総実行時間 : 0.11 秒\nGA詳細秒 : 0.076249\n総詳細秒 : 0.111273\nCSV秒 : 0.020285\n事前計算秒 : 0.014048\n初期個体秒 : 0.007353\n世代ループ秒 : 0.068890\n初期集団E : 0.428373\n地点CSV秒 : 0.006133\nノードCSV秒 : 0.006122\nエッジCSV秒 : 0.007539\n正門CSV秒 : 0.000491\nグラフ構築秒 : 0.000866\n正門探索秒 : 0.000001\n最短経路秒 : 0.012922\n表作成秒 : 0.000259\n",
+      "stderr": "",
+      "E_json": 0.3226,
+      "command": [
+        "C:\\TCU\\ec-comp\\lab-competition-2026\\orienteering.exe",
+        "1"
+      ],
+      "history_csv": "generation,best_fitness\n1,0.428373\n2,0.418199\n3,0.418199\n4,0.418199\n5,0.418199\n6,0.418199\n7,0.418199\n8,0.418199\n9,0.322600\n10,0.322600\n11,0.322600\n12,0.322600\n13,0.322600\n14,0.322600\n15,0.322600\n16,0.322600\n17,0.322600\n18,0.322600\n19,0.322600\n20,0.322600\n",
+      "ga_precise_seconds": 0.076249,
+      "total_precise_seconds": 0.111273,
+      "initialization_seconds": 0.007353,
+      "generations_seconds": 0.06889,
+      "initial_best_fitness": 0.428373,
+      "csv_seconds": 0.020285,
+      "precompute_seconds": 0.014048,
+      "shortest_path_seconds": 0.012922
+    },
+    {
+      "seed": 2,
+      "E": 0.3226,
+      "ga_seconds": 0.08,
+      "total_seconds": 0.1,
+      "n_controls": 8,
+      "f_map": 0.0,
+      "f_dist": 3.103,
+      "f_time": 0.049,
+      "f_route": 0.0,
+      "course": {
+        "n_controls": 8,
+        "total_distance_m": 3507.5,
+        "total_gain_m": 38.0,
+        "estimated_time_min": 60.0,
+        "fitness": 0.3226,
+        "objectives": {
+          "f_map": 0.0,
+          "f_dist": 3.103,
+          "f_time": 0.049,
+          "f_route": 0.0
+        },
+        "weights": {
+          "f_map": 0.5,
+          "f_dist": 0.1,
+          "f_time": 0.25,
+          "f_route": 0.15
+        },
+        "controls": [
+          {
+            "name": "東京都市大学",
+            "feature": "university",
+            "lat": 35.5611321,
+            "lon": 139.5756784
+          },
+          {
+            "name": "学生食堂",
+            "feature": "restaurant",
+            "lat": 35.561503,
+            "lon": 139.5742961
+          },
+          {
+            "name": "大谷家",
+            "feature": "restaurant",
+            "lat": 35.5629012,
+            "lon": 139.5724454
+          },
+          {
+            "name": "牛久保西ひかりがおか公園",
+            "feature": "park",
+            "lat": 35.5642712,
+            "lon": 139.5720437
+          },
+          {
+            "name": "BAR DE ESPANA Zorro",
+            "feature": "restaurant",
+            "lat": 35.5641324,
+            "lon": 139.5698356
+          },
+          {
+            "name": "中川駅前交番",
+            "feature": "police",
+            "lat": 35.5628941,
+            "lon": 139.5704756
+          },
+          {
+            "name": "Atelier KiD",
+            "feature": "clothes",
+            "lat": 35.5622048,
+            "lon": 139.5721578
+          },
+          {
+            "name": "牛久保あやめ公園",
+            "feature": "park",
+            "lat": 35.5631773,
+            "lon": 139.5775581
+          }
+        ],
+        "course_nodes": [
+          7368660689,
+          13403237136,
+          2616953964,
+          2587513285,
+          6452310341,
+          2587567965,
+          1704650319,
+          1704650216,
+          7368658444,
+          7368660689
+        ]
+      },
+      "stdout": "データを読み込み中...\n  候補数: 113件 / ノード: 2267件 / エッジ: 6860件\n  最短経路を事前計算中...\n\n遺伝的アルゴリズムを実行中...\n  個体数: 20 / 世代数: 20\n\n  → output/best_course.json に保存しました\n  → output/fitness_history.csv に保存しました\n\n========== Step 5 (C++) 完了 ==========\n巡回順（最良個体）:\n  スタート : 正門\n  63 : 東京都市大学\n  10 : 学生食堂\n  82 : 大谷家\n  80 : 牛久保西ひかりがおか公園\n  20 : BAR DE ESPANA Zorro\n  73 : 中川駅前交番\n  19 : Atelier KiD\n  79 : 牛久保あやめ公園\n  ゴール   : 正門\n実行時間          : 0.08 秒\n最良解の fitness  : 0.3226\nコントロール数    : 8 件\n推定時間          : 60.0 分\n累積登り          : 38.0 m\nf_map             : 0.000\nf_dist            : 3.103\nf_time            : 0.049\nf_route           : 0.000\n==========================================\n総実行時間 : 0.10 秒\nGA詳細秒 : 0.078953\n総詳細秒 : 0.095805\nCSV秒 : 0.002401\n事前計算秒 : 0.013776\n初期個体秒 : 0.006983\n世代ループ秒 : 0.071965\n初期集団E : 0.647037\n地点CSV秒 : 0.000135\nノードCSV秒 : 0.000508\nエッジCSV秒 : 0.001717\n正門CSV秒 : 0.000042\nグラフ構築秒 : 0.001104\n正門探索秒 : 0.000001\n最短経路秒 : 0.012414\n表作成秒 : 0.000256\n",
+      "stderr": "",
+      "E_json": 0.3226,
+      "command": [
+        "C:\\TCU\\ec-comp\\lab-competition-2026\\orienteering.exe",
+        "2"
+      ],
+      "history_csv": "generation,best_fitness\n1,0.428373\n2,0.418199\n3,0.418199\n4,0.322600\n5,0.322600\n6,0.322600\n7,0.322600\n8,0.322600\n9,0.322600\n10,0.322600\n11,0.322600\n12,0.322600\n13,0.322600\n14,0.322600\n15,0.322600\n16,0.322600\n17,0.322600\n18,0.322600\n19,0.322600\n20,0.322600\n",
+      "ga_precise_seconds": 0.078953,
+      "total_precise_seconds": 0.095805,
+      "initialization_seconds": 0.006983,
+      "generations_seconds": 0.071965,
+      "initial_best_fitness": 0.647037,
+      "csv_seconds": 0.002401,
+      "precompute_seconds": 0.013776,
+      "shortest_path_seconds": 0.012414
+    },
+    {
+      "seed": 3,
+      "E": 0.3226,
+      "ga_seconds": 0.09,
+      "total_seconds": 0.11,
+      "n_controls": 8,
+      "f_map": 0.0,
+      "f_dist": 3.103,
+      "f_time": 0.049,
+      "f_route": 0.0,
+      "course": {
+        "n_controls": 8,
+        "total_distance_m": 3507.5,
+        "total_gain_m": 38.0,
+        "estimated_time_min": 60.0,
+        "fitness": 0.3226,
+        "objectives": {
+          "f_map": 0.0,
+          "f_dist": 3.103,
+          "f_time": 0.049,
+          "f_route": 0.0
+        },
+        "weights": {
+          "f_map": 0.5,
+          "f_dist": 0.1,
+          "f_time": 0.25,
+          "f_route": 0.15
+        },
+        "controls": [
+          {
+            "name": "東京都市大学",
+            "feature": "university",
+            "lat": 35.5611321,
+            "lon": 139.5756784
+          },
+          {
+            "name": "学生食堂",
+            "feature": "restaurant",
+            "lat": 35.561503,
+            "lon": 139.5742961
+          },
+          {
+            "name": "大谷家",
+            "feature": "restaurant",
+            "lat": 35.5629012,
+            "lon": 139.5724454
+          },
+          {
+            "name": "牛久保西ひかりがおか公園",
+            "feature": "park",
+            "lat": 35.5642712,
+            "lon": 139.5720437
+          },
+          {
+            "name": "BAR DE ESPANA Zorro",
+            "feature": "restaurant",
+            "lat": 35.5641324,
+            "lon": 139.5698356
+          },
+          {
+            "name": "中川駅前交番",
+            "feature": "police",
+            "lat": 35.5628941,
+            "lon": 139.5704756
+          },
+          {
+            "name": "Atelier KiD",
+            "feature": "clothes",
+            "lat": 35.5622048,
+            "lon": 139.5721578
+          },
+          {
+            "name": "牛久保あやめ公園",
+            "feature": "park",
+            "lat": 35.5631773,
+            "lon": 139.5775581
+          }
+        ],
+        "course_nodes": [
+          7368660689,
+          13403237136,
+          2616953964,
+          2587513285,
+          6452310341,
+          2587567965,
+          1704650319,
+          1704650216,
+          7368658444,
+          7368660689
+        ]
+      },
+      "stdout": "データを読み込み中...\n  候補数: 113件 / ノード: 2267件 / エッジ: 6860件\n  最短経路を事前計算中...\n\n遺伝的アルゴリズムを実行中...\n  個体数: 20 / 世代数: 20\n\n  → output/best_course.json に保存しました\n  → output/fitness_history.csv に保存しました\n\n========== Step 5 (C++) 完了 ==========\n巡回順（最良個体）:\n  スタート : 正門\n  63 : 東京都市大学\n  10 : 学生食堂\n  82 : 大谷家\n  80 : 牛久保西ひかりがおか公園\n  20 : BAR DE ESPANA Zorro\n  73 : 中川駅前交番\n  19 : Atelier KiD\n  79 : 牛久保あやめ公園\n  ゴール   : 正門\n実行時間          : 0.09 秒\n最良解の fitness  : 0.3226\nコントロール数    : 8 件\n推定時間          : 60.0 分\n累積登り          : 38.0 m\nf_map             : 0.000\nf_dist            : 3.103\nf_time            : 0.049\nf_route           : 0.000\n==========================================\n総実行時間 : 0.11 秒\nGA詳細秒 : 0.088785\n総詳細秒 : 0.105759\nCSV秒 : 0.002275\n事前計算秒 : 0.014038\n初期個体秒 : 0.007961\n世代ループ秒 : 0.080819\n初期集団E : 0.683496\n地点CSV秒 : 0.000154\nノードCSV秒 : 0.000423\nエッジCSV秒 : 0.001663\n正門CSV秒 : 0.000036\nグラフ構築秒 : 0.000803\n正門探索秒 : 0.000001\n最短経路秒 : 0.012986\n表作成秒 : 0.000248\n",
+      "stderr": "",
+      "E_json": 0.3226,
+      "command": [
+        "C:\\TCU\\ec-comp\\lab-competition-2026\\orienteering.exe",
+        "3"
+      ],
+      "history_csv": "generation,best_fitness\n1,0.613662\n2,0.613662\n3,0.613662\n4,0.495948\n5,0.495948\n6,0.455490\n7,0.418199\n8,0.418199\n9,0.417468\n10,0.417468\n11,0.417468\n12,0.417468\n13,0.417468\n14,0.417468\n15,0.322600\n16,0.322600\n17,0.322600\n18,0.322600\n19,0.322600\n20,0.322600\n",
+      "ga_precise_seconds": 0.088785,
+      "total_precise_seconds": 0.105759,
+      "initialization_seconds": 0.007961,
+      "generations_seconds": 0.080819,
+      "initial_best_fitness": 0.683496,
+      "csv_seconds": 0.002275,
+      "precompute_seconds": 0.014038,
+      "shortest_path_seconds": 0.012986
+    },
+    {
+      "seed": 4,
+      "E": 0.3226,
+      "ga_seconds": 0.08,
+      "total_seconds": 0.1,
+      "n_controls": 8,
+      "f_map": 0.0,
+      "f_dist": 3.103,
+      "f_time": 0.049,
+      "f_route": 0.0,
+      "course": {
+        "n_controls": 8,
+        "total_distance_m": 3507.5,
+        "total_gain_m": 38.0,
+        "estimated_time_min": 60.0,
+        "fitness": 0.3226,
+        "objectives": {
+          "f_map": 0.0,
+          "f_dist": 3.103,
+          "f_time": 0.049,
+          "f_route": 0.0
+        },
+        "weights": {
+          "f_map": 0.5,
+          "f_dist": 0.1,
+          "f_time": 0.25,
+          "f_route": 0.15
+        },
+        "controls": [
+          {
+            "name": "東京都市大学",
+            "feature": "university",
+            "lat": 35.5611321,
+            "lon": 139.5756784
+          },
+          {
+            "name": "学生食堂",
+            "feature": "restaurant",
+            "lat": 35.561503,
+            "lon": 139.5742961
+          },
+          {
+            "name": "大谷家",
+            "feature": "restaurant",
+            "lat": 35.5629012,
+            "lon": 139.5724454
+          },
+          {
+            "name": "牛久保西ひかりがおか公園",
+            "feature": "park",
+            "lat": 35.5642712,
+            "lon": 139.5720437
+          },
+          {
+            "name": "BAR DE ESPANA Zorro",
+            "feature": "restaurant",
+            "lat": 35.5641324,
+            "lon": 139.5698356
+          },
+          {
+            "name": "中川駅前交番",
+            "feature": "police",
+            "lat": 35.5628941,
+            "lon": 139.5704756
+          },
+          {
+            "name": "Atelier KiD",
+            "feature": "clothes",
+            "lat": 35.5622048,
+            "lon": 139.5721578
+          },
+          {
+            "name": "牛久保あやめ公園",
+            "feature": "park",
+            "lat": 35.5631773,
+            "lon": 139.5775581
+          }
+        ],
+        "course_nodes": [
+          7368660689,
+          13403237136,
+          2616953964,
+          2587513285,
+          6452310341,
+          2587567965,
+          1704650319,
+          1704650216,
+          7368658444,
+          7368660689
+        ]
+      },
+      "stdout": "データを読み込み中...\n  候補数: 113件 / ノード: 2267件 / エッジ: 6860件\n  最短経路を事前計算中...\n\n遺伝的アルゴリズムを実行中...\n  個体数: 20 / 世代数: 20\n\n  → output/best_course.json に保存しました\n  → output/fitness_history.csv に保存しました\n\n========== Step 5 (C++) 完了 ==========\n巡回順（最良個体）:\n  スタート : 正門\n  63 : 東京都市大学\n  10 : 学生食堂\n  82 : 大谷家\n  80 : 牛久保西ひかりがおか公園\n  20 : BAR DE ESPANA Zorro\n  73 : 中川駅前交番\n  19 : Atelier KiD\n  79 : 牛久保あやめ公園\n  ゴール   : 正門\n実行時間          : 0.08 秒\n最良解の fitness  : 0.3226\nコントロール数    : 8 件\n推定時間          : 60.0 分\n累積登り          : 38.0 m\nf_map             : 0.000\nf_dist            : 3.103\nf_time            : 0.049\nf_route           : 0.000\n==========================================\n総実行時間 : 0.10 秒\nGA詳細秒 : 0.084909\n総詳細秒 : 0.103171\nCSV秒 : 0.002364\n事前計算秒 : 0.015132\n初期個体秒 : 0.007360\n世代ループ秒 : 0.077544\n初期集団E : 0.614519\n地点CSV秒 : 0.000146\nノードCSV秒 : 0.000475\nエッジCSV秒 : 0.001699\n正門CSV秒 : 0.000044\nグラフ構築秒 : 0.000843\n正門探索秒 : 0.000001\n最短経路秒 : 0.014025\n表作成秒 : 0.000262\n",
+      "stderr": "",
+      "E_json": 0.3226,
+      "command": [
+        "C:\\TCU\\ec-comp\\lab-competition-2026\\orienteering.exe",
+        "4"
+      ],
+      "history_csv": "generation,best_fitness\n1,0.495948\n2,0.495948\n3,0.446993\n4,0.446993\n5,0.438252\n6,0.322600\n7,0.322600\n8,0.322600\n9,0.322600\n10,0.322600\n11,0.322600\n12,0.322600\n13,0.322600\n14,0.322600\n15,0.322600\n16,0.322600\n17,0.322600\n18,0.322600\n19,0.322600\n20,0.322600\n",
+      "ga_precise_seconds": 0.084909,
+      "total_precise_seconds": 0.103171,
+      "initialization_seconds": 0.00736,
+      "generations_seconds": 0.077544,
+      "initial_best_fitness": 0.614519,
+      "csv_seconds": 0.002364,
+      "precompute_seconds": 0.015132,
+      "shortest_path_seconds": 0.014025
+    },
+    {
+      "seed": 5,
+      "E": 0.3226,
+      "ga_seconds": 0.09,
+      "total_seconds": 0.1,
+      "n_controls": 8,
+      "f_map": 0.0,
+      "f_dist": 3.103,
+      "f_time": 0.049,
+      "f_route": 0.0,
+      "course": {
+        "n_controls": 8,
+        "total_distance_m": 3507.5,
+        "total_gain_m": 38.0,
+        "estimated_time_min": 60.0,
+        "fitness": 0.3226,
+        "objectives": {
+          "f_map": 0.0,
+          "f_dist": 3.103,
+          "f_time": 0.049,
+          "f_route": 0.0
+        },
+        "weights": {
+          "f_map": 0.5,
+          "f_dist": 0.1,
+          "f_time": 0.25,
+          "f_route": 0.15
+        },
+        "controls": [
+          {
+            "name": "東京都市大学",
+            "feature": "university",
+            "lat": 35.5611321,
+            "lon": 139.5756784
+          },
+          {
+            "name": "学生食堂",
+            "feature": "restaurant",
+            "lat": 35.561503,
+            "lon": 139.5742961
+          },
+          {
+            "name": "大谷家",
+            "feature": "restaurant",
+            "lat": 35.5629012,
+            "lon": 139.5724454
+          },
+          {
+            "name": "牛久保西ひかりがおか公園",
+            "feature": "park",
+            "lat": 35.5642712,
+            "lon": 139.5720437
+          },
+          {
+            "name": "BAR DE ESPANA Zorro",
+            "feature": "restaurant",
+            "lat": 35.5641324,
+            "lon": 139.5698356
+          },
+          {
+            "name": "中川駅前交番",
+            "feature": "police",
+            "lat": 35.5628941,
+            "lon": 139.5704756
+          },
+          {
+            "name": "Atelier KiD",
+            "feature": "clothes",
+            "lat": 35.5622048,
+            "lon": 139.5721578
+          },
+          {
+            "name": "牛久保あやめ公園",
+            "feature": "park",
+            "lat": 35.5631773,
+            "lon": 139.5775581
+          }
+        ],
+        "course_nodes": [
+          7368660689,
+          13403237136,
+          2616953964,
+          2587513285,
+          6452310341,
+          2587567965,
+          1704650319,
+          1704650216,
+          7368658444,
+          7368660689
+        ]
+      },
+      "stdout": "データを読み込み中...\n  候補数: 113件 / ノード: 2267件 / エッジ: 6860件\n  最短経路を事前計算中...\n\n遺伝的アルゴリズムを実行中...\n  個体数: 20 / 世代数: 20\n\n  → output/best_course.json に保存しました\n  → output/fitness_history.csv に保存しました\n\n========== Step 5 (C++) 完了 ==========\n巡回順（最良個体）:\n  スタート : 正門\n  63 : 東京都市大学\n  10 : 学生食堂\n  82 : 大谷家\n  80 : 牛久保西ひかりがおか公園\n  20 : BAR DE ESPANA Zorro\n  73 : 中川駅前交番\n  19 : Atelier KiD\n  79 : 牛久保あやめ公園\n  ゴール   : 正門\n実行時間          : 0.09 秒\n最良解の fitness  : 0.3226\nコントロール数    : 8 件\n推定時間          : 60.0 分\n累積登り          : 38.0 m\nf_map             : 0.000\nf_dist            : 3.103\nf_time            : 0.049\nf_route           : 0.000\n==========================================\n総実行時間 : 0.10 秒\nGA詳細秒 : 0.087826\n総詳細秒 : 0.104881\nCSV秒 : 0.002353\n事前計算秒 : 0.014033\n初期個体秒 : 0.008346\n世代ループ秒 : 0.079474\n初期集団E : 0.654659\n地点CSV秒 : 0.000148\nノードCSV秒 : 0.000440\nエッジCSV秒 : 0.001726\n正門CSV秒 : 0.000039\nグラフ構築秒 : 0.000843\n正門探索秒 : 0.000001\n最短経路秒 : 0.012927\n表作成秒 : 0.000262\n",
+      "stderr": "",
+      "E_json": 0.3226,
+      "command": [
+        "C:\\TCU\\ec-comp\\lab-competition-2026\\orienteering.exe",
+        "5"
+      ],
+      "history_csv": "generation,best_fitness\n1,0.551545\n2,0.442825\n3,0.422982\n4,0.374867\n5,0.374867\n6,0.374867\n7,0.374867\n8,0.374867\n9,0.322600\n10,0.322600\n11,0.322600\n12,0.322600\n13,0.322600\n14,0.322600\n15,0.322600\n16,0.322600\n17,0.322600\n18,0.322600\n19,0.322600\n20,0.322600\n",
+      "ga_precise_seconds": 0.087826,
+      "total_precise_seconds": 0.104881,
+      "initialization_seconds": 0.008346,
+      "generations_seconds": 0.079474,
+      "initial_best_fitness": 0.654659,
+      "csv_seconds": 0.002353,
+      "precompute_seconds": 0.014033,
+      "shortest_path_seconds": 0.012927
+    },
+    {
+      "seed": 6,
+      "E": 0.3887,
+      "ga_seconds": 0.08,
+      "total_seconds": 0.1,
+      "n_controls": 8,
+      "f_map": 0.0,
+      "f_dist": 3.125,
+      "f_time": 0.305,
+      "f_route": 0.0,
+      "course": {
+        "n_controls": 8,
+        "total_distance_m": 3562.0,
+        "total_gain_m": 35.7,
+        "estimated_time_min": 60.3,
+        "fitness": 0.388682,
+        "objectives": {
+          "f_map": 0.0,
+          "f_dist": 3.125,
+          "f_time": 0.305,
+          "f_route": 0.0
+        },
+        "weights": {
+          "f_map": 0.5,
+          "f_dist": 0.1,
+          "f_time": 0.25,
+          "f_route": 0.15
+        },
+        "controls": [
+          {
+            "name": "東京都市大学",
+            "feature": "university",
+            "lat": 35.5611321,
+            "lon": 139.5756784
+          },
+          {
+            "name": "学生食堂",
+            "feature": "restaurant",
+            "lat": 35.561503,
+            "lon": 139.5742961
+          },
+          {
+            "name": "本格焼肉 ふくひろ亭",
+            "feature": "restaurant",
+            "lat": 35.5621863,
+            "lon": 139.5726205
+          },
+          {
+            "name": "大谷家",
+            "feature": "restaurant",
+            "lat": 35.5629012,
+            "lon": 139.5724454
+          },
+          {
+            "name": "BAR DE ESPANA Zorro",
+            "feature": "restaurant",
+            "lat": 35.5641324,
+            "lon": 139.5698356
+          },
+          {
+            "name": "中川駅前交番",
+            "feature": "police",
+            "lat": 35.5628941,
+            "lon": 139.5704756
+          },
+          {
+            "name": "牛久保西ひかりがおか公園",
+            "feature": "park",
+            "lat": 35.5642712,
+            "lon": 139.5720437
+          },
+          {
+            "name": "牛久保あやめ公園",
+            "feature": "park",
+            "lat": 35.5631773,
+            "lon": 139.5775581
+          }
+        ],
+        "course_nodes": [
+          7368660689,
+          13403237136,
+          2616953964,
+          1303244922,
+          2587513285,
+          2587567965,
+          1704650319,
+          6452310341,
+          7368658444,
+          7368660689
+        ]
+      },
+      "stdout": "データを読み込み中...\n  候補数: 113件 / ノード: 2267件 / エッジ: 6860件\n  最短経路を事前計算中...\n\n遺伝的アルゴリズムを実行中...\n  個体数: 20 / 世代数: 20\n\n  → output/best_course.json に保存しました\n  → output/fitness_history.csv に保存しました\n\n========== Step 5 (C++) 完了 ==========\n巡回順（最良個体）:\n  スタート : 正門\n  63 : 東京都市大学\n  10 : 学生食堂\n  15 : 本格焼肉 ふくひろ亭\n  82 : 大谷家\n  20 : BAR DE ESPANA Zorro\n  73 : 中川駅前交番\n  80 : 牛久保西ひかりがおか公園\n  79 : 牛久保あやめ公園\n  ゴール   : 正門\n実行時間          : 0.08 秒\n最良解の fitness  : 0.3887\nコントロール数    : 8 件\n推定時間          : 60.3 分\n累積登り          : 35.7 m\nf_map             : 0.000\nf_dist            : 3.125\nf_time            : 0.305\nf_route           : 0.000\n==========================================\n総実行時間 : 0.10 秒\nGA詳細秒 : 0.080049\n総詳細秒 : 0.097094\nCSV秒 : 0.002282\n事前計算秒 : 0.014120\n初期個体秒 : 0.007334\n世代ループ秒 : 0.072710\n初期集団E : 0.647997\n地点CSV秒 : 0.000154\nノードCSV秒 : 0.000430\nエッジCSV秒 : 0.001659\n正門CSV秒 : 0.000039\nグラフ構築秒 : 0.000818\n正門探索秒 : 0.000001\n最短経路秒 : 0.013041\n表作成秒 : 0.000260\n",
+      "stderr": "",
+      "E_json": 0.388682,
+      "command": [
+        "C:\\TCU\\ec-comp\\lab-competition-2026\\orienteering.exe",
+        "6"
+      ],
+      "history_csv": "generation,best_fitness\n1,0.516881\n2,0.516881\n3,0.418199\n4,0.418199\n5,0.418199\n6,0.418199\n7,0.418199\n8,0.418199\n9,0.418199\n10,0.388682\n11,0.388682\n12,0.388682\n13,0.388682\n14,0.388682\n15,0.388682\n16,0.388682\n17,0.388682\n18,0.388682\n19,0.388682\n20,0.388682\n",
+      "ga_precise_seconds": 0.080049,
+      "total_precise_seconds": 0.097094,
+      "initialization_seconds": 0.007334,
+      "generations_seconds": 0.07271,
+      "initial_best_fitness": 0.647997,
+      "csv_seconds": 0.002282,
+      "precompute_seconds": 0.01412,
+      "shortest_path_seconds": 0.013041
+    },
+    {
+      "seed": 7,
+      "E": 0.3226,
+      "ga_seconds": 0.08,
+      "total_seconds": 0.1,
+      "n_controls": 8,
+      "f_map": 0.0,
+      "f_dist": 3.103,
+      "f_time": 0.049,
+      "f_route": 0.0,
+      "course": {
+        "n_controls": 8,
+        "total_distance_m": 3507.5,
+        "total_gain_m": 38.0,
+        "estimated_time_min": 60.0,
+        "fitness": 0.3226,
+        "objectives": {
+          "f_map": 0.0,
+          "f_dist": 3.103,
+          "f_time": 0.049,
+          "f_route": 0.0
+        },
+        "weights": {
+          "f_map": 0.5,
+          "f_dist": 0.1,
+          "f_time": 0.25,
+          "f_route": 0.15
+        },
+        "controls": [
+          {
+            "name": "東京都市大学",
+            "feature": "university",
+            "lat": 35.5611321,
+            "lon": 139.5756784
+          },
+          {
+            "name": "学生食堂",
+            "feature": "restaurant",
+            "lat": 35.561503,
+            "lon": 139.5742961
+          },
+          {
+            "name": "大谷家",
+            "feature": "restaurant",
+            "lat": 35.5629012,
+            "lon": 139.5724454
+          },
+          {
+            "name": "牛久保西ひかりがおか公園",
+            "feature": "park",
+            "lat": 35.5642712,
+            "lon": 139.5720437
+          },
+          {
+            "name": "BAR DE ESPANA Zorro",
+            "feature": "restaurant",
+            "lat": 35.5641324,
+            "lon": 139.5698356
+          },
+          {
+            "name": "中川駅前交番",
+            "feature": "police",
+            "lat": 35.5628941,
+            "lon": 139.5704756
+          },
+          {
+            "name": "Atelier KiD",
+            "feature": "clothes",
+            "lat": 35.5622048,
+            "lon": 139.5721578
+          },
+          {
+            "name": "牛久保あやめ公園",
+            "feature": "park",
+            "lat": 35.5631773,
+            "lon": 139.5775581
+          }
+        ],
+        "course_nodes": [
+          7368660689,
+          13403237136,
+          2616953964,
+          2587513285,
+          6452310341,
+          2587567965,
+          1704650319,
+          1704650216,
+          7368658444,
+          7368660689
+        ]
+      },
+      "stdout": "データを読み込み中...\n  候補数: 113件 / ノード: 2267件 / エッジ: 6860件\n  最短経路を事前計算中...\n\n遺伝的アルゴリズムを実行中...\n  個体数: 20 / 世代数: 20\n\n  → output/best_course.json に保存しました\n  → output/fitness_history.csv に保存しました\n\n========== Step 5 (C++) 完了 ==========\n巡回順（最良個体）:\n  スタート : 正門\n  63 : 東京都市大学\n  10 : 学生食堂\n  82 : 大谷家\n  80 : 牛久保西ひかりがおか公園\n  20 : BAR DE ESPANA Zorro\n  73 : 中川駅前交番\n  19 : Atelier KiD\n  79 : 牛久保あやめ公園\n  ゴール   : 正門\n実行時間          : 0.08 秒\n最良解の fitness  : 0.3226\nコントロール数    : 8 件\n推定時間          : 60.0 分\n累積登り          : 38.0 m\nf_map             : 0.000\nf_dist            : 3.103\nf_time            : 0.049\nf_route           : 0.000\n==========================================\n総実行時間 : 0.10 秒\nGA詳細秒 : 0.082640\n総詳細秒 : 0.099491\nCSV秒 : 0.002357\n事前計算秒 : 0.013637\n初期個体秒 : 0.006716\n世代ループ秒 : 0.075918\n初期集団E : 0.669455\n地点CSV秒 : 0.000148\nノードCSV秒 : 0.000428\nエッジCSV秒 : 0.001685\n正門CSV秒 : 0.000096\nグラフ構築秒 : 0.000838\n正門探索秒 : 0.000001\n最短経路秒 : 0.012523\n表作成秒 : 0.000274\n",
+      "stderr": "",
+      "E_json": 0.3226,
+      "command": [
+        "C:\\TCU\\ec-comp\\lab-competition-2026\\orienteering.exe",
+        "7"
+      ],
+      "history_csv": "generation,best_fitness\n1,0.519451\n2,0.417468\n3,0.417468\n4,0.417468\n5,0.417468\n6,0.322600\n7,0.322600\n8,0.322600\n9,0.322600\n10,0.322600\n11,0.322600\n12,0.322600\n13,0.322600\n14,0.322600\n15,0.322600\n16,0.322600\n17,0.322600\n18,0.322600\n19,0.322600\n20,0.322600\n",
+      "ga_precise_seconds": 0.08264,
+      "total_precise_seconds": 0.099491,
+      "initialization_seconds": 0.006716,
+      "generations_seconds": 0.075918,
+      "initial_best_fitness": 0.669455,
+      "csv_seconds": 0.002357,
+      "precompute_seconds": 0.013637,
+      "shortest_path_seconds": 0.012523
+    },
+    {
+      "seed": 8,
+      "E": 0.412,
+      "ga_seconds": 0.08,
+      "total_seconds": 0.1,
+      "n_controls": 8,
+      "f_map": 0.0,
+      "f_dist": 4.113,
+      "f_time": 0.003,
+      "f_route": 0.0,
+      "course": {
+        "n_controls": 8,
+        "total_distance_m": 3480.2,
+        "total_gain_m": 40.3,
+        "estimated_time_min": 60.0,
+        "fitness": 0.411956,
+        "objectives": {
+          "f_map": 0.0,
+          "f_dist": 4.113,
+          "f_time": 0.003,
+          "f_route": 0.0
+        },
+        "weights": {
+          "f_map": 0.5,
+          "f_dist": 0.1,
+          "f_time": 0.25,
+          "f_route": 0.15
+        },
+        "controls": [
+          {
+            "name": "牛久保西ひかりがおか公園",
+            "feature": "park",
+            "lat": 35.5642712,
+            "lon": 139.5720437
+          },
+          {
+            "name": "中川駅前交番",
+            "feature": "police",
+            "lat": 35.5628941,
+            "lon": 139.5704756
+          },
+          {
+            "name": "かまめし・くしやき 木の香（きのか）",
+            "feature": "restaurant",
+            "lat": 35.562042,
+            "lon": 139.5696111
+          },
+          {
+            "name": "横浜市立中川西小学校",
+            "feature": "school",
+            "lat": 35.5601957,
+            "lon": 139.5689502
+          },
+          {
+            "name": "Atelier KiD",
+            "feature": "clothes",
+            "lat": 35.5622048,
+            "lon": 139.5721578
+          },
+          {
+            "name": "こめいろ",
+            "feature": "restaurant",
+            "lat": 35.5626447,
+            "lon": 139.5728569
+          },
+          {
+            "name": "学生食堂",
+            "feature": "restaurant",
+            "lat": 35.561503,
+            "lon": 139.5742961
+          },
+          {
+            "name": "東京都市大学",
+            "feature": "university",
+            "lat": 35.5611321,
+            "lon": 139.5756784
+          }
+        ],
+        "course_nodes": [
+          7368660689,
+          6452310341,
+          1704650319,
+          2626055007,
+          6437962852,
+          1704650216,
+          2587513272,
+          2616953964,
+          13403237136,
+          7368660689
+        ]
+      },
+      "stdout": "データを読み込み中...\n  候補数: 113件 / ノード: 2267件 / エッジ: 6860件\n  最短経路を事前計算中...\n\n遺伝的アルゴリズムを実行中...\n  個体数: 20 / 世代数: 20\n\n  → output/best_course.json に保存しました\n  → output/fitness_history.csv に保存しました\n\n========== Step 5 (C++) 完了 ==========\n巡回順（最良個体）:\n  スタート : 正門\n  80 : 牛久保西ひかりがおか公園\n  73 : 中川駅前交番\n  32 : かまめし・くしやき 木の香（きのか）\n  66 : 横浜市立中川西小学校\n  19 : Atelier KiD\n  44 : こめいろ\n  10 : 学生食堂\n  63 : 東京都市大学\n  ゴール   : 正門\n実行時間          : 0.08 秒\n最良解の fitness  : 0.4120\nコントロール数    : 8 件\n推定時間          : 60.0 分\n累積登り          : 40.3 m\nf_map             : 0.000\nf_dist            : 4.113\nf_time            : 0.003\nf_route           : 0.000\n==========================================\n総実行時間 : 0.10 秒\nGA詳細秒 : 0.083792\n総詳細秒 : 0.100979\nCSV秒 : 0.002330\n事前計算秒 : 0.014183\n初期個体秒 : 0.007087\n世代ループ秒 : 0.076699\n初期集団E : 0.679739\n地点CSV秒 : 0.000139\nノードCSV秒 : 0.000423\nエッジCSV秒 : 0.001681\n正門CSV秒 : 0.000087\nグラフ構築秒 : 0.000842\n正門探索秒 : 0.000001\n最短経路秒 : 0.013071\n表作成秒 : 0.000269\n",
+      "stderr": "",
+      "E_json": 0.411956,
+      "command": [
+        "C:\\TCU\\ec-comp\\lab-competition-2026\\orienteering.exe",
+        "8"
+      ],
+      "history_csv": "generation,best_fitness\n1,0.679739\n2,0.417468\n3,0.417468\n4,0.417468\n5,0.417468\n6,0.417468\n7,0.417468\n8,0.417468\n9,0.417468\n10,0.417468\n11,0.417468\n12,0.417468\n13,0.411956\n14,0.411956\n15,0.411956\n16,0.411956\n17,0.411956\n18,0.411956\n19,0.411956\n20,0.411956\n",
+      "ga_precise_seconds": 0.083792,
+      "total_precise_seconds": 0.100979,
+      "initialization_seconds": 0.007087,
+      "generations_seconds": 0.076699,
+      "initial_best_fitness": 0.679739,
+      "csv_seconds": 0.00233,
+      "precompute_seconds": 0.014183,
+      "shortest_path_seconds": 0.013071
+    },
+    {
+      "seed": 9,
+      "E": 0.3226,
+      "ga_seconds": 0.08,
+      "total_seconds": 0.1,
+      "n_controls": 8,
+      "f_map": 0.0,
+      "f_dist": 3.103,
+      "f_time": 0.049,
+      "f_route": 0.0,
+      "course": {
+        "n_controls": 8,
+        "total_distance_m": 3507.5,
+        "total_gain_m": 38.0,
+        "estimated_time_min": 60.0,
+        "fitness": 0.3226,
+        "objectives": {
+          "f_map": 0.0,
+          "f_dist": 3.103,
+          "f_time": 0.049,
+          "f_route": 0.0
+        },
+        "weights": {
+          "f_map": 0.5,
+          "f_dist": 0.1,
+          "f_time": 0.25,
+          "f_route": 0.15
+        },
+        "controls": [
+          {
+            "name": "東京都市大学",
+            "feature": "university",
+            "lat": 35.5611321,
+            "lon": 139.5756784
+          },
+          {
+            "name": "学生食堂",
+            "feature": "restaurant",
+            "lat": 35.561503,
+            "lon": 139.5742961
+          },
+          {
+            "name": "大谷家",
+            "feature": "restaurant",
+            "lat": 35.5629012,
+            "lon": 139.5724454
+          },
+          {
+            "name": "牛久保西ひかりがおか公園",
+            "feature": "park",
+            "lat": 35.5642712,
+            "lon": 139.5720437
+          },
+          {
+            "name": "BAR DE ESPANA Zorro",
+            "feature": "restaurant",
+            "lat": 35.5641324,
+            "lon": 139.5698356
+          },
+          {
+            "name": "中川駅前交番",
+            "feature": "police",
+            "lat": 35.5628941,
+            "lon": 139.5704756
+          },
+          {
+            "name": "Atelier KiD",
+            "feature": "clothes",
+            "lat": 35.5622048,
+            "lon": 139.5721578
+          },
+          {
+            "name": "牛久保あやめ公園",
+            "feature": "park",
+            "lat": 35.5631773,
+            "lon": 139.5775581
+          }
+        ],
+        "course_nodes": [
+          7368660689,
+          13403237136,
+          2616953964,
+          2587513285,
+          6452310341,
+          2587567965,
+          1704650319,
+          1704650216,
+          7368658444,
+          7368660689
+        ]
+      },
+      "stdout": "データを読み込み中...\n  候補数: 113件 / ノード: 2267件 / エッジ: 6860件\n  最短経路を事前計算中...\n\n遺伝的アルゴリズムを実行中...\n  個体数: 20 / 世代数: 20\n\n  → output/best_course.json に保存しました\n  → output/fitness_history.csv に保存しました\n\n========== Step 5 (C++) 完了 ==========\n巡回順（最良個体）:\n  スタート : 正門\n  63 : 東京都市大学\n  10 : 学生食堂\n  82 : 大谷家\n  80 : 牛久保西ひかりがおか公園\n  20 : BAR DE ESPANA Zorro\n  73 : 中川駅前交番\n  19 : Atelier KiD\n  79 : 牛久保あやめ公園\n  ゴール   : 正門\n実行時間          : 0.08 秒\n最良解の fitness  : 0.3226\nコントロール数    : 8 件\n推定時間          : 60.0 分\n累積登り          : 38.0 m\nf_map             : 0.000\nf_dist            : 3.103\nf_time            : 0.049\nf_route           : 0.000\n==========================================\n総実行時間 : 0.10 秒\nGA詳細秒 : 0.078117\n総詳細秒 : 0.095033\nCSV秒 : 0.002286\n事前計算秒 : 0.013954\n初期個体秒 : 0.007016\n世代ループ秒 : 0.071095\n初期集団E : 0.678310\n地点CSV秒 : 0.000148\nノードCSV秒 : 0.000437\nエッジCSV秒 : 0.001662\n正門CSV秒 : 0.000039\nグラフ構築秒 : 0.000835\n正門探索秒 : 0.000001\n最短経路秒 : 0.012862\n表作成秒 : 0.000256\n",
+      "stderr": "",
+      "E_json": 0.3226,
+      "command": [
+        "C:\\TCU\\ec-comp\\lab-competition-2026\\orienteering.exe",
+        "9"
+      ],
+      "history_csv": "generation,best_fitness\n1,0.647129\n2,0.514044\n3,0.418199\n4,0.418199\n5,0.404204\n6,0.404204\n7,0.404204\n8,0.404204\n9,0.404204\n10,0.404204\n11,0.404204\n12,0.404204\n13,0.322600\n14,0.322600\n15,0.322600\n16,0.322600\n17,0.322600\n18,0.322600\n19,0.322600\n20,0.322600\n",
+      "ga_precise_seconds": 0.078117,
+      "total_precise_seconds": 0.095033,
+      "initialization_seconds": 0.007016,
+      "generations_seconds": 0.071095,
+      "initial_best_fitness": 0.67831,
+      "csv_seconds": 0.002286,
+      "precompute_seconds": 0.013954,
+      "shortest_path_seconds": 0.012862
+    },
+    {
+      "seed": 10,
+      "E": 0.412,
+      "ga_seconds": 0.09,
+      "total_seconds": 0.1,
+      "n_controls": 8,
+      "f_map": 0.0,
+      "f_dist": 4.113,
+      "f_time": 0.003,
+      "f_route": 0.0,
+      "course": {
+        "n_controls": 8,
+        "total_distance_m": 3480.2,
+        "total_gain_m": 40.3,
+        "estimated_time_min": 60.0,
+        "fitness": 0.411956,
+        "objectives": {
+          "f_map": 0.0,
+          "f_dist": 4.113,
+          "f_time": 0.003,
+          "f_route": 0.0
+        },
+        "weights": {
+          "f_map": 0.5,
+          "f_dist": 0.1,
+          "f_time": 0.25,
+          "f_route": 0.15
+        },
+        "controls": [
+          {
+            "name": "東京都市大学",
+            "feature": "university",
+            "lat": 35.5611321,
+            "lon": 139.5756784
+          },
+          {
+            "name": "学生食堂",
+            "feature": "restaurant",
+            "lat": 35.561503,
+            "lon": 139.5742961
+          },
+          {
+            "name": "こめいろ",
+            "feature": "restaurant",
+            "lat": 35.5626447,
+            "lon": 139.5728569
+          },
+          {
+            "name": "Atelier KiD",
+            "feature": "clothes",
+            "lat": 35.5622048,
+            "lon": 139.5721578
+          },
+          {
+            "name": "横浜市立中川西小学校",
+            "feature": "school",
+            "lat": 35.5601957,
+            "lon": 139.5689502
+          },
+          {
+            "name": "かまめし・くしやき 木の香（きのか）",
+            "feature": "restaurant",
+            "lat": 35.562042,
+            "lon": 139.5696111
+          },
+          {
+            "name": "中川駅前交番",
+            "feature": "police",
+            "lat": 35.5628941,
+            "lon": 139.5704756
+          },
+          {
+            "name": "牛久保西ひかりがおか公園",
+            "feature": "park",
+            "lat": 35.5642712,
+            "lon": 139.5720437
+          }
+        ],
+        "course_nodes": [
+          7368660689,
+          13403237136,
+          2616953964,
+          2587513272,
+          1704650216,
+          6437962852,
+          2626055007,
+          1704650319,
+          6452310341,
+          7368660689
+        ]
+      },
+      "stdout": "データを読み込み中...\n  候補数: 113件 / ノード: 2267件 / エッジ: 6860件\n  最短経路を事前計算中...\n\n遺伝的アルゴリズムを実行中...\n  個体数: 20 / 世代数: 20\n\n  → output/best_course.json に保存しました\n  → output/fitness_history.csv に保存しました\n\n========== Step 5 (C++) 完了 ==========\n巡回順（最良個体）:\n  スタート : 正門\n  63 : 東京都市大学\n  10 : 学生食堂\n  44 : こめいろ\n  19 : Atelier KiD\n  66 : 横浜市立中川西小学校\n  32 : かまめし・くしやき 木の香（きのか）\n  73 : 中川駅前交番\n  80 : 牛久保西ひかりがおか公園\n  ゴール   : 正門\n実行時間          : 0.09 秒\n最良解の fitness  : 0.4120\nコントロール数    : 8 件\n推定時間          : 60.0 分\n累積登り          : 40.3 m\nf_map             : 0.000\nf_dist            : 4.113\nf_time            : 0.003\nf_route           : 0.000\n==========================================\n総実行時間 : 0.10 秒\nGA詳細秒 : 0.085375\n総詳細秒 : 0.102276\nCSV秒 : 0.002399\n事前計算秒 : 0.013798\n初期個体秒 : 0.008153\n世代ループ秒 : 0.077217\n初期集団E : 0.673045\n地点CSV秒 : 0.000171\nノードCSV秒 : 0.000439\nエッジCSV秒 : 0.001702\n正門CSV秒 : 0.000087\nグラフ構築秒 : 0.000825\n正門探索秒 : 0.000001\n最短経路秒 : 0.012681\n表作成秒 : 0.000291\n",
+      "stderr": "",
+      "E_json": 0.411956,
+      "command": [
+        "C:\\TCU\\ec-comp\\lab-competition-2026\\orienteering.exe",
+        "10"
+      ],
+      "history_csv": "generation,best_fitness\n1,0.516881\n2,0.516881\n3,0.516881\n4,0.516881\n5,0.485210\n6,0.436550\n7,0.418199\n8,0.418199\n9,0.418199\n10,0.418199\n11,0.417468\n12,0.417468\n13,0.411956\n14,0.411956\n15,0.411956\n16,0.411956\n17,0.411956\n18,0.411956\n19,0.411956\n20,0.411956\n",
+      "ga_precise_seconds": 0.085375,
+      "total_precise_seconds": 0.102276,
+      "initialization_seconds": 0.008153,
+      "generations_seconds": 0.077217,
+      "initial_best_fitness": 0.673045,
+      "csv_seconds": 0.002399,
+      "precompute_seconds": 0.013798,
+      "shortest_path_seconds": 0.012681
+    }
+  ],
+  "source_sha256": {
+    "build.bat": "27a468ce09073222b13080e7764e5e5c74ad70472faa89d3161e94ea40e997a1",
+    "const.h": "bdf7a61418008c6c0af28407643b30a7f6b83b5f15a7e6793e0e5628ec449ba2",
+    "csv_loader.cpp": "c1b1561d5018513c5738770f0b48938fe2088967b6db8f3cf2d4f95ec1abe0c4",
+    "csv_loader.h": "db014dce366aaf8d441554c74f9ca9273955d608b92a4a08e6e2f38404a7a3df",
+    "evaluate.cpp": "0672c59da34574df10a03323d0169e4d7960e14c78021f5c6885f818b6be0ebb",
+    "evaluate.h": "40cd80a67c033274801301f1ee10bd71c211c95aed87743bf04d83d423ef6304",
+    "ga.cpp": "fb753a405cebf44984a7c8fa305f1b2fd2b439e081019fe0958832c2d80b37c1",
+    "ga.h": "ef322a423241a3f2b84261f6414e22454f3aa2d780a66e21c806105acf413510",
+    "graph.cpp": "5d56e4304e1133705b3feb4ec53b821e25776b40ce8ef289b349d7e1b7f29c39",
+    "graph.h": "8f06cc1a236aeb8f2ce948b79f28f8e4a22c1a1c7dbaa157a267afdf0dc20aa7",
+    "main.cpp": "bf303196adf7dd6170171031760e569263bbc531c962ce1b41b51f7d38bc7a65",
+    "test.bat": "fb56de7737b568cc1b2eb7cc8344632504b98825b470325bdeb871253d9be4e4",
+    "test_efficiency.bat": "135d8ef2a51d6fc4dc08ebfddcefd9dbe833dd4b9a2327d41469d9e67609f04a"
+  },
+  "summary": {
+    "mean": 0.34709,
+    "std": 0.03788974663414892,
+    "minimum": 0.3226,
+    "maximum": 0.412,
+    "ga_seconds": 0.083,
+    "total_seconds": 0.10200000000000001,
+    "best_count": 7
+  }
+}

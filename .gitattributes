@@ -1,0 +1,4 @@
+# Makefile は必ず LF で置く。
+# macOS 標準の make（GNU Make 3.81）は行末の CR を取り除かないため、
+# CRLF のままだとコマンド名に CR が混ざってビルドが失敗しうる。
+Makefile text eol=lf

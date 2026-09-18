@@ -1,0 +1,1351 @@
+{
+  "label": "07-fargate-p20g20r3",
+  "date": "2026-09-18T03:26:58.849165+09:00",
+  "note": "07 安定化: far-gate / 個体20・世代20・再スタート3 (再スタート3回)",
+  "repo": "C:\\TCU\\ec-comp\\lab-competition-2026",
+  "workdir": "C:\\TCU\\ec-comp\\datasets\\far-gate",
+  "seeds": [
+    1,
+    4,
+    7,
+    10,
+    13,
+    16,
+    19,
+    22,
+    25,
+    28,
+    42
+  ],
+  "pop": 20,
+  "gen": 20,
+  "flags": [
+    "--restarts",
+    "3"
+  ],
+  "status": "complete",
+  "runs": [
+    {
+      "seed": 1,
+      "E": 0.3307,
+      "ga_seconds": 0.23,
+      "total_seconds": 0.24,
+      "n_controls": 8,
+      "f_map": 0.0,
+      "f_dist": 3.258,
+      "f_time": 0.019,
+      "f_route": 0.0,
+      "course": {
+        "n_controls": 8,
+        "total_distance_m": 3398.3,
+        "total_gain_m": 46.3,
+        "estimated_time_min": 60.0,
+        "fitness": 0.330659,
+        "objectives": {
+          "f_map": 0.0,
+          "f_dist": 3.258,
+          "f_time": 0.019,
+          "f_route": 0.0
+        },
+        "weights": {
+          "f_map": 0.5,
+          "f_dist": 0.1,
+          "f_time": 0.25,
+          "f_route": 0.15
+        },
+        "controls": [
+          {
+            "name": "あゆみが丘公園",
+            "feature": "park",
+            "lat": 35.5686253,
+            "lon": 139.5659083
+          },
+          {
+            "name": "BAR DE ESPANA Zorro",
+            "feature": "restaurant",
+            "lat": 35.5641324,
+            "lon": 139.5698356
+          },
+          {
+            "name": "こめいろ",
+            "feature": "restaurant",
+            "lat": 35.5626447,
+            "lon": 139.5728569
+          },
+          {
+            "name": "シェアリーカフェ",
+            "feature": "cafe",
+            "lat": 35.5628572,
+            "lon": 139.5718655
+          },
+          {
+            "name": "牛久保西ひかりがおか公園",
+            "feature": "park",
+            "lat": 35.5642712,
+            "lon": 139.5720437
+          },
+          {
+            "name": "集う人達",
+            "feature": "artwork",
+            "lat": 35.5627235,
+            "lon": 139.570135
+          },
+          {
+            "name": "和幸",
+            "feature": "restaurant",
+            "lat": 35.5676147,
+            "lon": 139.5662171
+          },
+          {
+            "name": "新石川四丁目公園",
+            "feature": "park",
+            "lat": 35.570379,
+            "lon": 139.5655302
+          }
+        ],
+        "course_nodes": [
+          908108531,
+          7924959775,
+          2587567965,
+          2587513272,
+          2587513282,
+          6452310341,
+          2555365272,
+          7924960097,
+          908108531,
+          908108531
+        ]
+      },
+      "stdout": "データを読み込み中...\n  候補数: 113件 / ノード: 2267件 / エッジ: 6860件\n  最短経路を事前計算中...\n\n遺伝的アルゴリズムを実行中...\n  個体数: 20 / 世代数: 20 / 再スタート: 3\n\n  → output/best_course.json に保存しました\n  → output/fitness_history.csv に保存しました\n\n========== Step 5 (C++) 完了 ==========\n巡回順（最良個体）:\n  スタート : 正門\n  93 : あゆみが丘公園\n  20 : BAR DE ESPANA Zorro\n  44 : こめいろ\n  45 : シェアリーカフェ\n  80 : 牛久保西ひかりがおか公園\n  46 : 集う人達\n  94 : 和幸\n  96 : 新石川四丁目公園\n  ゴール   : 正門\n実行時間          : 0.23 秒\n最良解の fitness  : 0.3307\nコントロール数    : 8 件\n推定時間          : 60.0 分\n累積登り          : 46.3 m\nf_map             : 0.000\nf_dist            : 3.258\nf_time            : 0.019\nf_route           : 0.000\n==========================================\n総実行時間 : 0.24 秒\nGA詳細秒 : 0.226258\n総詳細秒 : 0.243275\nCSV秒 : 0.002473\n事前計算秒 : 0.013659\n初期個体秒 : 0.025919\n世代ループ秒 : 0.200321\n初期集団E : 0.369132\n地点CSV秒 : 0.000161\nノードCSV秒 : 0.000431\nエッジCSV秒 : 0.001792\n正門CSV秒 : 0.000089\nグラフ構築秒 : 0.001021\n正門探索秒 : 0.000002\n最短経路秒 : 0.012368\n表作成秒 : 0.000269\n再スタート回数 : 3\n再スタートE : 0.330659 0.330659 0.330659\n",
+      "stderr": "",
+      "E_json": 0.330659,
+      "command": [
+        "C:\\TCU\\ec-comp\\lab-competition-2026\\orienteering.exe",
+        "1",
+        "20",
+        "20",
+        "--restarts",
+        "3"
+      ],
+      "history_csv": "generation,best_fitness\n1,0.331869\n2,0.331869\n3,0.330659\n4,0.330659\n5,0.330659\n6,0.330659\n7,0.330659\n8,0.330659\n9,0.330659\n10,0.330659\n11,0.330659\n12,0.330659\n13,0.330659\n14,0.330659\n15,0.330659\n16,0.330659\n17,0.330659\n18,0.330659\n19,0.330659\n20,0.330659\n",
+      "ga_precise_seconds": 0.226258,
+      "total_precise_seconds": 0.243275,
+      "initialization_seconds": 0.025919,
+      "generations_seconds": 0.200321,
+      "initial_best_fitness": 0.369132,
+      "csv_seconds": 0.002473,
+      "precompute_seconds": 0.013659,
+      "shortest_path_seconds": 0.012368,
+      "restarts": 3.0,
+      "restart_fitness": [
+        0.330659,
+        0.330659,
+        0.330659
+      ]
+    },
+    {
+      "seed": 4,
+      "E": 0.3307,
+      "ga_seconds": 0.21,
+      "total_seconds": 0.23,
+      "n_controls": 8,
+      "f_map": 0.0,
+      "f_dist": 3.258,
+      "f_time": 0.019,
+      "f_route": 0.0,
+      "course": {
+        "n_controls": 8,
+        "total_distance_m": 3398.3,
+        "total_gain_m": 46.3,
+        "estimated_time_min": 60.0,
+        "fitness": 0.330659,
+        "objectives": {
+          "f_map": 0.0,
+          "f_dist": 3.258,
+          "f_time": 0.019,
+          "f_route": 0.0
+        },
+        "weights": {
+          "f_map": 0.5,
+          "f_dist": 0.1,
+          "f_time": 0.25,
+          "f_route": 0.15
+        },
+        "controls": [
+          {
+            "name": "新石川四丁目公園",
+            "feature": "park",
+            "lat": 35.570379,
+            "lon": 139.5655302
+          },
+          {
+            "name": "あゆみが丘公園",
+            "feature": "park",
+            "lat": 35.5686253,
+            "lon": 139.5659083
+          },
+          {
+            "name": "まいばすけっと",
+            "feature": "supermarket",
+            "lat": 35.5628043,
+            "lon": 139.5701188
+          },
+          {
+            "name": "牛久保西ひかりがおか公園",
+            "feature": "park",
+            "lat": 35.5642712,
+            "lon": 139.5720437
+          },
+          {
+            "name": "シェアリーカフェ",
+            "feature": "cafe",
+            "lat": 35.5628572,
+            "lon": 139.5718655
+          },
+          {
+            "name": "こめいろ",
+            "feature": "restaurant",
+            "lat": 35.5626447,
+            "lon": 139.5728569
+          },
+          {
+            "name": "BAR DE ESPANA Zorro",
+            "feature": "restaurant",
+            "lat": 35.5641324,
+            "lon": 139.5698356
+          },
+          {
+            "name": "和幸",
+            "feature": "restaurant",
+            "lat": 35.5676147,
+            "lon": 139.5662171
+          }
+        ],
+        "course_nodes": [
+          908108531,
+          908108531,
+          7924959775,
+          2555365272,
+          6452310341,
+          2587513282,
+          2587513272,
+          2587567965,
+          7924960097,
+          908108531
+        ]
+      },
+      "stdout": "データを読み込み中...\n  候補数: 113件 / ノード: 2267件 / エッジ: 6860件\n  最短経路を事前計算中...\n\n遺伝的アルゴリズムを実行中...\n  個体数: 20 / 世代数: 20 / 再スタート: 3\n\n  → output/best_course.json に保存しました\n  → output/fitness_history.csv に保存しました\n\n========== Step 5 (C++) 完了 ==========\n巡回順（最良個体）:\n  スタート : 正門\n  96 : 新石川四丁目公園\n  93 : あゆみが丘公園\n  8 : まいばすけっと\n  80 : 牛久保西ひかりがおか公園\n  45 : シェアリーカフェ\n  44 : こめいろ\n  20 : BAR DE ESPANA Zorro\n  94 : 和幸\n  ゴール   : 正門\n実行時間          : 0.21 秒\n最良解の fitness  : 0.3307\nコントロール数    : 8 件\n推定時間          : 60.0 分\n累積登り          : 46.3 m\nf_map             : 0.000\nf_dist            : 3.258\nf_time            : 0.019\nf_route           : 0.000\n==========================================\n総実行時間 : 0.23 秒\nGA詳細秒 : 0.214891\n総詳細秒 : 0.231701\nCSV秒 : 0.002321\n事前計算秒 : 0.013851\n初期個体秒 : 0.026004\n世代ループ秒 : 0.188872\n初期集団E : 0.473482\n地点CSV秒 : 0.000169\nノードCSV秒 : 0.000423\nエッジCSV秒 : 0.001688\n正門CSV秒 : 0.000040\nグラフ構築秒 : 0.001157\n正門探索秒 : 0.000002\n最短経路秒 : 0.012431\n表作成秒 : 0.000261\n再スタート回数 : 3\n再スタートE : 0.330659 0.330659 0.330659\n",
+      "stderr": "",
+      "E_json": 0.330659,
+      "command": [
+        "C:\\TCU\\ec-comp\\lab-competition-2026\\orienteering.exe",
+        "4",
+        "20",
+        "20",
+        "--restarts",
+        "3"
+      ],
+      "history_csv": "generation,best_fitness\n1,0.331869\n2,0.331869\n3,0.331869\n4,0.331869\n5,0.331869\n6,0.331869\n7,0.331869\n8,0.330659\n9,0.330659\n10,0.330659\n11,0.330659\n12,0.330659\n13,0.330659\n14,0.330659\n15,0.330659\n16,0.330659\n17,0.330659\n18,0.330659\n19,0.330659\n20,0.330659\n",
+      "ga_precise_seconds": 0.214891,
+      "total_precise_seconds": 0.231701,
+      "initialization_seconds": 0.026004,
+      "generations_seconds": 0.188872,
+      "initial_best_fitness": 0.473482,
+      "csv_seconds": 0.002321,
+      "precompute_seconds": 0.013851,
+      "shortest_path_seconds": 0.012431,
+      "restarts": 3.0,
+      "restart_fitness": [
+        0.330659,
+        0.330659,
+        0.330659
+      ]
+    },
+    {
+      "seed": 7,
+      "E": 0.3307,
+      "ga_seconds": 0.22,
+      "total_seconds": 0.24,
+      "n_controls": 8,
+      "f_map": 0.0,
+      "f_dist": 3.258,
+      "f_time": 0.019,
+      "f_route": 0.0,
+      "course": {
+        "n_controls": 8,
+        "total_distance_m": 3398.3,
+        "total_gain_m": 46.3,
+        "estimated_time_min": 60.0,
+        "fitness": 0.330659,
+        "objectives": {
+          "f_map": 0.0,
+          "f_dist": 3.258,
+          "f_time": 0.019,
+          "f_route": 0.0
+        },
+        "weights": {
+          "f_map": 0.5,
+          "f_dist": 0.1,
+          "f_time": 0.25,
+          "f_route": 0.15
+        },
+        "controls": [
+          {
+            "name": "あゆみが丘公園",
+            "feature": "park",
+            "lat": 35.5686253,
+            "lon": 139.5659083
+          },
+          {
+            "name": "まいばすけっと",
+            "feature": "supermarket",
+            "lat": 35.5628043,
+            "lon": 139.5701188
+          },
+          {
+            "name": "牛久保西ひかりがおか公園",
+            "feature": "park",
+            "lat": 35.5642712,
+            "lon": 139.5720437
+          },
+          {
+            "name": "シェアリーカフェ",
+            "feature": "cafe",
+            "lat": 35.5628572,
+            "lon": 139.5718655
+          },
+          {
+            "name": "こめいろ",
+            "feature": "restaurant",
+            "lat": 35.5626447,
+            "lon": 139.5728569
+          },
+          {
+            "name": "BAR DE ESPANA Zorro",
+            "feature": "restaurant",
+            "lat": 35.5641324,
+            "lon": 139.5698356
+          },
+          {
+            "name": "和幸",
+            "feature": "restaurant",
+            "lat": 35.5676147,
+            "lon": 139.5662171
+          },
+          {
+            "name": "新石川四丁目公園",
+            "feature": "park",
+            "lat": 35.570379,
+            "lon": 139.5655302
+          }
+        ],
+        "course_nodes": [
+          908108531,
+          7924959775,
+          2555365272,
+          6452310341,
+          2587513282,
+          2587513272,
+          2587567965,
+          7924960097,
+          908108531,
+          908108531
+        ]
+      },
+      "stdout": "データを読み込み中...\n  候補数: 113件 / ノード: 2267件 / エッジ: 6860件\n  最短経路を事前計算中...\n\n遺伝的アルゴリズムを実行中...\n  個体数: 20 / 世代数: 20 / 再スタート: 3\n\n  → output/best_course.json に保存しました\n  → output/fitness_history.csv に保存しました\n\n========== Step 5 (C++) 完了 ==========\n巡回順（最良個体）:\n  スタート : 正門\n  93 : あゆみが丘公園\n  8 : まいばすけっと\n  80 : 牛久保西ひかりがおか公園\n  45 : シェアリーカフェ\n  44 : こめいろ\n  20 : BAR DE ESPANA Zorro\n  94 : 和幸\n  96 : 新石川四丁目公園\n  ゴール   : 正門\n実行時間          : 0.22 秒\n最良解の fitness  : 0.3307\nコントロール数    : 8 件\n推定時間          : 60.0 分\n累積登り          : 46.3 m\nf_map             : 0.000\nf_dist            : 3.258\nf_time            : 0.019\nf_route           : 0.000\n==========================================\n総実行時間 : 0.24 秒\nGA詳細秒 : 0.218330\n総詳細秒 : 0.235650\nCSV秒 : 0.002338\n事前計算秒 : 0.014367\n初期個体秒 : 0.024751\n世代ループ秒 : 0.193563\n初期集団E : 0.369132\n地点CSV秒 : 0.000138\nノードCSV秒 : 0.000414\nエッジCSV秒 : 0.001702\n正門CSV秒 : 0.000084\nグラフ構築秒 : 0.000930\n正門探索秒 : 0.000002\n最短経路秒 : 0.013163\n表作成秒 : 0.000272\n再スタート回数 : 3\n再スタートE : 0.330659 0.330659 0.330659\n",
+      "stderr": "",
+      "E_json": 0.330659,
+      "command": [
+        "C:\\TCU\\ec-comp\\lab-competition-2026\\orienteering.exe",
+        "7",
+        "20",
+        "20",
+        "--restarts",
+        "3"
+      ],
+      "history_csv": "generation,best_fitness\n1,0.369132\n2,0.331869\n3,0.331869\n4,0.331869\n5,0.331869\n6,0.331869\n7,0.331869\n8,0.330659\n9,0.330659\n10,0.330659\n11,0.330659\n12,0.330659\n13,0.330659\n14,0.330659\n15,0.330659\n16,0.330659\n17,0.330659\n18,0.330659\n19,0.330659\n20,0.330659\n",
+      "ga_precise_seconds": 0.21833,
+      "total_precise_seconds": 0.23565,
+      "initialization_seconds": 0.024751,
+      "generations_seconds": 0.193563,
+      "initial_best_fitness": 0.369132,
+      "csv_seconds": 0.002338,
+      "precompute_seconds": 0.014367,
+      "shortest_path_seconds": 0.013163,
+      "restarts": 3.0,
+      "restart_fitness": [
+        0.330659,
+        0.330659,
+        0.330659
+      ]
+    },
+    {
+      "seed": 10,
+      "E": 0.3307,
+      "ga_seconds": 0.22,
+      "total_seconds": 0.24,
+      "n_controls": 8,
+      "f_map": 0.0,
+      "f_dist": 3.258,
+      "f_time": 0.019,
+      "f_route": 0.0,
+      "course": {
+        "n_controls": 8,
+        "total_distance_m": 3398.3,
+        "total_gain_m": 46.3,
+        "estimated_time_min": 60.0,
+        "fitness": 0.330659,
+        "objectives": {
+          "f_map": 0.0,
+          "f_dist": 3.258,
+          "f_time": 0.019,
+          "f_route": 0.0
+        },
+        "weights": {
+          "f_map": 0.5,
+          "f_dist": 0.1,
+          "f_time": 0.25,
+          "f_route": 0.15
+        },
+        "controls": [
+          {
+            "name": "あゆみが丘公園",
+            "feature": "park",
+            "lat": 35.5686253,
+            "lon": 139.5659083
+          },
+          {
+            "name": "集う人達",
+            "feature": "artwork",
+            "lat": 35.5627235,
+            "lon": 139.570135
+          },
+          {
+            "name": "牛久保西ひかりがおか公園",
+            "feature": "park",
+            "lat": 35.5642712,
+            "lon": 139.5720437
+          },
+          {
+            "name": "シェアリーカフェ",
+            "feature": "cafe",
+            "lat": 35.5628572,
+            "lon": 139.5718655
+          },
+          {
+            "name": "こめいろ",
+            "feature": "restaurant",
+            "lat": 35.5626447,
+            "lon": 139.5728569
+          },
+          {
+            "name": "BAR DE ESPANA Zorro",
+            "feature": "restaurant",
+            "lat": 35.5641324,
+            "lon": 139.5698356
+          },
+          {
+            "name": "和幸",
+            "feature": "restaurant",
+            "lat": 35.5676147,
+            "lon": 139.5662171
+          },
+          {
+            "name": "新石川四丁目公園",
+            "feature": "park",
+            "lat": 35.570379,
+            "lon": 139.5655302
+          }
+        ],
+        "course_nodes": [
+          908108531,
+          7924959775,
+          2555365272,
+          6452310341,
+          2587513282,
+          2587513272,
+          2587567965,
+          7924960097,
+          908108531,
+          908108531
+        ]
+      },
+      "stdout": "データを読み込み中...\n  候補数: 113件 / ノード: 2267件 / エッジ: 6860件\n  最短経路を事前計算中...\n\n遺伝的アルゴリズムを実行中...\n  個体数: 20 / 世代数: 20 / 再スタート: 3\n\n  → output/best_course.json に保存しました\n  → output/fitness_history.csv に保存しました\n\n========== Step 5 (C++) 完了 ==========\n巡回順（最良個体）:\n  スタート : 正門\n  93 : あゆみが丘公園\n  46 : 集う人達\n  80 : 牛久保西ひかりがおか公園\n  45 : シェアリーカフェ\n  44 : こめいろ\n  20 : BAR DE ESPANA Zorro\n  94 : 和幸\n  96 : 新石川四丁目公園\n  ゴール   : 正門\n実行時間          : 0.22 秒\n最良解の fitness  : 0.3307\nコントロール数    : 8 件\n推定時間          : 60.0 分\n累積登り          : 46.3 m\nf_map             : 0.000\nf_dist            : 3.258\nf_time            : 0.019\nf_route           : 0.000\n==========================================\n総実行時間 : 0.24 秒\nGA詳細秒 : 0.221298\n総詳細秒 : 0.238147\nCSV秒 : 0.002401\n事前計算秒 : 0.013778\n初期個体秒 : 0.025834\n世代ループ秒 : 0.195447\n初期集団E : 0.331869\n地点CSV秒 : 0.000139\nノードCSV秒 : 0.000419\nエッジCSV秒 : 0.001759\n正門CSV秒 : 0.000083\nグラフ構築秒 : 0.000924\n正門探索秒 : 0.000001\n最短経路秒 : 0.012589\n表作成秒 : 0.000263\n再スタート回数 : 3\n再スタートE : 0.330659 0.330659 0.330659\n",
+      "stderr": "",
+      "E_json": 0.330659,
+      "command": [
+        "C:\\TCU\\ec-comp\\lab-competition-2026\\orienteering.exe",
+        "10",
+        "20",
+        "20",
+        "--restarts",
+        "3"
+      ],
+      "history_csv": "generation,best_fitness\n1,0.331869\n2,0.330659\n3,0.330659\n4,0.330659\n5,0.330659\n6,0.330659\n7,0.330659\n8,0.330659\n9,0.330659\n10,0.330659\n11,0.330659\n12,0.330659\n13,0.330659\n14,0.330659\n15,0.330659\n16,0.330659\n17,0.330659\n18,0.330659\n19,0.330659\n20,0.330659\n",
+      "ga_precise_seconds": 0.221298,
+      "total_precise_seconds": 0.238147,
+      "initialization_seconds": 0.025834,
+      "generations_seconds": 0.195447,
+      "initial_best_fitness": 0.331869,
+      "csv_seconds": 0.002401,
+      "precompute_seconds": 0.013778,
+      "shortest_path_seconds": 0.012589,
+      "restarts": 3.0,
+      "restart_fitness": [
+        0.330659,
+        0.330659,
+        0.330659
+      ]
+    },
+    {
+      "seed": 13,
+      "E": 0.3307,
+      "ga_seconds": 0.23,
+      "total_seconds": 0.25,
+      "n_controls": 8,
+      "f_map": 0.0,
+      "f_dist": 3.258,
+      "f_time": 0.019,
+      "f_route": 0.0,
+      "course": {
+        "n_controls": 8,
+        "total_distance_m": 3398.3,
+        "total_gain_m": 46.3,
+        "estimated_time_min": 60.0,
+        "fitness": 0.330659,
+        "objectives": {
+          "f_map": 0.0,
+          "f_dist": 3.258,
+          "f_time": 0.019,
+          "f_route": 0.0
+        },
+        "weights": {
+          "f_map": 0.5,
+          "f_dist": 0.1,
+          "f_time": 0.25,
+          "f_route": 0.15
+        },
+        "controls": [
+          {
+            "name": "あゆみが丘公園",
+            "feature": "park",
+            "lat": 35.5686253,
+            "lon": 139.5659083
+          },
+          {
+            "name": "集う人達",
+            "feature": "artwork",
+            "lat": 35.5627235,
+            "lon": 139.570135
+          },
+          {
+            "name": "牛久保西ひかりがおか公園",
+            "feature": "park",
+            "lat": 35.5642712,
+            "lon": 139.5720437
+          },
+          {
+            "name": "シェアリーカフェ",
+            "feature": "cafe",
+            "lat": 35.5628572,
+            "lon": 139.5718655
+          },
+          {
+            "name": "こめいろ",
+            "feature": "restaurant",
+            "lat": 35.5626447,
+            "lon": 139.5728569
+          },
+          {
+            "name": "BAR DE ESPANA Zorro",
+            "feature": "restaurant",
+            "lat": 35.5641324,
+            "lon": 139.5698356
+          },
+          {
+            "name": "和幸",
+            "feature": "restaurant",
+            "lat": 35.5676147,
+            "lon": 139.5662171
+          },
+          {
+            "name": "新石川四丁目公園",
+            "feature": "park",
+            "lat": 35.570379,
+            "lon": 139.5655302
+          }
+        ],
+        "course_nodes": [
+          908108531,
+          7924959775,
+          2555365272,
+          6452310341,
+          2587513282,
+          2587513272,
+          2587567965,
+          7924960097,
+          908108531,
+          908108531
+        ]
+      },
+      "stdout": "データを読み込み中...\n  候補数: 113件 / ノード: 2267件 / エッジ: 6860件\n  最短経路を事前計算中...\n\n遺伝的アルゴリズムを実行中...\n  個体数: 20 / 世代数: 20 / 再スタート: 3\n\n  → output/best_course.json に保存しました\n  → output/fitness_history.csv に保存しました\n\n========== Step 5 (C++) 完了 ==========\n巡回順（最良個体）:\n  スタート : 正門\n  93 : あゆみが丘公園\n  46 : 集う人達\n  80 : 牛久保西ひかりがおか公園\n  45 : シェアリーカフェ\n  44 : こめいろ\n  20 : BAR DE ESPANA Zorro\n  94 : 和幸\n  96 : 新石川四丁目公園\n  ゴール   : 正門\n実行時間          : 0.23 秒\n最良解の fitness  : 0.3307\nコントロール数    : 8 件\n推定時間          : 60.0 分\n累積登り          : 46.3 m\nf_map             : 0.000\nf_dist            : 3.258\nf_time            : 0.019\nf_route           : 0.000\n==========================================\n総実行時間 : 0.25 秒\nGA詳細秒 : 0.231828\n総詳細秒 : 0.249530\nCSV秒 : 0.002401\n事前計算秒 : 0.014514\n初期個体秒 : 0.026480\n世代ループ秒 : 0.205326\n初期集団E : 0.451464\n地点CSV秒 : 0.000156\nノードCSV秒 : 0.000420\nエッジCSV秒 : 0.001771\n正門CSV秒 : 0.000053\nグラフ構築秒 : 0.000933\n正門探索秒 : 0.000002\n最短経路秒 : 0.013298\n表作成秒 : 0.000282\n再スタート回数 : 3\n再スタートE : 0.330659 0.330659 0.330659\n",
+      "stderr": "",
+      "E_json": 0.330659,
+      "command": [
+        "C:\\TCU\\ec-comp\\lab-competition-2026\\orienteering.exe",
+        "13",
+        "20",
+        "20",
+        "--restarts",
+        "3"
+      ],
+      "history_csv": "generation,best_fitness\n1,0.427148\n2,0.425286\n3,0.369132\n4,0.369132\n5,0.331869\n6,0.330659\n7,0.330659\n8,0.330659\n9,0.330659\n10,0.330659\n11,0.330659\n12,0.330659\n13,0.330659\n14,0.330659\n15,0.330659\n16,0.330659\n17,0.330659\n18,0.330659\n19,0.330659\n20,0.330659\n",
+      "ga_precise_seconds": 0.231828,
+      "total_precise_seconds": 0.24953,
+      "initialization_seconds": 0.02648,
+      "generations_seconds": 0.205326,
+      "initial_best_fitness": 0.451464,
+      "csv_seconds": 0.002401,
+      "precompute_seconds": 0.014514,
+      "shortest_path_seconds": 0.013298,
+      "restarts": 3.0,
+      "restart_fitness": [
+        0.330659,
+        0.330659,
+        0.330659
+      ]
+    },
+    {
+      "seed": 16,
+      "E": 0.3307,
+      "ga_seconds": 0.22,
+      "total_seconds": 0.24,
+      "n_controls": 8,
+      "f_map": 0.0,
+      "f_dist": 3.258,
+      "f_time": 0.019,
+      "f_route": 0.0,
+      "course": {
+        "n_controls": 8,
+        "total_distance_m": 3398.3,
+        "total_gain_m": 46.3,
+        "estimated_time_min": 60.0,
+        "fitness": 0.330659,
+        "objectives": {
+          "f_map": 0.0,
+          "f_dist": 3.258,
+          "f_time": 0.019,
+          "f_route": 0.0
+        },
+        "weights": {
+          "f_map": 0.5,
+          "f_dist": 0.1,
+          "f_time": 0.25,
+          "f_route": 0.15
+        },
+        "controls": [
+          {
+            "name": "あゆみが丘公園",
+            "feature": "park",
+            "lat": 35.5686253,
+            "lon": 139.5659083
+          },
+          {
+            "name": "BAR DE ESPANA Zorro",
+            "feature": "restaurant",
+            "lat": 35.5641324,
+            "lon": 139.5698356
+          },
+          {
+            "name": "こめいろ",
+            "feature": "restaurant",
+            "lat": 35.5626447,
+            "lon": 139.5728569
+          },
+          {
+            "name": "シェアリーカフェ",
+            "feature": "cafe",
+            "lat": 35.5628572,
+            "lon": 139.5718655
+          },
+          {
+            "name": "牛久保西ひかりがおか公園",
+            "feature": "park",
+            "lat": 35.5642712,
+            "lon": 139.5720437
+          },
+          {
+            "name": "まいばすけっと",
+            "feature": "supermarket",
+            "lat": 35.5628043,
+            "lon": 139.5701188
+          },
+          {
+            "name": "和幸",
+            "feature": "restaurant",
+            "lat": 35.5676147,
+            "lon": 139.5662171
+          },
+          {
+            "name": "新石川四丁目公園",
+            "feature": "park",
+            "lat": 35.570379,
+            "lon": 139.5655302
+          }
+        ],
+        "course_nodes": [
+          908108531,
+          7924959775,
+          2587567965,
+          2587513272,
+          2587513282,
+          6452310341,
+          2555365272,
+          7924960097,
+          908108531,
+          908108531
+        ]
+      },
+      "stdout": "データを読み込み中...\n  候補数: 113件 / ノード: 2267件 / エッジ: 6860件\n  最短経路を事前計算中...\n\n遺伝的アルゴリズムを実行中...\n  個体数: 20 / 世代数: 20 / 再スタート: 3\n\n  → output/best_course.json に保存しました\n  → output/fitness_history.csv に保存しました\n\n========== Step 5 (C++) 完了 ==========\n巡回順（最良個体）:\n  スタート : 正門\n  93 : あゆみが丘公園\n  20 : BAR DE ESPANA Zorro\n  44 : こめいろ\n  45 : シェアリーカフェ\n  80 : 牛久保西ひかりがおか公園\n  8 : まいばすけっと\n  94 : 和幸\n  96 : 新石川四丁目公園\n  ゴール   : 正門\n実行時間          : 0.22 秒\n最良解の fitness  : 0.3307\nコントロール数    : 8 件\n推定時間          : 60.0 分\n累積登り          : 46.3 m\nf_map             : 0.000\nf_dist            : 3.258\nf_time            : 0.019\nf_route           : 0.000\n==========================================\n総実行時間 : 0.24 秒\nGA詳細秒 : 0.224435\n総詳細秒 : 0.241117\nCSV秒 : 0.002397\n事前計算秒 : 0.013612\n初期個体秒 : 0.026651\n世代ループ秒 : 0.197768\n初期集団E : 0.369132\n地点CSV秒 : 0.000142\nノードCSV秒 : 0.000418\nエッジCSV秒 : 0.001749\n正門CSV秒 : 0.000089\nグラフ構築秒 : 0.000935\n正門探索秒 : 0.000001\n最短経路秒 : 0.012403\n表作成秒 : 0.000273\n再スタート回数 : 3\n再スタートE : 0.330659 0.330659 0.330659\n",
+      "stderr": "",
+      "E_json": 0.330659,
+      "command": [
+        "C:\\TCU\\ec-comp\\lab-competition-2026\\orienteering.exe",
+        "16",
+        "20",
+        "20",
+        "--restarts",
+        "3"
+      ],
+      "history_csv": "generation,best_fitness\n1,0.330659\n2,0.330659\n3,0.330659\n4,0.330659\n5,0.330659\n6,0.330659\n7,0.330659\n8,0.330659\n9,0.330659\n10,0.330659\n11,0.330659\n12,0.330659\n13,0.330659\n14,0.330659\n15,0.330659\n16,0.330659\n17,0.330659\n18,0.330659\n19,0.330659\n20,0.330659\n",
+      "ga_precise_seconds": 0.224435,
+      "total_precise_seconds": 0.241117,
+      "initialization_seconds": 0.026651,
+      "generations_seconds": 0.197768,
+      "initial_best_fitness": 0.369132,
+      "csv_seconds": 0.002397,
+      "precompute_seconds": 0.013612,
+      "shortest_path_seconds": 0.012403,
+      "restarts": 3.0,
+      "restart_fitness": [
+        0.330659,
+        0.330659,
+        0.330659
+      ]
+    },
+    {
+      "seed": 19,
+      "E": 0.3307,
+      "ga_seconds": 0.22,
+      "total_seconds": 0.23,
+      "n_controls": 8,
+      "f_map": 0.0,
+      "f_dist": 3.258,
+      "f_time": 0.019,
+      "f_route": 0.0,
+      "course": {
+        "n_controls": 8,
+        "total_distance_m": 3398.3,
+        "total_gain_m": 46.3,
+        "estimated_time_min": 60.0,
+        "fitness": 0.330659,
+        "objectives": {
+          "f_map": 0.0,
+          "f_dist": 3.258,
+          "f_time": 0.019,
+          "f_route": 0.0
+        },
+        "weights": {
+          "f_map": 0.5,
+          "f_dist": 0.1,
+          "f_time": 0.25,
+          "f_route": 0.15
+        },
+        "controls": [
+          {
+            "name": "あゆみが丘公園",
+            "feature": "park",
+            "lat": 35.5686253,
+            "lon": 139.5659083
+          },
+          {
+            "name": "集う人達",
+            "feature": "artwork",
+            "lat": 35.5627235,
+            "lon": 139.570135
+          },
+          {
+            "name": "牛久保西ひかりがおか公園",
+            "feature": "park",
+            "lat": 35.5642712,
+            "lon": 139.5720437
+          },
+          {
+            "name": "シェアリーカフェ",
+            "feature": "cafe",
+            "lat": 35.5628572,
+            "lon": 139.5718655
+          },
+          {
+            "name": "こめいろ",
+            "feature": "restaurant",
+            "lat": 35.5626447,
+            "lon": 139.5728569
+          },
+          {
+            "name": "BAR DE ESPANA Zorro",
+            "feature": "restaurant",
+            "lat": 35.5641324,
+            "lon": 139.5698356
+          },
+          {
+            "name": "和幸",
+            "feature": "restaurant",
+            "lat": 35.5676147,
+            "lon": 139.5662171
+          },
+          {
+            "name": "新石川四丁目公園",
+            "feature": "park",
+            "lat": 35.570379,
+            "lon": 139.5655302
+          }
+        ],
+        "course_nodes": [
+          908108531,
+          7924959775,
+          2555365272,
+          6452310341,
+          2587513282,
+          2587513272,
+          2587567965,
+          7924960097,
+          908108531,
+          908108531
+        ]
+      },
+      "stdout": "データを読み込み中...\n  候補数: 113件 / ノード: 2267件 / エッジ: 6860件\n  最短経路を事前計算中...\n\n遺伝的アルゴリズムを実行中...\n  個体数: 20 / 世代数: 20 / 再スタート: 3\n\n  → output/best_course.json に保存しました\n  → output/fitness_history.csv に保存しました\n\n========== Step 5 (C++) 完了 ==========\n巡回順（最良個体）:\n  スタート : 正門\n  93 : あゆみが丘公園\n  46 : 集う人達\n  80 : 牛久保西ひかりがおか公園\n  45 : シェアリーカフェ\n  44 : こめいろ\n  20 : BAR DE ESPANA Zorro\n  94 : 和幸\n  96 : 新石川四丁目公園\n  ゴール   : 正門\n実行時間          : 0.22 秒\n最良解の fitness  : 0.3307\nコントロール数    : 8 件\n推定時間          : 60.0 分\n累積登り          : 46.3 m\nf_map             : 0.000\nf_dist            : 3.258\nf_time            : 0.019\nf_route           : 0.000\n==========================================\n総実行時間 : 0.23 秒\nGA詳細秒 : 0.216418\n総詳細秒 : 0.232829\nCSV秒 : 0.002296\n事前計算秒 : 0.013472\n初期個体秒 : 0.026371\n世代ループ秒 : 0.190032\n初期集団E : 0.369132\n地点CSV秒 : 0.000157\nノードCSV秒 : 0.000414\nエッジCSV秒 : 0.001684\n正門CSV秒 : 0.000041\nグラフ構築秒 : 0.000915\n正門探索秒 : 0.000002\n最短経路秒 : 0.012294\n表作成秒 : 0.000260\n再スタート回数 : 3\n再スタートE : 0.330659 0.330659 0.330659\n",
+      "stderr": "",
+      "E_json": 0.330659,
+      "command": [
+        "C:\\TCU\\ec-comp\\lab-competition-2026\\orienteering.exe",
+        "19",
+        "20",
+        "20",
+        "--restarts",
+        "3"
+      ],
+      "history_csv": "generation,best_fitness\n1,0.369132\n2,0.330659\n3,0.330659\n4,0.330659\n5,0.330659\n6,0.330659\n7,0.330659\n8,0.330659\n9,0.330659\n10,0.330659\n11,0.330659\n12,0.330659\n13,0.330659\n14,0.330659\n15,0.330659\n16,0.330659\n17,0.330659\n18,0.330659\n19,0.330659\n20,0.330659\n",
+      "ga_precise_seconds": 0.216418,
+      "total_precise_seconds": 0.232829,
+      "initialization_seconds": 0.026371,
+      "generations_seconds": 0.190032,
+      "initial_best_fitness": 0.369132,
+      "csv_seconds": 0.002296,
+      "precompute_seconds": 0.013472,
+      "shortest_path_seconds": 0.012294,
+      "restarts": 3.0,
+      "restart_fitness": [
+        0.330659,
+        0.330659,
+        0.330659
+      ]
+    },
+    {
+      "seed": 22,
+      "E": 0.3307,
+      "ga_seconds": 0.22,
+      "total_seconds": 0.24,
+      "n_controls": 8,
+      "f_map": 0.0,
+      "f_dist": 3.258,
+      "f_time": 0.019,
+      "f_route": 0.0,
+      "course": {
+        "n_controls": 8,
+        "total_distance_m": 3398.3,
+        "total_gain_m": 46.3,
+        "estimated_time_min": 60.0,
+        "fitness": 0.330659,
+        "objectives": {
+          "f_map": 0.0,
+          "f_dist": 3.258,
+          "f_time": 0.019,
+          "f_route": 0.0
+        },
+        "weights": {
+          "f_map": 0.5,
+          "f_dist": 0.1,
+          "f_time": 0.25,
+          "f_route": 0.15
+        },
+        "controls": [
+          {
+            "name": "あゆみが丘公園",
+            "feature": "park",
+            "lat": 35.5686253,
+            "lon": 139.5659083
+          },
+          {
+            "name": "まいばすけっと",
+            "feature": "supermarket",
+            "lat": 35.5628043,
+            "lon": 139.5701188
+          },
+          {
+            "name": "牛久保西ひかりがおか公園",
+            "feature": "park",
+            "lat": 35.5642712,
+            "lon": 139.5720437
+          },
+          {
+            "name": "シェアリーカフェ",
+            "feature": "cafe",
+            "lat": 35.5628572,
+            "lon": 139.5718655
+          },
+          {
+            "name": "こめいろ",
+            "feature": "restaurant",
+            "lat": 35.5626447,
+            "lon": 139.5728569
+          },
+          {
+            "name": "BAR DE ESPANA Zorro",
+            "feature": "restaurant",
+            "lat": 35.5641324,
+            "lon": 139.5698356
+          },
+          {
+            "name": "和幸",
+            "feature": "restaurant",
+            "lat": 35.5676147,
+            "lon": 139.5662171
+          },
+          {
+            "name": "新石川四丁目公園",
+            "feature": "park",
+            "lat": 35.570379,
+            "lon": 139.5655302
+          }
+        ],
+        "course_nodes": [
+          908108531,
+          7924959775,
+          2555365272,
+          6452310341,
+          2587513282,
+          2587513272,
+          2587567965,
+          7924960097,
+          908108531,
+          908108531
+        ]
+      },
+      "stdout": "データを読み込み中...\n  候補数: 113件 / ノード: 2267件 / エッジ: 6860件\n  最短経路を事前計算中...\n\n遺伝的アルゴリズムを実行中...\n  個体数: 20 / 世代数: 20 / 再スタート: 3\n\n  → output/best_course.json に保存しました\n  → output/fitness_history.csv に保存しました\n\n========== Step 5 (C++) 完了 ==========\n巡回順（最良個体）:\n  スタート : 正門\n  93 : あゆみが丘公園\n  8 : まいばすけっと\n  80 : 牛久保西ひかりがおか公園\n  45 : シェアリーカフェ\n  44 : こめいろ\n  20 : BAR DE ESPANA Zorro\n  94 : 和幸\n  96 : 新石川四丁目公園\n  ゴール   : 正門\n実行時間          : 0.22 秒\n最良解の fitness  : 0.3307\nコントロール数    : 8 件\n推定時間          : 60.0 分\n累積登り          : 46.3 m\nf_map             : 0.000\nf_dist            : 3.258\nf_time            : 0.019\nf_route           : 0.000\n==========================================\n総実行時間 : 0.24 秒\nGA詳細秒 : 0.219876\n総詳細秒 : 0.236767\nCSV秒 : 0.002295\n事前計算秒 : 0.013894\n初期個体秒 : 0.025193\n世代ループ秒 : 0.194666\n初期集団E : 0.541310\n地点CSV秒 : 0.000153\nノードCSV秒 : 0.000414\nエッジCSV秒 : 0.001686\n正門CSV秒 : 0.000042\nグラフ構築秒 : 0.000929\n正門探索秒 : 0.000001\n最短経路秒 : 0.012676\n表作成秒 : 0.000287\n再スタート回数 : 3\n再スタートE : 0.330659 0.330659 0.330659\n",
+      "stderr": "",
+      "E_json": 0.330659,
+      "command": [
+        "C:\\TCU\\ec-comp\\lab-competition-2026\\orienteering.exe",
+        "22",
+        "20",
+        "20",
+        "--restarts",
+        "3"
+      ],
+      "history_csv": "generation,best_fitness\n1,0.331869\n2,0.331869\n3,0.330659\n4,0.330659\n5,0.330659\n6,0.330659\n7,0.330659\n8,0.330659\n9,0.330659\n10,0.330659\n11,0.330659\n12,0.330659\n13,0.330659\n14,0.330659\n15,0.330659\n16,0.330659\n17,0.330659\n18,0.330659\n19,0.330659\n20,0.330659\n",
+      "ga_precise_seconds": 0.219876,
+      "total_precise_seconds": 0.236767,
+      "initialization_seconds": 0.025193,
+      "generations_seconds": 0.194666,
+      "initial_best_fitness": 0.54131,
+      "csv_seconds": 0.002295,
+      "precompute_seconds": 0.013894,
+      "shortest_path_seconds": 0.012676,
+      "restarts": 3.0,
+      "restart_fitness": [
+        0.330659,
+        0.330659,
+        0.330659
+      ]
+    },
+    {
+      "seed": 25,
+      "E": 0.3307,
+      "ga_seconds": 0.22,
+      "total_seconds": 0.23,
+      "n_controls": 8,
+      "f_map": 0.0,
+      "f_dist": 3.258,
+      "f_time": 0.019,
+      "f_route": 0.0,
+      "course": {
+        "n_controls": 8,
+        "total_distance_m": 3398.3,
+        "total_gain_m": 46.3,
+        "estimated_time_min": 60.0,
+        "fitness": 0.330659,
+        "objectives": {
+          "f_map": 0.0,
+          "f_dist": 3.258,
+          "f_time": 0.019,
+          "f_route": 0.0
+        },
+        "weights": {
+          "f_map": 0.5,
+          "f_dist": 0.1,
+          "f_time": 0.25,
+          "f_route": 0.15
+        },
+        "controls": [
+          {
+            "name": "新石川四丁目公園",
+            "feature": "park",
+            "lat": 35.570379,
+            "lon": 139.5655302
+          },
+          {
+            "name": "あゆみが丘公園",
+            "feature": "park",
+            "lat": 35.5686253,
+            "lon": 139.5659083
+          },
+          {
+            "name": "まいばすけっと",
+            "feature": "supermarket",
+            "lat": 35.5628043,
+            "lon": 139.5701188
+          },
+          {
+            "name": "牛久保西ひかりがおか公園",
+            "feature": "park",
+            "lat": 35.5642712,
+            "lon": 139.5720437
+          },
+          {
+            "name": "シェアリーカフェ",
+            "feature": "cafe",
+            "lat": 35.5628572,
+            "lon": 139.5718655
+          },
+          {
+            "name": "こめいろ",
+            "feature": "restaurant",
+            "lat": 35.5626447,
+            "lon": 139.5728569
+          },
+          {
+            "name": "BAR DE ESPANA Zorro",
+            "feature": "restaurant",
+            "lat": 35.5641324,
+            "lon": 139.5698356
+          },
+          {
+            "name": "和幸",
+            "feature": "restaurant",
+            "lat": 35.5676147,
+            "lon": 139.5662171
+          }
+        ],
+        "course_nodes": [
+          908108531,
+          908108531,
+          7924959775,
+          2555365272,
+          6452310341,
+          2587513282,
+          2587513272,
+          2587567965,
+          7924960097,
+          908108531
+        ]
+      },
+      "stdout": "データを読み込み中...\n  候補数: 113件 / ノード: 2267件 / エッジ: 6860件\n  最短経路を事前計算中...\n\n遺伝的アルゴリズムを実行中...\n  個体数: 20 / 世代数: 20 / 再スタート: 3\n\n  → output/best_course.json に保存しました\n  → output/fitness_history.csv に保存しました\n\n========== Step 5 (C++) 完了 ==========\n巡回順（最良個体）:\n  スタート : 正門\n  96 : 新石川四丁目公園\n  93 : あゆみが丘公園\n  8 : まいばすけっと\n  80 : 牛久保西ひかりがおか公園\n  45 : シェアリーカフェ\n  44 : こめいろ\n  20 : BAR DE ESPANA Zorro\n  94 : 和幸\n  ゴール   : 正門\n実行時間          : 0.22 秒\n最良解の fitness  : 0.3307\nコントロール数    : 8 件\n推定時間          : 60.0 分\n累積登り          : 46.3 m\nf_map             : 0.000\nf_dist            : 3.258\nf_time            : 0.019\nf_route           : 0.000\n==========================================\n総実行時間 : 0.23 秒\nGA詳細秒 : 0.215412\n総詳細秒 : 0.232545\nCSV秒 : 0.002527\n事前計算秒 : 0.013905\n初期個体秒 : 0.024767\n世代ループ秒 : 0.190629\n初期集団E : 0.493000\n地点CSV秒 : 0.000159\nノードCSV秒 : 0.000459\nエッジCSV秒 : 0.001821\n正門CSV秒 : 0.000087\nグラフ構築秒 : 0.000929\n正門探索秒 : 0.000002\n最短経路秒 : 0.012713\n表作成秒 : 0.000261\n再スタート回数 : 3\n再スタートE : 0.330659 0.330659 0.330659\n",
+      "stderr": "",
+      "E_json": 0.330659,
+      "command": [
+        "C:\\TCU\\ec-comp\\lab-competition-2026\\orienteering.exe",
+        "25",
+        "20",
+        "20",
+        "--restarts",
+        "3"
+      ],
+      "history_csv": "generation,best_fitness\n1,0.439638\n2,0.354561\n3,0.331869\n4,0.330659\n5,0.330659\n6,0.330659\n7,0.330659\n8,0.330659\n9,0.330659\n10,0.330659\n11,0.330659\n12,0.330659\n13,0.330659\n14,0.330659\n15,0.330659\n16,0.330659\n17,0.330659\n18,0.330659\n19,0.330659\n20,0.330659\n",
+      "ga_precise_seconds": 0.215412,
+      "total_precise_seconds": 0.232545,
+      "initialization_seconds": 0.024767,
+      "generations_seconds": 0.190629,
+      "initial_best_fitness": 0.493,
+      "csv_seconds": 0.002527,
+      "precompute_seconds": 0.013905,
+      "shortest_path_seconds": 0.012713,
+      "restarts": 3.0,
+      "restart_fitness": [
+        0.330659,
+        0.330659,
+        0.330659
+      ]
+    },
+    {
+      "seed": 28,
+      "E": 0.3307,
+      "ga_seconds": 0.23,
+      "total_seconds": 0.25,
+      "n_controls": 8,
+      "f_map": 0.0,
+      "f_dist": 3.258,
+      "f_time": 0.019,
+      "f_route": 0.0,
+      "course": {
+        "n_controls": 8,
+        "total_distance_m": 3398.3,
+        "total_gain_m": 46.3,
+        "estimated_time_min": 60.0,
+        "fitness": 0.330659,
+        "objectives": {
+          "f_map": 0.0,
+          "f_dist": 3.258,
+          "f_time": 0.019,
+          "f_route": 0.0
+        },
+        "weights": {
+          "f_map": 0.5,
+          "f_dist": 0.1,
+          "f_time": 0.25,
+          "f_route": 0.15
+        },
+        "controls": [
+          {
+            "name": "あゆみが丘公園",
+            "feature": "park",
+            "lat": 35.5686253,
+            "lon": 139.5659083
+          },
+          {
+            "name": "集う人達",
+            "feature": "artwork",
+            "lat": 35.5627235,
+            "lon": 139.570135
+          },
+          {
+            "name": "牛久保西ひかりがおか公園",
+            "feature": "park",
+            "lat": 35.5642712,
+            "lon": 139.5720437
+          },
+          {
+            "name": "シェアリーカフェ",
+            "feature": "cafe",
+            "lat": 35.5628572,
+            "lon": 139.5718655
+          },
+          {
+            "name": "こめいろ",
+            "feature": "restaurant",
+            "lat": 35.5626447,
+            "lon": 139.5728569
+          },
+          {
+            "name": "BAR DE ESPANA Zorro",
+            "feature": "restaurant",
+            "lat": 35.5641324,
+            "lon": 139.5698356
+          },
+          {
+            "name": "和幸",
+            "feature": "restaurant",
+            "lat": 35.5676147,
+            "lon": 139.5662171
+          },
+          {
+            "name": "新石川四丁目公園",
+            "feature": "park",
+            "lat": 35.570379,
+            "lon": 139.5655302
+          }
+        ],
+        "course_nodes": [
+          908108531,
+          7924959775,
+          2555365272,
+          6452310341,
+          2587513282,
+          2587513272,
+          2587567965,
+          7924960097,
+          908108531,
+          908108531
+        ]
+      },
+      "stdout": "データを読み込み中...\n  候補数: 113件 / ノード: 2267件 / エッジ: 6860件\n  最短経路を事前計算中...\n\n遺伝的アルゴリズムを実行中...\n  個体数: 20 / 世代数: 20 / 再スタート: 3\n\n  → output/best_course.json に保存しました\n  → output/fitness_history.csv に保存しました\n\n========== Step 5 (C++) 完了 ==========\n巡回順（最良個体）:\n  スタート : 正門\n  93 : あゆみが丘公園\n  46 : 集う人達\n  80 : 牛久保西ひかりがおか公園\n  45 : シェアリーカフェ\n  44 : こめいろ\n  20 : BAR DE ESPANA Zorro\n  94 : 和幸\n  96 : 新石川四丁目公園\n  ゴール   : 正門\n実行時間          : 0.23 秒\n最良解の fitness  : 0.3307\nコントロール数    : 8 件\n推定時間          : 60.0 分\n累積登り          : 46.3 m\nf_map             : 0.000\nf_dist            : 3.258\nf_time            : 0.019\nf_route           : 0.000\n==========================================\n総実行時間 : 0.25 秒\nGA詳細秒 : 0.231535\n総詳細秒 : 0.248287\nCSV秒 : 0.002271\n事前計算秒 : 0.013632\n初期個体秒 : 0.026428\n世代ループ秒 : 0.205073\n初期集団E : 0.600745\n地点CSV秒 : 0.000150\nノードCSV秒 : 0.000409\nエッジCSV秒 : 0.001674\n正門CSV秒 : 0.000038\nグラフ構築秒 : 0.000910\n正門探索秒 : 0.000001\n最短経路秒 : 0.012468\n表作成秒 : 0.000253\n再スタート回数 : 3\n再スタートE : 0.330659 0.330659 0.330659\n",
+      "stderr": "",
+      "E_json": 0.330659,
+      "command": [
+        "C:\\TCU\\ec-comp\\lab-competition-2026\\orienteering.exe",
+        "28",
+        "20",
+        "20",
+        "--restarts",
+        "3"
+      ],
+      "history_csv": "generation,best_fitness\n1,0.451464\n2,0.330659\n3,0.330659\n4,0.330659\n5,0.330659\n6,0.330659\n7,0.330659\n8,0.330659\n9,0.330659\n10,0.330659\n11,0.330659\n12,0.330659\n13,0.330659\n14,0.330659\n15,0.330659\n16,0.330659\n17,0.330659\n18,0.330659\n19,0.330659\n20,0.330659\n",
+      "ga_precise_seconds": 0.231535,
+      "total_precise_seconds": 0.248287,
+      "initialization_seconds": 0.026428,
+      "generations_seconds": 0.205073,
+      "initial_best_fitness": 0.600745,
+      "csv_seconds": 0.002271,
+      "precompute_seconds": 0.013632,
+      "shortest_path_seconds": 0.012468,
+      "restarts": 3.0,
+      "restart_fitness": [
+        0.330659,
+        0.330659,
+        0.330659
+      ]
+    },
+    {
+      "seed": 42,
+      "E": 0.3307,
+      "ga_seconds": 0.23,
+      "total_seconds": 0.25,
+      "n_controls": 8,
+      "f_map": 0.0,
+      "f_dist": 3.258,
+      "f_time": 0.019,
+      "f_route": 0.0,
+      "course": {
+        "n_controls": 8,
+        "total_distance_m": 3398.3,
+        "total_gain_m": 46.3,
+        "estimated_time_min": 60.0,
+        "fitness": 0.330659,
+        "objectives": {
+          "f_map": 0.0,
+          "f_dist": 3.258,
+          "f_time": 0.019,
+          "f_route": 0.0
+        },
+        "weights": {
+          "f_map": 0.5,
+          "f_dist": 0.1,
+          "f_time": 0.25,
+          "f_route": 0.15
+        },
+        "controls": [
+          {
+            "name": "あゆみが丘公園",
+            "feature": "park",
+            "lat": 35.5686253,
+            "lon": 139.5659083
+          },
+          {
+            "name": "集う人達",
+            "feature": "artwork",
+            "lat": 35.5627235,
+            "lon": 139.570135
+          },
+          {
+            "name": "牛久保西ひかりがおか公園",
+            "feature": "park",
+            "lat": 35.5642712,
+            "lon": 139.5720437
+          },
+          {
+            "name": "シェアリーカフェ",
+            "feature": "cafe",
+            "lat": 35.5628572,
+            "lon": 139.5718655
+          },
+          {
+            "name": "こめいろ",
+            "feature": "restaurant",
+            "lat": 35.5626447,
+            "lon": 139.5728569
+          },
+          {
+            "name": "BAR DE ESPANA Zorro",
+            "feature": "restaurant",
+            "lat": 35.5641324,
+            "lon": 139.5698356
+          },
+          {
+            "name": "和幸",
+            "feature": "restaurant",
+            "lat": 35.5676147,
+            "lon": 139.5662171
+          },
+          {
+            "name": "新石川四丁目公園",
+            "feature": "park",
+            "lat": 35.570379,
+            "lon": 139.5655302
+          }
+        ],
+        "course_nodes": [
+          908108531,
+          7924959775,
+          2555365272,
+          6452310341,
+          2587513282,
+          2587513272,
+          2587567965,
+          7924960097,
+          908108531,
+          908108531
+        ]
+      },
+      "stdout": "データを読み込み中...\n  候補数: 113件 / ノード: 2267件 / エッジ: 6860件\n  最短経路を事前計算中...\n\n遺伝的アルゴリズムを実行中...\n  個体数: 20 / 世代数: 20 / 再スタート: 3\n\n  → output/best_course.json に保存しました\n  → output/fitness_history.csv に保存しました\n\n========== Step 5 (C++) 完了 ==========\n巡回順（最良個体）:\n  スタート : 正門\n  93 : あゆみが丘公園\n  46 : 集う人達\n  80 : 牛久保西ひかりがおか公園\n  45 : シェアリーカフェ\n  44 : こめいろ\n  20 : BAR DE ESPANA Zorro\n  94 : 和幸\n  96 : 新石川四丁目公園\n  ゴール   : 正門\n実行時間          : 0.23 秒\n最良解の fitness  : 0.3307\nコントロール数    : 8 件\n推定時間          : 60.0 分\n累積登り          : 46.3 m\nf_map             : 0.000\nf_dist            : 3.258\nf_time            : 0.019\nf_route           : 0.000\n==========================================\n総実行時間 : 0.25 秒\nGA詳細秒 : 0.229855\n総詳細秒 : 0.247034\nCSV秒 : 0.002355\n事前計算秒 : 0.013751\n初期個体秒 : 0.027517\n世代ループ秒 : 0.202316\n初期集団E : 0.493000\n地点CSV秒 : 0.000147\nノードCSV秒 : 0.000440\nエッジCSV秒 : 0.001725\n正門CSV秒 : 0.000043\nグラフ構築秒 : 0.000937\n正門探索秒 : 0.000002\n最短経路秒 : 0.012537\n表作成秒 : 0.000274\n再スタート回数 : 3\n再スタートE : 0.330659 0.331869 0.330659\n",
+      "stderr": "",
+      "E_json": 0.330659,
+      "command": [
+        "C:\\TCU\\ec-comp\\lab-competition-2026\\orienteering.exe",
+        "42",
+        "20",
+        "20",
+        "--restarts",
+        "3"
+      ],
+      "history_csv": "generation,best_fitness\n1,0.473482\n2,0.369132\n3,0.369132\n4,0.331869\n5,0.331869\n6,0.331869\n7,0.331869\n8,0.331869\n9,0.331869\n10,0.330659\n11,0.330659\n12,0.330659\n13,0.330659\n14,0.330659\n15,0.330659\n16,0.330659\n17,0.330659\n18,0.330659\n19,0.330659\n20,0.330659\n",
+      "ga_precise_seconds": 0.229855,
+      "total_precise_seconds": 0.247034,
+      "initialization_seconds": 0.027517,
+      "generations_seconds": 0.202316,
+      "initial_best_fitness": 0.493,
+      "csv_seconds": 0.002355,
+      "precompute_seconds": 0.013751,
+      "shortest_path_seconds": 0.012537,
+      "restarts": 3.0,
+      "restart_fitness": [
+        0.330659,
+        0.331869,
+        0.330659
+      ]
+    }
+  ],
+  "source_sha256": {
+    "build.bat": "27a468ce09073222b13080e7764e5e5c74ad70472faa89d3161e94ea40e997a1",
+    "const.h": "0ab02f9bb41fc0e013ea800e9de9d0fdbdec5cd821ff2c6e49647d04182cc823",
+    "csv_loader.cpp": "c1b1561d5018513c5738770f0b48938fe2088967b6db8f3cf2d4f95ec1abe0c4",
+    "csv_loader.h": "db014dce366aaf8d441554c74f9ca9273955d608b92a4a08e6e2f38404a7a3df",
+    "evaluate.cpp": "0672c59da34574df10a03323d0169e4d7960e14c78021f5c6885f818b6be0ebb",
+    "evaluate.h": "40cd80a67c033274801301f1ee10bd71c211c95aed87743bf04d83d423ef6304",
+    "ga.cpp": "fb753a405cebf44984a7c8fa305f1b2fd2b439e081019fe0958832c2d80b37c1",
+    "ga.h": "ef322a423241a3f2b84261f6414e22454f3aa2d780a66e21c806105acf413510",
+    "graph.cpp": "5d56e4304e1133705b3feb4ec53b821e25776b40ce8ef289b349d7e1b7f29c39",
+    "graph.h": "8f06cc1a236aeb8f2ce948b79f28f8e4a22c1a1c7dbaa157a267afdf0dc20aa7",
+    "main.cpp": "0d35c47ef8d7b5bb8aa9a499660a515951057721f14bcfec990eb08c11f34feb",
+    "test.bat": "fb56de7737b568cc1b2eb7cc8344632504b98825b470325bdeb871253d9be4e4",
+    "test_efficiency.bat": "135d8ef2a51d6fc4dc08ebfddcefd9dbe833dd4b9a2327d41469d9e67609f04a"
+  },
+  "summary": {
+    "mean": 0.3307,
+    "std": 0.0,
+    "minimum": 0.3307,
+    "maximum": 0.3307,
+    "ga_seconds": 0.22272727272727272,
+    "total_seconds": 0.24,
+    "best_count": 11
+  }
+}

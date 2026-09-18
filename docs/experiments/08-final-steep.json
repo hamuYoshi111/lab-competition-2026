@@ -1,0 +1,1304 @@
+{
+  "label": "08-final-steep",
+  "date": "2026-09-18T12:30:45.521941+09:00",
+  "note": "08 最終測定: steep / 引数なし (const.h 既定 = 個体10・世代20・再スタート3・候補40・表示なし・種42)",
+  "repo": "C:\\TCU\\ec-comp\\lab-competition-2026",
+  "workdir": "C:\\TCU\\ec-comp\\datasets\\steep",
+  "seeds": [
+    1,
+    4,
+    7,
+    10,
+    13,
+    16,
+    19,
+    22,
+    25,
+    28,
+    42
+  ],
+  "pop": null,
+  "gen": null,
+  "flags": [],
+  "status": "complete",
+  "runs": [
+    {
+      "seed": 1,
+      "E": 3.4394,
+      "ga_seconds": 0.14,
+      "total_seconds": 0.18,
+      "n_controls": 8,
+      "f_map": 0.0,
+      "f_dist": 13.266,
+      "f_time": 1.371,
+      "f_route": 11.8,
+      "course": {
+        "n_controls": 8,
+        "total_distance_m": 3100.0,
+        "total_gain_m": 61.8,
+        "estimated_time_min": 58.6,
+        "fitness": 3.439361,
+        "objectives": {
+          "f_map": 0.0,
+          "f_dist": 13.266,
+          "f_time": 1.371,
+          "f_route": 11.8
+        },
+        "weights": {
+          "f_map": 0.5,
+          "f_dist": 0.1,
+          "f_time": 0.25,
+          "f_route": 0.15
+        },
+        "controls": [
+          {
+            "name": "東京都市大学",
+            "feature": "university",
+            "lat": 35.5611321,
+            "lon": 139.5756784
+          },
+          {
+            "name": "Atelier KiD",
+            "feature": "clothes",
+            "lat": 35.5622048,
+            "lon": 139.5721578
+          },
+          {
+            "name": "こめいろ",
+            "feature": "restaurant",
+            "lat": 35.5626447,
+            "lon": 139.5728569
+          },
+          {
+            "name": "中華料理 博",
+            "feature": "restaurant",
+            "lat": 35.5635086,
+            "lon": 139.5693222
+          },
+          {
+            "name": "大谷家",
+            "feature": "restaurant",
+            "lat": 35.5629012,
+            "lon": 139.5724454
+          },
+          {
+            "name": "BAR DE ESPANA Zorro",
+            "feature": "restaurant",
+            "lat": 35.5641324,
+            "lon": 139.5698356
+          },
+          {
+            "name": "和食れすとらん 天狗",
+            "feature": "restaurant",
+            "lat": 35.5625864,
+            "lon": 139.5695312
+          },
+          {
+            "name": "学生食堂",
+            "feature": "restaurant",
+            "lat": 35.561503,
+            "lon": 139.5742961
+          }
+        ],
+        "course_nodes": [
+          7368660689,
+          13403237136,
+          1704650216,
+          2587513272,
+          2555242407,
+          2587513285,
+          2587567965,
+          7368660723,
+          2616953964,
+          7368660689
+        ]
+      },
+      "stdout": "データを読み込み中...\n  候補数: 113件 / ノード: 2267件 / エッジ: 6860件\n  最短経路を事前計算中...\n\n遺伝的アルゴリズムを実行中...\n  個体数: 10 / 世代数: 20 / 再スタート: 3\n\n  → output/best_course.json に保存しました\n  → output/fitness_history.csv に保存しました\n\n========== 最良コース ==========\n巡回順（最良個体）:\n  スタート : 正門\n  63 : 東京都市大学\n  19 : Atelier KiD\n  44 : こめいろ\n  18 : 中華料理 博\n  82 : 大谷家\n  20 : BAR DE ESPANA Zorro\n  74 : 和食れすとらん 天狗\n  10 : 学生食堂\n  ゴール   : 正門\n実行時間          : 0.14 秒\n最良解の fitness  : 3.4394\nコントロール数    : 8 件\n推定時間          : 58.6 分\n累積登り          : 61.8 m\nf_map             : 0.000\nf_dist            : 13.266\nf_time            : 1.371\nf_route           : 11.800\n==========================================\n総実行時間 : 0.18 秒\nGA詳細秒 : 0.138036\n総詳細秒 : 0.183887\nCSV秒 : 0.029610\n事前計算秒 : 0.015161\n初期個体秒 : 0.015137\n世代ループ秒 : 0.122870\n初期集団E : 3.902344\n地点CSV秒 : 0.008222\nノードCSV秒 : 0.008531\nエッジCSV秒 : 0.011640\n正門CSV秒 : 0.001216\nグラフ構築秒 : 0.000882\n正門探索秒 : 0.000002\n最短経路秒 : 0.013865\n表作成秒 : 0.000411\n再スタート回数 : 3\n再スタートE : 4.833265 3.439361 3.439361\n",
+      "stderr": "",
+      "E_json": 3.439361,
+      "command": [
+        "C:\\TCU\\ec-comp\\lab-competition-2026\\orienteering.exe",
+        "1"
+      ],
+      "history_csv": "generation,best_fitness\n1,3.439361\n2,3.439361\n3,3.439361\n4,3.439361\n5,3.439361\n6,3.439361\n7,3.439361\n8,3.439361\n9,3.439361\n10,3.439361\n11,3.439361\n12,3.439361\n13,3.439361\n14,3.439361\n15,3.439361\n16,3.439361\n17,3.439361\n18,3.439361\n19,3.439361\n20,3.439361\n",
+      "ga_precise_seconds": 0.138036,
+      "total_precise_seconds": 0.183887,
+      "initialization_seconds": 0.015137,
+      "generations_seconds": 0.12287,
+      "initial_best_fitness": 3.902344,
+      "csv_seconds": 0.02961,
+      "precompute_seconds": 0.015161,
+      "shortest_path_seconds": 0.013865,
+      "restarts": 3.0,
+      "restart_fitness": [
+        4.833265,
+        3.439361,
+        3.439361
+      ]
+    },
+    {
+      "seed": 4,
+      "E": 3.4394,
+      "ga_seconds": 0.14,
+      "total_seconds": 0.16,
+      "n_controls": 8,
+      "f_map": 0.0,
+      "f_dist": 13.266,
+      "f_time": 1.371,
+      "f_route": 11.8,
+      "course": {
+        "n_controls": 8,
+        "total_distance_m": 3100.0,
+        "total_gain_m": 61.8,
+        "estimated_time_min": 58.6,
+        "fitness": 3.439361,
+        "objectives": {
+          "f_map": 0.0,
+          "f_dist": 13.266,
+          "f_time": 1.371,
+          "f_route": 11.8
+        },
+        "weights": {
+          "f_map": 0.5,
+          "f_dist": 0.1,
+          "f_time": 0.25,
+          "f_route": 0.15
+        },
+        "controls": [
+          {
+            "name": "東京都市大学",
+            "feature": "university",
+            "lat": 35.5611321,
+            "lon": 139.5756784
+          },
+          {
+            "name": "Atelier KiD",
+            "feature": "clothes",
+            "lat": 35.5622048,
+            "lon": 139.5721578
+          },
+          {
+            "name": "こめいろ",
+            "feature": "restaurant",
+            "lat": 35.5626447,
+            "lon": 139.5728569
+          },
+          {
+            "name": "中華料理 博",
+            "feature": "restaurant",
+            "lat": 35.5635086,
+            "lon": 139.5693222
+          },
+          {
+            "name": "大谷家",
+            "feature": "restaurant",
+            "lat": 35.5629012,
+            "lon": 139.5724454
+          },
+          {
+            "name": "BAR DE ESPANA Zorro",
+            "feature": "restaurant",
+            "lat": 35.5641324,
+            "lon": 139.5698356
+          },
+          {
+            "name": "和食れすとらん 天狗",
+            "feature": "restaurant",
+            "lat": 35.5625864,
+            "lon": 139.5695312
+          },
+          {
+            "name": "学生食堂",
+            "feature": "restaurant",
+            "lat": 35.561503,
+            "lon": 139.5742961
+          }
+        ],
+        "course_nodes": [
+          7368660689,
+          13403237136,
+          1704650216,
+          2587513272,
+          2555242407,
+          2587513285,
+          2587567965,
+          7368660723,
+          2616953964,
+          7368660689
+        ]
+      },
+      "stdout": "データを読み込み中...\n  候補数: 113件 / ノード: 2267件 / エッジ: 6860件\n  最短経路を事前計算中...\n\n遺伝的アルゴリズムを実行中...\n  個体数: 10 / 世代数: 20 / 再スタート: 3\n\n  → output/best_course.json に保存しました\n  → output/fitness_history.csv に保存しました\n\n========== 最良コース ==========\n巡回順（最良個体）:\n  スタート : 正門\n  63 : 東京都市大学\n  19 : Atelier KiD\n  44 : こめいろ\n  18 : 中華料理 博\n  82 : 大谷家\n  20 : BAR DE ESPANA Zorro\n  74 : 和食れすとらん 天狗\n  10 : 学生食堂\n  ゴール   : 正門\n実行時間          : 0.14 秒\n最良解の fitness  : 3.4394\nコントロール数    : 8 件\n推定時間          : 58.6 分\n累積登り          : 61.8 m\nf_map             : 0.000\nf_dist            : 13.266\nf_time            : 1.371\nf_route           : 11.800\n==========================================\n総実行時間 : 0.16 秒\nGA詳細秒 : 0.140427\n総詳細秒 : 0.160016\nCSV秒 : 0.002436\n事前計算秒 : 0.016223\n初期個体秒 : 0.013231\n世代ループ秒 : 0.127173\n初期集団E : 5.250853\n地点CSV秒 : 0.000141\nノードCSV秒 : 0.000429\nエッジCSV秒 : 0.001779\n正門CSV秒 : 0.000087\nグラフ構築秒 : 0.000906\n正門探索秒 : 0.000002\n最短経路秒 : 0.015033\n表作成秒 : 0.000282\n再スタート回数 : 3\n再スタートE : 3.439361 3.439361 3.439361\n",
+      "stderr": "",
+      "E_json": 3.439361,
+      "command": [
+        "C:\\TCU\\ec-comp\\lab-competition-2026\\orienteering.exe",
+        "4"
+      ],
+      "history_csv": "generation,best_fitness\n1,3.755129\n2,3.755129\n3,3.484619\n4,3.439361\n5,3.439361\n6,3.439361\n7,3.439361\n8,3.439361\n9,3.439361\n10,3.439361\n11,3.439361\n12,3.439361\n13,3.439361\n14,3.439361\n15,3.439361\n16,3.439361\n17,3.439361\n18,3.439361\n19,3.439361\n20,3.439361\n",
+      "ga_precise_seconds": 0.140427,
+      "total_precise_seconds": 0.160016,
+      "initialization_seconds": 0.013231,
+      "generations_seconds": 0.127173,
+      "initial_best_fitness": 5.250853,
+      "csv_seconds": 0.002436,
+      "precompute_seconds": 0.016223,
+      "shortest_path_seconds": 0.015033,
+      "restarts": 3.0,
+      "restart_fitness": [
+        3.439361,
+        3.439361,
+        3.439361
+      ]
+    },
+    {
+      "seed": 7,
+      "E": 3.4394,
+      "ga_seconds": 0.13,
+      "total_seconds": 0.15,
+      "n_controls": 8,
+      "f_map": 0.0,
+      "f_dist": 13.266,
+      "f_time": 1.371,
+      "f_route": 11.8,
+      "course": {
+        "n_controls": 8,
+        "total_distance_m": 3100.0,
+        "total_gain_m": 61.8,
+        "estimated_time_min": 58.6,
+        "fitness": 3.439361,
+        "objectives": {
+          "f_map": 0.0,
+          "f_dist": 13.266,
+          "f_time": 1.371,
+          "f_route": 11.8
+        },
+        "weights": {
+          "f_map": 0.5,
+          "f_dist": 0.1,
+          "f_time": 0.25,
+          "f_route": 0.15
+        },
+        "controls": [
+          {
+            "name": "学生食堂",
+            "feature": "restaurant",
+            "lat": 35.561503,
+            "lon": 139.5742961
+          },
+          {
+            "name": "和食れすとらん 天狗",
+            "feature": "restaurant",
+            "lat": 35.5625864,
+            "lon": 139.5695312
+          },
+          {
+            "name": "BAR DE ESPANA Zorro",
+            "feature": "restaurant",
+            "lat": 35.5641324,
+            "lon": 139.5698356
+          },
+          {
+            "name": "大谷家",
+            "feature": "restaurant",
+            "lat": 35.5629012,
+            "lon": 139.5724454
+          },
+          {
+            "name": "中華料理 博",
+            "feature": "restaurant",
+            "lat": 35.5635086,
+            "lon": 139.5693222
+          },
+          {
+            "name": "こめいろ",
+            "feature": "restaurant",
+            "lat": 35.5626447,
+            "lon": 139.5728569
+          },
+          {
+            "name": "Atelier KiD",
+            "feature": "clothes",
+            "lat": 35.5622048,
+            "lon": 139.5721578
+          },
+          {
+            "name": "東京都市大学",
+            "feature": "university",
+            "lat": 35.5611321,
+            "lon": 139.5756784
+          }
+        ],
+        "course_nodes": [
+          7368660689,
+          2616953964,
+          7368660723,
+          2587567965,
+          2587513285,
+          2555242407,
+          2587513272,
+          1704650216,
+          13403237136,
+          7368660689
+        ]
+      },
+      "stdout": "データを読み込み中...\n  候補数: 113件 / ノード: 2267件 / エッジ: 6860件\n  最短経路を事前計算中...\n\n遺伝的アルゴリズムを実行中...\n  個体数: 10 / 世代数: 20 / 再スタート: 3\n\n  → output/best_course.json に保存しました\n  → output/fitness_history.csv に保存しました\n\n========== 最良コース ==========\n巡回順（最良個体）:\n  スタート : 正門\n  10 : 学生食堂\n  74 : 和食れすとらん 天狗\n  20 : BAR DE ESPANA Zorro\n  82 : 大谷家\n  18 : 中華料理 博\n  44 : こめいろ\n  19 : Atelier KiD\n  63 : 東京都市大学\n  ゴール   : 正門\n実行時間          : 0.13 秒\n最良解の fitness  : 3.4394\nコントロール数    : 8 件\n推定時間          : 58.6 分\n累積登り          : 61.8 m\nf_map             : 0.000\nf_dist            : 13.266\nf_time            : 1.371\nf_route           : 11.800\n==========================================\n総実行時間 : 0.15 秒\nGA詳細秒 : 0.129125\n総詳細秒 : 0.146384\nCSV秒 : 0.002397\n事前計算秒 : 0.014110\n初期個体秒 : 0.011177\n世代ループ秒 : 0.117927\n初期集団E : 4.254230\n地点CSV秒 : 0.000152\nノードCSV秒 : 0.000437\nエッジCSV秒 : 0.001763\n正門CSV秒 : 0.000045\nグラフ構築秒 : 0.000947\n正門探索秒 : 0.000012\n最短経路秒 : 0.012875\n表作成秒 : 0.000276\n再スタート回数 : 3\n再スタートE : 3.439361 3.439361 3.439361\n",
+      "stderr": "",
+      "E_json": 3.439361,
+      "command": [
+        "C:\\TCU\\ec-comp\\lab-competition-2026\\orienteering.exe",
+        "7"
+      ],
+      "history_csv": "generation,best_fitness\n1,4.254230\n2,4.254230\n3,3.984138\n4,3.484619\n5,3.439361\n6,3.439361\n7,3.439361\n8,3.439361\n9,3.439361\n10,3.439361\n11,3.439361\n12,3.439361\n13,3.439361\n14,3.439361\n15,3.439361\n16,3.439361\n17,3.439361\n18,3.439361\n19,3.439361\n20,3.439361\n",
+      "ga_precise_seconds": 0.129125,
+      "total_precise_seconds": 0.146384,
+      "initialization_seconds": 0.011177,
+      "generations_seconds": 0.117927,
+      "initial_best_fitness": 4.25423,
+      "csv_seconds": 0.002397,
+      "precompute_seconds": 0.01411,
+      "shortest_path_seconds": 0.012875,
+      "restarts": 3.0,
+      "restart_fitness": [
+        3.439361,
+        3.439361,
+        3.439361
+      ]
+    },
+    {
+      "seed": 10,
+      "E": 3.4394,
+      "ga_seconds": 0.14,
+      "total_seconds": 0.16,
+      "n_controls": 8,
+      "f_map": 0.0,
+      "f_dist": 13.266,
+      "f_time": 1.371,
+      "f_route": 11.8,
+      "course": {
+        "n_controls": 8,
+        "total_distance_m": 3100.0,
+        "total_gain_m": 61.8,
+        "estimated_time_min": 58.6,
+        "fitness": 3.439361,
+        "objectives": {
+          "f_map": 0.0,
+          "f_dist": 13.266,
+          "f_time": 1.371,
+          "f_route": 11.8
+        },
+        "weights": {
+          "f_map": 0.5,
+          "f_dist": 0.1,
+          "f_time": 0.25,
+          "f_route": 0.15
+        },
+        "controls": [
+          {
+            "name": "東京都市大学",
+            "feature": "university",
+            "lat": 35.5611321,
+            "lon": 139.5756784
+          },
+          {
+            "name": "Atelier KiD",
+            "feature": "clothes",
+            "lat": 35.5622048,
+            "lon": 139.5721578
+          },
+          {
+            "name": "こめいろ",
+            "feature": "restaurant",
+            "lat": 35.5626447,
+            "lon": 139.5728569
+          },
+          {
+            "name": "中華料理 博",
+            "feature": "restaurant",
+            "lat": 35.5635086,
+            "lon": 139.5693222
+          },
+          {
+            "name": "大谷家",
+            "feature": "restaurant",
+            "lat": 35.5629012,
+            "lon": 139.5724454
+          },
+          {
+            "name": "BAR DE ESPANA Zorro",
+            "feature": "restaurant",
+            "lat": 35.5641324,
+            "lon": 139.5698356
+          },
+          {
+            "name": "和食れすとらん 天狗",
+            "feature": "restaurant",
+            "lat": 35.5625864,
+            "lon": 139.5695312
+          },
+          {
+            "name": "学生食堂",
+            "feature": "restaurant",
+            "lat": 35.561503,
+            "lon": 139.5742961
+          }
+        ],
+        "course_nodes": [
+          7368660689,
+          13403237136,
+          1704650216,
+          2587513272,
+          2555242407,
+          2587513285,
+          2587567965,
+          7368660723,
+          2616953964,
+          7368660689
+        ]
+      },
+      "stdout": "データを読み込み中...\n  候補数: 113件 / ノード: 2267件 / エッジ: 6860件\n  最短経路を事前計算中...\n\n遺伝的アルゴリズムを実行中...\n  個体数: 10 / 世代数: 20 / 再スタート: 3\n\n  → output/best_course.json に保存しました\n  → output/fitness_history.csv に保存しました\n\n========== 最良コース ==========\n巡回順（最良個体）:\n  スタート : 正門\n  63 : 東京都市大学\n  19 : Atelier KiD\n  44 : こめいろ\n  18 : 中華料理 博\n  82 : 大谷家\n  20 : BAR DE ESPANA Zorro\n  74 : 和食れすとらん 天狗\n  10 : 学生食堂\n  ゴール   : 正門\n実行時間          : 0.14 秒\n最良解の fitness  : 3.4394\nコントロール数    : 8 件\n推定時間          : 58.6 分\n累積登り          : 61.8 m\nf_map             : 0.000\nf_dist            : 13.266\nf_time            : 1.371\nf_route           : 11.800\n==========================================\n総実行時間 : 0.16 秒\nGA詳細秒 : 0.142286\n総詳細秒 : 0.159938\nCSV秒 : 0.002877\n事前計算秒 : 0.013968\n初期個体秒 : 0.013117\n世代ループ秒 : 0.129148\n初期集団E : 3.975315\n地点CSV秒 : 0.000191\nノードCSV秒 : 0.000669\nエッジCSV秒 : 0.001932\n正門CSV秒 : 0.000085\nグラフ構築秒 : 0.000918\n正門探索秒 : 0.000002\n最短経路秒 : 0.012759\n表作成秒 : 0.000289\n再スタート回数 : 3\n再スタートE : 3.439361 3.439361 3.439361\n",
+      "stderr": "",
+      "E_json": 3.439361,
+      "command": [
+        "C:\\TCU\\ec-comp\\lab-competition-2026\\orienteering.exe",
+        "10"
+      ],
+      "history_csv": "generation,best_fitness\n1,3.732038\n2,3.484619\n3,3.439361\n4,3.439361\n5,3.439361\n6,3.439361\n7,3.439361\n8,3.439361\n9,3.439361\n10,3.439361\n11,3.439361\n12,3.439361\n13,3.439361\n14,3.439361\n15,3.439361\n16,3.439361\n17,3.439361\n18,3.439361\n19,3.439361\n20,3.439361\n",
+      "ga_precise_seconds": 0.142286,
+      "total_precise_seconds": 0.159938,
+      "initialization_seconds": 0.013117,
+      "generations_seconds": 0.129148,
+      "initial_best_fitness": 3.975315,
+      "csv_seconds": 0.002877,
+      "precompute_seconds": 0.013968,
+      "shortest_path_seconds": 0.012759,
+      "restarts": 3.0,
+      "restart_fitness": [
+        3.439361,
+        3.439361,
+        3.439361
+      ]
+    },
+    {
+      "seed": 13,
+      "E": 3.4394,
+      "ga_seconds": 0.13,
+      "total_seconds": 0.14,
+      "n_controls": 8,
+      "f_map": 0.0,
+      "f_dist": 13.266,
+      "f_time": 1.371,
+      "f_route": 11.8,
+      "course": {
+        "n_controls": 8,
+        "total_distance_m": 3100.0,
+        "total_gain_m": 61.8,
+        "estimated_time_min": 58.6,
+        "fitness": 3.439361,
+        "objectives": {
+          "f_map": 0.0,
+          "f_dist": 13.266,
+          "f_time": 1.371,
+          "f_route": 11.8
+        },
+        "weights": {
+          "f_map": 0.5,
+          "f_dist": 0.1,
+          "f_time": 0.25,
+          "f_route": 0.15
+        },
+        "controls": [
+          {
+            "name": "学生食堂",
+            "feature": "restaurant",
+            "lat": 35.561503,
+            "lon": 139.5742961
+          },
+          {
+            "name": "和食れすとらん 天狗",
+            "feature": "restaurant",
+            "lat": 35.5625864,
+            "lon": 139.5695312
+          },
+          {
+            "name": "BAR DE ESPANA Zorro",
+            "feature": "restaurant",
+            "lat": 35.5641324,
+            "lon": 139.5698356
+          },
+          {
+            "name": "大谷家",
+            "feature": "restaurant",
+            "lat": 35.5629012,
+            "lon": 139.5724454
+          },
+          {
+            "name": "中華料理 博",
+            "feature": "restaurant",
+            "lat": 35.5635086,
+            "lon": 139.5693222
+          },
+          {
+            "name": "こめいろ",
+            "feature": "restaurant",
+            "lat": 35.5626447,
+            "lon": 139.5728569
+          },
+          {
+            "name": "Atelier KiD",
+            "feature": "clothes",
+            "lat": 35.5622048,
+            "lon": 139.5721578
+          },
+          {
+            "name": "東京都市大学",
+            "feature": "university",
+            "lat": 35.5611321,
+            "lon": 139.5756784
+          }
+        ],
+        "course_nodes": [
+          7368660689,
+          2616953964,
+          7368660723,
+          2587567965,
+          2587513285,
+          2555242407,
+          2587513272,
+          1704650216,
+          13403237136,
+          7368660689
+        ]
+      },
+      "stdout": "データを読み込み中...\n  候補数: 113件 / ノード: 2267件 / エッジ: 6860件\n  最短経路を事前計算中...\n\n遺伝的アルゴリズムを実行中...\n  個体数: 10 / 世代数: 20 / 再スタート: 3\n\n  → output/best_course.json に保存しました\n  → output/fitness_history.csv に保存しました\n\n========== 最良コース ==========\n巡回順（最良個体）:\n  スタート : 正門\n  10 : 学生食堂\n  74 : 和食れすとらん 天狗\n  20 : BAR DE ESPANA Zorro\n  82 : 大谷家\n  18 : 中華料理 博\n  44 : こめいろ\n  19 : Atelier KiD\n  63 : 東京都市大学\n  ゴール   : 正門\n実行時間          : 0.13 秒\n最良解の fitness  : 3.4394\nコントロール数    : 8 件\n推定時間          : 58.6 分\n累積登り          : 61.8 m\nf_map             : 0.000\nf_dist            : 13.266\nf_time            : 1.371\nf_route           : 11.800\n==========================================\n総実行時間 : 0.14 秒\nGA詳細秒 : 0.125484\n総詳細秒 : 0.142020\nCSV秒 : 0.002361\n事前計算秒 : 0.013492\n初期個体秒 : 0.011728\n世代ループ秒 : 0.113739\n初期集団E : 3.587410\n地点CSV秒 : 0.000160\nノードCSV秒 : 0.000427\nエッジCSV秒 : 0.001686\n正門CSV秒 : 0.000087\nグラフ構築秒 : 0.000818\n正門探索秒 : 0.000002\n最短経路秒 : 0.012407\n表作成秒 : 0.000266\n再スタート回数 : 3\n再スタートE : 3.439361 3.439361 3.439361\n",
+      "stderr": "",
+      "E_json": 3.439361,
+      "command": [
+        "C:\\TCU\\ec-comp\\lab-competition-2026\\orienteering.exe",
+        "13"
+      ],
+      "history_csv": "generation,best_fitness\n1,3.439361\n2,3.439361\n3,3.439361\n4,3.439361\n5,3.439361\n6,3.439361\n7,3.439361\n8,3.439361\n9,3.439361\n10,3.439361\n11,3.439361\n12,3.439361\n13,3.439361\n14,3.439361\n15,3.439361\n16,3.439361\n17,3.439361\n18,3.439361\n19,3.439361\n20,3.439361\n",
+      "ga_precise_seconds": 0.125484,
+      "total_precise_seconds": 0.14202,
+      "initialization_seconds": 0.011728,
+      "generations_seconds": 0.113739,
+      "initial_best_fitness": 3.58741,
+      "csv_seconds": 0.002361,
+      "precompute_seconds": 0.013492,
+      "shortest_path_seconds": 0.012407,
+      "restarts": 3.0,
+      "restart_fitness": [
+        3.439361,
+        3.439361,
+        3.439361
+      ]
+    },
+    {
+      "seed": 16,
+      "E": 3.4394,
+      "ga_seconds": 0.12,
+      "total_seconds": 0.14,
+      "n_controls": 8,
+      "f_map": 0.0,
+      "f_dist": 13.266,
+      "f_time": 1.371,
+      "f_route": 11.8,
+      "course": {
+        "n_controls": 8,
+        "total_distance_m": 3100.0,
+        "total_gain_m": 61.8,
+        "estimated_time_min": 58.6,
+        "fitness": 3.439361,
+        "objectives": {
+          "f_map": 0.0,
+          "f_dist": 13.266,
+          "f_time": 1.371,
+          "f_route": 11.8
+        },
+        "weights": {
+          "f_map": 0.5,
+          "f_dist": 0.1,
+          "f_time": 0.25,
+          "f_route": 0.15
+        },
+        "controls": [
+          {
+            "name": "東京都市大学",
+            "feature": "university",
+            "lat": 35.5611321,
+            "lon": 139.5756784
+          },
+          {
+            "name": "Atelier KiD",
+            "feature": "clothes",
+            "lat": 35.5622048,
+            "lon": 139.5721578
+          },
+          {
+            "name": "こめいろ",
+            "feature": "restaurant",
+            "lat": 35.5626447,
+            "lon": 139.5728569
+          },
+          {
+            "name": "中華料理 博",
+            "feature": "restaurant",
+            "lat": 35.5635086,
+            "lon": 139.5693222
+          },
+          {
+            "name": "大谷家",
+            "feature": "restaurant",
+            "lat": 35.5629012,
+            "lon": 139.5724454
+          },
+          {
+            "name": "BAR DE ESPANA Zorro",
+            "feature": "restaurant",
+            "lat": 35.5641324,
+            "lon": 139.5698356
+          },
+          {
+            "name": "和食れすとらん 天狗",
+            "feature": "restaurant",
+            "lat": 35.5625864,
+            "lon": 139.5695312
+          },
+          {
+            "name": "学生食堂",
+            "feature": "restaurant",
+            "lat": 35.561503,
+            "lon": 139.5742961
+          }
+        ],
+        "course_nodes": [
+          7368660689,
+          13403237136,
+          1704650216,
+          2587513272,
+          2555242407,
+          2587513285,
+          2587567965,
+          7368660723,
+          2616953964,
+          7368660689
+        ]
+      },
+      "stdout": "データを読み込み中...\n  候補数: 113件 / ノード: 2267件 / エッジ: 6860件\n  最短経路を事前計算中...\n\n遺伝的アルゴリズムを実行中...\n  個体数: 10 / 世代数: 20 / 再スタート: 3\n\n  → output/best_course.json に保存しました\n  → output/fitness_history.csv に保存しました\n\n========== 最良コース ==========\n巡回順（最良個体）:\n  スタート : 正門\n  63 : 東京都市大学\n  19 : Atelier KiD\n  44 : こめいろ\n  18 : 中華料理 博\n  82 : 大谷家\n  20 : BAR DE ESPANA Zorro\n  74 : 和食れすとらん 天狗\n  10 : 学生食堂\n  ゴール   : 正門\n実行時間          : 0.12 秒\n最良解の fitness  : 3.4394\nコントロール数    : 8 件\n推定時間          : 58.6 分\n累積登り          : 61.8 m\nf_map             : 0.000\nf_dist            : 13.266\nf_time            : 1.371\nf_route           : 11.800\n==========================================\n総実行時間 : 0.14 秒\nGA詳細秒 : 0.119443\n総詳細秒 : 0.137626\nCSV秒 : 0.002774\n事前計算秒 : 0.014623\n初期個体秒 : 0.011455\n世代ループ秒 : 0.107971\n初期集団E : 3.625194\n地点CSV秒 : 0.000145\nノードCSV秒 : 0.000446\nエッジCSV秒 : 0.002085\n正門CSV秒 : 0.000098\nグラフ構築秒 : 0.001118\n正門探索秒 : 0.000003\n最短経路秒 : 0.013243\n表作成秒 : 0.000261\n再スタート回数 : 3\n再スタートE : 4.833265 3.439361 3.439361\n",
+      "stderr": "",
+      "E_json": 3.439361,
+      "command": [
+        "C:\\TCU\\ec-comp\\lab-competition-2026\\orienteering.exe",
+        "16"
+      ],
+      "history_csv": "generation,best_fitness\n1,3.484619\n2,3.439361\n3,3.439361\n4,3.439361\n5,3.439361\n6,3.439361\n7,3.439361\n8,3.439361\n9,3.439361\n10,3.439361\n11,3.439361\n12,3.439361\n13,3.439361\n14,3.439361\n15,3.439361\n16,3.439361\n17,3.439361\n18,3.439361\n19,3.439361\n20,3.439361\n",
+      "ga_precise_seconds": 0.119443,
+      "total_precise_seconds": 0.137626,
+      "initialization_seconds": 0.011455,
+      "generations_seconds": 0.107971,
+      "initial_best_fitness": 3.625194,
+      "csv_seconds": 0.002774,
+      "precompute_seconds": 0.014623,
+      "shortest_path_seconds": 0.013243,
+      "restarts": 3.0,
+      "restart_fitness": [
+        4.833265,
+        3.439361,
+        3.439361
+      ]
+    },
+    {
+      "seed": 19,
+      "E": 3.4394,
+      "ga_seconds": 0.13,
+      "total_seconds": 0.15,
+      "n_controls": 8,
+      "f_map": 0.0,
+      "f_dist": 13.266,
+      "f_time": 1.371,
+      "f_route": 11.8,
+      "course": {
+        "n_controls": 8,
+        "total_distance_m": 3100.0,
+        "total_gain_m": 61.8,
+        "estimated_time_min": 58.6,
+        "fitness": 3.439361,
+        "objectives": {
+          "f_map": 0.0,
+          "f_dist": 13.266,
+          "f_time": 1.371,
+          "f_route": 11.8
+        },
+        "weights": {
+          "f_map": 0.5,
+          "f_dist": 0.1,
+          "f_time": 0.25,
+          "f_route": 0.15
+        },
+        "controls": [
+          {
+            "name": "学生食堂",
+            "feature": "restaurant",
+            "lat": 35.561503,
+            "lon": 139.5742961
+          },
+          {
+            "name": "和食れすとらん 天狗",
+            "feature": "restaurant",
+            "lat": 35.5625864,
+            "lon": 139.5695312
+          },
+          {
+            "name": "BAR DE ESPANA Zorro",
+            "feature": "restaurant",
+            "lat": 35.5641324,
+            "lon": 139.5698356
+          },
+          {
+            "name": "大谷家",
+            "feature": "restaurant",
+            "lat": 35.5629012,
+            "lon": 139.5724454
+          },
+          {
+            "name": "中華料理 博",
+            "feature": "restaurant",
+            "lat": 35.5635086,
+            "lon": 139.5693222
+          },
+          {
+            "name": "こめいろ",
+            "feature": "restaurant",
+            "lat": 35.5626447,
+            "lon": 139.5728569
+          },
+          {
+            "name": "Atelier KiD",
+            "feature": "clothes",
+            "lat": 35.5622048,
+            "lon": 139.5721578
+          },
+          {
+            "name": "東京都市大学",
+            "feature": "university",
+            "lat": 35.5611321,
+            "lon": 139.5756784
+          }
+        ],
+        "course_nodes": [
+          7368660689,
+          2616953964,
+          7368660723,
+          2587567965,
+          2587513285,
+          2555242407,
+          2587513272,
+          1704650216,
+          13403237136,
+          7368660689
+        ]
+      },
+      "stdout": "データを読み込み中...\n  候補数: 113件 / ノード: 2267件 / エッジ: 6860件\n  最短経路を事前計算中...\n\n遺伝的アルゴリズムを実行中...\n  個体数: 10 / 世代数: 20 / 再スタート: 3\n\n  → output/best_course.json に保存しました\n  → output/fitness_history.csv に保存しました\n\n========== 最良コース ==========\n巡回順（最良個体）:\n  スタート : 正門\n  10 : 学生食堂\n  74 : 和食れすとらん 天狗\n  20 : BAR DE ESPANA Zorro\n  82 : 大谷家\n  18 : 中華料理 博\n  44 : こめいろ\n  19 : Atelier KiD\n  63 : 東京都市大学\n  ゴール   : 正門\n実行時間          : 0.13 秒\n最良解の fitness  : 3.4394\nコントロール数    : 8 件\n推定時間          : 58.6 分\n累積登り          : 61.8 m\nf_map             : 0.000\nf_dist            : 13.266\nf_time            : 1.371\nf_route           : 11.800\n==========================================\n総実行時間 : 0.15 秒\nGA詳細秒 : 0.132323\n総詳細秒 : 0.150470\nCSV秒 : 0.002649\n事前計算秒 : 0.014771\n初期個体秒 : 0.013810\n世代ループ秒 : 0.118489\n初期集団E : 3.694703\n地点CSV秒 : 0.000164\nノードCSV秒 : 0.000437\nエッジCSV秒 : 0.001958\n正門CSV秒 : 0.000089\nグラフ構築秒 : 0.000856\n正門探索秒 : 0.000001\n最短経路秒 : 0.013610\n表作成秒 : 0.000303\n再スタート回数 : 3\n再スタートE : 3.439361 3.439361 3.439361\n",
+      "stderr": "",
+      "E_json": 3.439361,
+      "command": [
+        "C:\\TCU\\ec-comp\\lab-competition-2026\\orienteering.exe",
+        "19"
+      ],
+      "history_csv": "generation,best_fitness\n1,3.587410\n2,3.587410\n3,3.439361\n4,3.439361\n5,3.439361\n6,3.439361\n7,3.439361\n8,3.439361\n9,3.439361\n10,3.439361\n11,3.439361\n12,3.439361\n13,3.439361\n14,3.439361\n15,3.439361\n16,3.439361\n17,3.439361\n18,3.439361\n19,3.439361\n20,3.439361\n",
+      "ga_precise_seconds": 0.132323,
+      "total_precise_seconds": 0.15047,
+      "initialization_seconds": 0.01381,
+      "generations_seconds": 0.118489,
+      "initial_best_fitness": 3.694703,
+      "csv_seconds": 0.002649,
+      "precompute_seconds": 0.014771,
+      "shortest_path_seconds": 0.01361,
+      "restarts": 3.0,
+      "restart_fitness": [
+        3.439361,
+        3.439361,
+        3.439361
+      ]
+    },
+    {
+      "seed": 22,
+      "E": 3.4394,
+      "ga_seconds": 0.13,
+      "total_seconds": 0.15,
+      "n_controls": 8,
+      "f_map": 0.0,
+      "f_dist": 13.266,
+      "f_time": 1.371,
+      "f_route": 11.8,
+      "course": {
+        "n_controls": 8,
+        "total_distance_m": 3100.0,
+        "total_gain_m": 61.8,
+        "estimated_time_min": 58.6,
+        "fitness": 3.439361,
+        "objectives": {
+          "f_map": 0.0,
+          "f_dist": 13.266,
+          "f_time": 1.371,
+          "f_route": 11.8
+        },
+        "weights": {
+          "f_map": 0.5,
+          "f_dist": 0.1,
+          "f_time": 0.25,
+          "f_route": 0.15
+        },
+        "controls": [
+          {
+            "name": "東京都市大学",
+            "feature": "university",
+            "lat": 35.5611321,
+            "lon": 139.5756784
+          },
+          {
+            "name": "Atelier KiD",
+            "feature": "clothes",
+            "lat": 35.5622048,
+            "lon": 139.5721578
+          },
+          {
+            "name": "こめいろ",
+            "feature": "restaurant",
+            "lat": 35.5626447,
+            "lon": 139.5728569
+          },
+          {
+            "name": "中華料理 博",
+            "feature": "restaurant",
+            "lat": 35.5635086,
+            "lon": 139.5693222
+          },
+          {
+            "name": "大谷家",
+            "feature": "restaurant",
+            "lat": 35.5629012,
+            "lon": 139.5724454
+          },
+          {
+            "name": "BAR DE ESPANA Zorro",
+            "feature": "restaurant",
+            "lat": 35.5641324,
+            "lon": 139.5698356
+          },
+          {
+            "name": "和食れすとらん 天狗",
+            "feature": "restaurant",
+            "lat": 35.5625864,
+            "lon": 139.5695312
+          },
+          {
+            "name": "学生食堂",
+            "feature": "restaurant",
+            "lat": 35.561503,
+            "lon": 139.5742961
+          }
+        ],
+        "course_nodes": [
+          7368660689,
+          13403237136,
+          1704650216,
+          2587513272,
+          2555242407,
+          2587513285,
+          2587567965,
+          7368660723,
+          2616953964,
+          7368660689
+        ]
+      },
+      "stdout": "データを読み込み中...\n  候補数: 113件 / ノード: 2267件 / エッジ: 6860件\n  最短経路を事前計算中...\n\n遺伝的アルゴリズムを実行中...\n  個体数: 10 / 世代数: 20 / 再スタート: 3\n\n  → output/best_course.json に保存しました\n  → output/fitness_history.csv に保存しました\n\n========== 最良コース ==========\n巡回順（最良個体）:\n  スタート : 正門\n  63 : 東京都市大学\n  19 : Atelier KiD\n  44 : こめいろ\n  18 : 中華料理 博\n  82 : 大谷家\n  20 : BAR DE ESPANA Zorro\n  74 : 和食れすとらん 天狗\n  10 : 学生食堂\n  ゴール   : 正門\n実行時間          : 0.13 秒\n最良解の fitness  : 3.4394\nコントロール数    : 8 件\n推定時間          : 58.6 分\n累積登り          : 61.8 m\nf_map             : 0.000\nf_dist            : 13.266\nf_time            : 1.371\nf_route           : 11.800\n==========================================\n総実行時間 : 0.15 秒\nGA詳細秒 : 0.129970\n総詳細秒 : 0.146640\nCSV秒 : 0.002293\n事前計算秒 : 0.013572\n初期個体秒 : 0.010943\n世代ループ秒 : 0.119007\n初期集団E : 4.254230\n地点CSV秒 : 0.000154\nノードCSV秒 : 0.000436\nエッジCSV秒 : 0.001665\n正門CSV秒 : 0.000038\nグラフ構築秒 : 0.000826\n正門探索秒 : 0.000001\n最短経路秒 : 0.012381\n表作成秒 : 0.000363\n再スタート回数 : 3\n再スタートE : 3.439361 3.439361 3.439361\n",
+      "stderr": "",
+      "E_json": 3.439361,
+      "command": [
+        "C:\\TCU\\ec-comp\\lab-competition-2026\\orienteering.exe",
+        "22"
+      ],
+      "history_csv": "generation,best_fitness\n1,4.254230\n2,4.254230\n3,4.254230\n4,4.114207\n5,3.484619\n6,3.439361\n7,3.439361\n8,3.439361\n9,3.439361\n10,3.439361\n11,3.439361\n12,3.439361\n13,3.439361\n14,3.439361\n15,3.439361\n16,3.439361\n17,3.439361\n18,3.439361\n19,3.439361\n20,3.439361\n",
+      "ga_precise_seconds": 0.12997,
+      "total_precise_seconds": 0.14664,
+      "initialization_seconds": 0.010943,
+      "generations_seconds": 0.119007,
+      "initial_best_fitness": 4.25423,
+      "csv_seconds": 0.002293,
+      "precompute_seconds": 0.013572,
+      "shortest_path_seconds": 0.012381,
+      "restarts": 3.0,
+      "restart_fitness": [
+        3.439361,
+        3.439361,
+        3.439361
+      ]
+    },
+    {
+      "seed": 25,
+      "E": 3.4394,
+      "ga_seconds": 0.13,
+      "total_seconds": 0.15,
+      "n_controls": 8,
+      "f_map": 0.0,
+      "f_dist": 13.266,
+      "f_time": 1.371,
+      "f_route": 11.8,
+      "course": {
+        "n_controls": 8,
+        "total_distance_m": 3100.0,
+        "total_gain_m": 61.8,
+        "estimated_time_min": 58.6,
+        "fitness": 3.439361,
+        "objectives": {
+          "f_map": 0.0,
+          "f_dist": 13.266,
+          "f_time": 1.371,
+          "f_route": 11.8
+        },
+        "weights": {
+          "f_map": 0.5,
+          "f_dist": 0.1,
+          "f_time": 0.25,
+          "f_route": 0.15
+        },
+        "controls": [
+          {
+            "name": "学生食堂",
+            "feature": "restaurant",
+            "lat": 35.561503,
+            "lon": 139.5742961
+          },
+          {
+            "name": "和食れすとらん 天狗",
+            "feature": "restaurant",
+            "lat": 35.5625864,
+            "lon": 139.5695312
+          },
+          {
+            "name": "BAR DE ESPANA Zorro",
+            "feature": "restaurant",
+            "lat": 35.5641324,
+            "lon": 139.5698356
+          },
+          {
+            "name": "大谷家",
+            "feature": "restaurant",
+            "lat": 35.5629012,
+            "lon": 139.5724454
+          },
+          {
+            "name": "中華料理 博",
+            "feature": "restaurant",
+            "lat": 35.5635086,
+            "lon": 139.5693222
+          },
+          {
+            "name": "こめいろ",
+            "feature": "restaurant",
+            "lat": 35.5626447,
+            "lon": 139.5728569
+          },
+          {
+            "name": "Atelier KiD",
+            "feature": "clothes",
+            "lat": 35.5622048,
+            "lon": 139.5721578
+          },
+          {
+            "name": "東京都市大学",
+            "feature": "university",
+            "lat": 35.5611321,
+            "lon": 139.5756784
+          }
+        ],
+        "course_nodes": [
+          7368660689,
+          2616953964,
+          7368660723,
+          2587567965,
+          2587513285,
+          2555242407,
+          2587513272,
+          1704650216,
+          13403237136,
+          7368660689
+        ]
+      },
+      "stdout": "データを読み込み中...\n  候補数: 113件 / ノード: 2267件 / エッジ: 6860件\n  最短経路を事前計算中...\n\n遺伝的アルゴリズムを実行中...\n  個体数: 10 / 世代数: 20 / 再スタート: 3\n\n  → output/best_course.json に保存しました\n  → output/fitness_history.csv に保存しました\n\n========== 最良コース ==========\n巡回順（最良個体）:\n  スタート : 正門\n  10 : 学生食堂\n  74 : 和食れすとらん 天狗\n  20 : BAR DE ESPANA Zorro\n  82 : 大谷家\n  18 : 中華料理 博\n  44 : こめいろ\n  19 : Atelier KiD\n  63 : 東京都市大学\n  ゴール   : 正門\n実行時間          : 0.13 秒\n最良解の fitness  : 3.4394\nコントロール数    : 8 件\n推定時間          : 58.6 分\n累積登り          : 61.8 m\nf_map             : 0.000\nf_dist            : 13.266\nf_time            : 1.371\nf_route           : 11.800\n==========================================\n総実行時間 : 0.15 秒\nGA詳細秒 : 0.132295\n総詳細秒 : 0.150363\nCSV秒 : 0.002653\n事前計算秒 : 0.014525\n初期個体秒 : 0.011988\n世代ループ秒 : 0.120286\n初期集団E : 4.382985\n地点CSV秒 : 0.000238\nノードCSV秒 : 0.000447\nエッジCSV秒 : 0.001909\n正門CSV秒 : 0.000060\nグラフ構築秒 : 0.001232\n正門探索秒 : 0.000002\n最短経路秒 : 0.013015\n表作成秒 : 0.000277\n再スタート回数 : 3\n再スタートE : 3.439361 3.439361 3.439361\n",
+      "stderr": "",
+      "E_json": 3.439361,
+      "command": [
+        "C:\\TCU\\ec-comp\\lab-competition-2026\\orienteering.exe",
+        "25"
+      ],
+      "history_csv": "generation,best_fitness\n1,3.484619\n2,3.439361\n3,3.439361\n4,3.439361\n5,3.439361\n6,3.439361\n7,3.439361\n8,3.439361\n9,3.439361\n10,3.439361\n11,3.439361\n12,3.439361\n13,3.439361\n14,3.439361\n15,3.439361\n16,3.439361\n17,3.439361\n18,3.439361\n19,3.439361\n20,3.439361\n",
+      "ga_precise_seconds": 0.132295,
+      "total_precise_seconds": 0.150363,
+      "initialization_seconds": 0.011988,
+      "generations_seconds": 0.120286,
+      "initial_best_fitness": 4.382985,
+      "csv_seconds": 0.002653,
+      "precompute_seconds": 0.014525,
+      "shortest_path_seconds": 0.013015,
+      "restarts": 3.0,
+      "restart_fitness": [
+        3.439361,
+        3.439361,
+        3.439361
+      ]
+    },
+    {
+      "seed": 28,
+      "E": 3.4394,
+      "ga_seconds": 0.14,
+      "total_seconds": 0.16,
+      "n_controls": 8,
+      "f_map": 0.0,
+      "f_dist": 13.266,
+      "f_time": 1.371,
+      "f_route": 11.8,
+      "course": {
+        "n_controls": 8,
+        "total_distance_m": 3100.0,
+        "total_gain_m": 61.8,
+        "estimated_time_min": 58.6,
+        "fitness": 3.439361,
+        "objectives": {
+          "f_map": 0.0,
+          "f_dist": 13.266,
+          "f_time": 1.371,
+          "f_route": 11.8
+        },
+        "weights": {
+          "f_map": 0.5,
+          "f_dist": 0.1,
+          "f_time": 0.25,
+          "f_route": 0.15
+        },
+        "controls": [
+          {
+            "name": "学生食堂",
+            "feature": "restaurant",
+            "lat": 35.561503,
+            "lon": 139.5742961
+          },
+          {
+            "name": "和食れすとらん 天狗",
+            "feature": "restaurant",
+            "lat": 35.5625864,
+            "lon": 139.5695312
+          },
+          {
+            "name": "BAR DE ESPANA Zorro",
+            "feature": "restaurant",
+            "lat": 35.5641324,
+            "lon": 139.5698356
+          },
+          {
+            "name": "大谷家",
+            "feature": "restaurant",
+            "lat": 35.5629012,
+            "lon": 139.5724454
+          },
+          {
+            "name": "中華料理 博",
+            "feature": "restaurant",
+            "lat": 35.5635086,
+            "lon": 139.5693222
+          },
+          {
+            "name": "こめいろ",
+            "feature": "restaurant",
+            "lat": 35.5626447,
+            "lon": 139.5728569
+          },
+          {
+            "name": "Atelier KiD",
+            "feature": "clothes",
+            "lat": 35.5622048,
+            "lon": 139.5721578
+          },
+          {
+            "name": "東京都市大学",
+            "feature": "university",
+            "lat": 35.5611321,
+            "lon": 139.5756784
+          }
+        ],
+        "course_nodes": [
+          7368660689,
+          2616953964,
+          7368660723,
+          2587567965,
+          2587513285,
+          2555242407,
+          2587513272,
+          1704650216,
+          13403237136,
+          7368660689
+        ]
+      },
+      "stdout": "データを読み込み中...\n  候補数: 113件 / ノード: 2267件 / エッジ: 6860件\n  最短経路を事前計算中...\n\n遺伝的アルゴリズムを実行中...\n  個体数: 10 / 世代数: 20 / 再スタート: 3\n\n  → output/best_course.json に保存しました\n  → output/fitness_history.csv に保存しました\n\n========== 最良コース ==========\n巡回順（最良個体）:\n  スタート : 正門\n  10 : 学生食堂\n  74 : 和食れすとらん 天狗\n  20 : BAR DE ESPANA Zorro\n  82 : 大谷家\n  18 : 中華料理 博\n  44 : こめいろ\n  19 : Atelier KiD\n  63 : 東京都市大学\n  ゴール   : 正門\n実行時間          : 0.14 秒\n最良解の fitness  : 3.4394\nコントロール数    : 8 件\n推定時間          : 58.6 分\n累積登り          : 61.8 m\nf_map             : 0.000\nf_dist            : 13.266\nf_time            : 1.371\nf_route           : 11.800\n==========================================\n総実行時間 : 0.16 秒\nGA詳細秒 : 0.138926\n総詳細秒 : 0.156475\nCSV秒 : 0.002522\n事前計算秒 : 0.014292\n初期個体秒 : 0.013596\n世代ループ秒 : 0.125307\n初期集団E : 3.800787\n地点CSV秒 : 0.000151\nノードCSV秒 : 0.000460\nエッジCSV秒 : 0.001842\n正門CSV秒 : 0.000069\nグラフ構築秒 : 0.000859\n正門探索秒 : 0.000002\n最短経路秒 : 0.013095\n表作成秒 : 0.000336\n再スタート回数 : 3\n再スタートE : 3.439361 3.439361 3.439361\n",
+      "stderr": "",
+      "E_json": 3.439361,
+      "command": [
+        "C:\\TCU\\ec-comp\\lab-competition-2026\\orienteering.exe",
+        "28"
+      ],
+      "history_csv": "generation,best_fitness\n1,3.800787\n2,3.484619\n3,3.439361\n4,3.439361\n5,3.439361\n6,3.439361\n7,3.439361\n8,3.439361\n9,3.439361\n10,3.439361\n11,3.439361\n12,3.439361\n13,3.439361\n14,3.439361\n15,3.439361\n16,3.439361\n17,3.439361\n18,3.439361\n19,3.439361\n20,3.439361\n",
+      "ga_precise_seconds": 0.138926,
+      "total_precise_seconds": 0.156475,
+      "initialization_seconds": 0.013596,
+      "generations_seconds": 0.125307,
+      "initial_best_fitness": 3.800787,
+      "csv_seconds": 0.002522,
+      "precompute_seconds": 0.014292,
+      "shortest_path_seconds": 0.013095,
+      "restarts": 3.0,
+      "restart_fitness": [
+        3.439361,
+        3.439361,
+        3.439361
+      ]
+    },
+    {
+      "seed": 42,
+      "E": 3.4394,
+      "ga_seconds": 0.13,
+      "total_seconds": 0.15,
+      "n_controls": 8,
+      "f_map": 0.0,
+      "f_dist": 13.266,
+      "f_time": 1.371,
+      "f_route": 11.8,
+      "course": {
+        "n_controls": 8,
+        "total_distance_m": 3100.0,
+        "total_gain_m": 61.8,
+        "estimated_time_min": 58.6,
+        "fitness": 3.439361,
+        "objectives": {
+          "f_map": 0.0,
+          "f_dist": 13.266,
+          "f_time": 1.371,
+          "f_route": 11.8
+        },
+        "weights": {
+          "f_map": 0.5,
+          "f_dist": 0.1,
+          "f_time": 0.25,
+          "f_route": 0.15
+        },
+        "controls": [
+          {
+            "name": "学生食堂",
+            "feature": "restaurant",
+            "lat": 35.561503,
+            "lon": 139.5742961
+          },
+          {
+            "name": "和食れすとらん 天狗",
+            "feature": "restaurant",
+            "lat": 35.5625864,
+            "lon": 139.5695312
+          },
+          {
+            "name": "BAR DE ESPANA Zorro",
+            "feature": "restaurant",
+            "lat": 35.5641324,
+            "lon": 139.5698356
+          },
+          {
+            "name": "大谷家",
+            "feature": "restaurant",
+            "lat": 35.5629012,
+            "lon": 139.5724454
+          },
+          {
+            "name": "中華料理 博",
+            "feature": "restaurant",
+            "lat": 35.5635086,
+            "lon": 139.5693222
+          },
+          {
+            "name": "こめいろ",
+            "feature": "restaurant",
+            "lat": 35.5626447,
+            "lon": 139.5728569
+          },
+          {
+            "name": "Atelier KiD",
+            "feature": "clothes",
+            "lat": 35.5622048,
+            "lon": 139.5721578
+          },
+          {
+            "name": "東京都市大学",
+            "feature": "university",
+            "lat": 35.5611321,
+            "lon": 139.5756784
+          }
+        ],
+        "course_nodes": [
+          7368660689,
+          2616953964,
+          7368660723,
+          2587567965,
+          2587513285,
+          2555242407,
+          2587513272,
+          1704650216,
+          13403237136,
+          7368660689
+        ]
+      },
+      "stdout": "データを読み込み中...\n  候補数: 113件 / ノード: 2267件 / エッジ: 6860件\n  最短経路を事前計算中...\n\n遺伝的アルゴリズムを実行中...\n  個体数: 10 / 世代数: 20 / 再スタート: 3\n\n  → output/best_course.json に保存しました\n  → output/fitness_history.csv に保存しました\n\n========== 最良コース ==========\n巡回順（最良個体）:\n  スタート : 正門\n  10 : 学生食堂\n  74 : 和食れすとらん 天狗\n  20 : BAR DE ESPANA Zorro\n  82 : 大谷家\n  18 : 中華料理 博\n  44 : こめいろ\n  19 : Atelier KiD\n  63 : 東京都市大学\n  ゴール   : 正門\n実行時間          : 0.13 秒\n最良解の fitness  : 3.4394\nコントロール数    : 8 件\n推定時間          : 58.6 分\n累積登り          : 61.8 m\nf_map             : 0.000\nf_dist            : 13.266\nf_time            : 1.371\nf_route           : 11.800\n==========================================\n総実行時間 : 0.15 秒\nGA詳細秒 : 0.128732\n総詳細秒 : 0.146287\nCSV秒 : 0.002508\n事前計算秒 : 0.014214\n初期個体秒 : 0.012414\n世代ループ秒 : 0.116299\n初期集団E : 4.254230\n地点CSV秒 : 0.000164\nノードCSV秒 : 0.000447\nエッジCSV秒 : 0.001808\n正門CSV秒 : 0.000089\nグラフ構築秒 : 0.000880\n正門探索秒 : 0.000002\n最短経路秒 : 0.012902\n表作成秒 : 0.000430\n再スタート回数 : 3\n再スタートE : 3.439361 3.439361 3.439361\n",
+      "stderr": "",
+      "E_json": 3.439361,
+      "command": [
+        "C:\\TCU\\ec-comp\\lab-competition-2026\\orienteering.exe",
+        "42"
+      ],
+      "history_csv": "generation,best_fitness\n1,4.254230\n2,3.857590\n3,3.845769\n4,3.484619\n5,3.439361\n6,3.439361\n7,3.439361\n8,3.439361\n9,3.439361\n10,3.439361\n11,3.439361\n12,3.439361\n13,3.439361\n14,3.439361\n15,3.439361\n16,3.439361\n17,3.439361\n18,3.439361\n19,3.439361\n20,3.439361\n",
+      "ga_precise_seconds": 0.128732,
+      "total_precise_seconds": 0.146287,
+      "initialization_seconds": 0.012414,
+      "generations_seconds": 0.116299,
+      "initial_best_fitness": 4.25423,
+      "csv_seconds": 0.002508,
+      "precompute_seconds": 0.014214,
+      "shortest_path_seconds": 0.012902,
+      "restarts": 3.0,
+      "restart_fitness": [
+        3.439361,
+        3.439361,
+        3.439361
+      ]
+    }
+  ],
+  "source_sha256": {
+    "build.bat": "27a468ce09073222b13080e7764e5e5c74ad70472faa89d3161e94ea40e997a1",
+    "const.h": "d9b7811545f3f41877451b8429060cf89133c1c3e839e44049c84dc71e521efb",
+    "csv_loader.cpp": "c5bb7688c6f070a7f198d6b5a22a642ceac39655cb9e778856e5b6e6032f3d8d",
+    "csv_loader.h": "a48d13110dc16f2e2170116dc0c089a71ea092c125aaf1c5abd4e27ac84a0d4d",
+    "evaluate.cpp": "5d9e2b3548dcf3661231b34306977b48d95d67f2acec55c06eba0127d518ac22",
+    "evaluate.h": "b1a2609a2e722fe3f6946326316ff89d29f52dc1cdbcbea578e3bb50382a6312",
+    "ga.cpp": "b4011b8a03d1ab7ebe726eaf947476848b2354dbe92f5e1b4fa32d005dc99891",
+    "ga.h": "bcad2005fd4e603c534882f35313fcecf52a5e9c5ba54b8c778f56b80608d125",
+    "graph.cpp": "678b265c0dbe003e44240e4723c99f2ba9f5b2549fb5ca35b0e7583aef845aeb",
+    "graph.h": "edd91c68a1c0da252290e9d7ddf3c4d1a4001e9bf859fb99606223e092dd1f23",
+    "main.cpp": "d0545eaea771d04d0f9a32ac75002e9145eb3896fd4f438854b2448e0f591093",
+    "test.bat": "fb56de7737b568cc1b2eb7cc8344632504b98825b470325bdeb871253d9be4e4",
+    "test_efficiency.bat": "135d8ef2a51d6fc4dc08ebfddcefd9dbe833dd4b9a2327d41469d9e67609f04a"
+  },
+  "summary": {
+    "mean": 3.4394,
+    "std": 0.0,
+    "minimum": 3.4394,
+    "maximum": 3.4394,
+    "ga_seconds": 0.13272727272727272,
+    "total_seconds": 0.15363636363636363,
+    "best_count": 11
+  }
+}

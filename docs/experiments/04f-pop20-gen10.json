@@ -1,0 +1,1131 @@
+{
+  "label": "04f-pop20-gen10",
+  "date": "2026-09-18T01:54:34.223485+09:00",
+  "note": "04eと同じC(K=40)のみで個体数・世代数を比較",
+  "repo": "C:\\TCU\\ec-comp\\lab-competition-2026",
+  "seeds": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "pop": 20,
+  "gen": 10,
+  "flags": [
+    "--candidate-k",
+    "40"
+  ],
+  "status": "complete",
+  "runs": [
+    {
+      "seed": 1,
+      "E": 0.0009,
+      "ga_seconds": 0.05,
+      "total_seconds": 0.08,
+      "n_controls": 8,
+      "f_map": 0.0,
+      "f_dist": 0.0,
+      "f_time": 0.003,
+      "f_route": 0.0,
+      "course": {
+        "n_controls": 8,
+        "total_distance_m": 3370.3,
+        "total_gain_m": 48.5,
+        "estimated_time_min": 60.0,
+        "fitness": 0.000852,
+        "objectives": {
+          "f_map": 0.0,
+          "f_dist": 0.0,
+          "f_time": 0.003,
+          "f_route": 0.0
+        },
+        "weights": {
+          "f_map": 0.5,
+          "f_dist": 0.1,
+          "f_time": 0.25,
+          "f_route": 0.15
+        },
+        "controls": [
+          {
+            "name": "牛久保こすもす公園",
+            "feature": "playground",
+            "lat": 35.5621638,
+            "lon": 139.5820758
+          },
+          {
+            "name": "AOKI",
+            "feature": "clothes",
+            "lat": 35.5611952,
+            "lon": 139.5801688
+          },
+          {
+            "name": "牛久保西公園",
+            "feature": "park",
+            "lat": 35.5590295,
+            "lon": 139.5778765
+          },
+          {
+            "name": "江戸前びっくり寿司",
+            "feature": "restaurant",
+            "lat": 35.5560047,
+            "lon": 139.577823
+          },
+          {
+            "name": "じげもんちゃんぽん",
+            "feature": "restaurant",
+            "lat": 35.5550931,
+            "lon": 139.57918
+          },
+          {
+            "name": "牛久保西すずらん公園",
+            "feature": "park",
+            "lat": 35.5578437,
+            "lon": 139.5801899
+          },
+          {
+            "name": "横浜市立牛久保小学校",
+            "feature": "school",
+            "lat": 35.5593495,
+            "lon": 139.5819938
+          },
+          {
+            "name": "ヴィーノヴィーノ",
+            "feature": "restaurant",
+            "lat": 35.5631951,
+            "lon": 139.5805751
+          }
+        ],
+        "course_nodes": [
+          7368660689,
+          1303245549,
+          1303245512,
+          7099852153,
+          9983573509,
+          10721114682,
+          1704577740,
+          1767739968,
+          1303245638,
+          7368660689
+        ]
+      },
+      "stdout": "データを読み込み中...\n  候補数: 113件 / ノード: 2267件 / エッジ: 6860件\n  最短経路を事前計算中...\n\n遺伝的アルゴリズムを実行中...\n  個体数: 20 / 世代数: 10\n  [世代 1]  best_fitness = 0.0190394\n  [世代 2]  best_fitness = 0.0168673\n  [世代 3]  best_fitness = 0.0138321\n  [世代 4]  best_fitness = 0.00212345\n  [世代 5]  best_fitness = 0.000851548\n  [世代 6]  best_fitness = 0.000851548\n  [世代 7]  best_fitness = 0.000851548\n  [世代 8]  best_fitness = 0.000851548\n  [世代 9]  best_fitness = 0.000851548\n  [世代 10]  best_fitness = 0.000851548\n\n  → output/best_course.json に保存しました\n  → output/fitness_history.csv に保存しました\n\n========== Step 5 (C++) 完了 ==========\n巡回順（最良個体）:\n  スタート : 正門\n  89 : 牛久保こすもす公園\n  4 : AOKI\n  69 : 牛久保西公園\n  5 : 江戸前びっくり寿司\n  47 : じげもんちゃんぽん\n  78 : 牛久保西すずらん公園\n  67 : 横浜市立牛久保小学校\n  90 : ヴィーノヴィーノ\n  ゴール   : 正門\n実行時間          : 0.05 秒\n最良解の fitness  : 0.0009\nコントロール数    : 8 件\n推定時間          : 60.0 分\n累積登り          : 48.5 m\nf_map             : 0.000\nf_dist            : 0.000\nf_time            : 0.003\nf_route           : 0.000\n==========================================\n総実行時間 : 0.08 秒\nGA詳細秒 : 0.051554\n総詳細秒 : 0.078946\nCSV秒 : 0.008568\n事前計算秒 : 0.018095\n初期個体秒 : 0.006868\n世代ループ秒 : 0.044677\n",
+      "stderr": "",
+      "E_json": 0.000852,
+      "command": [
+        "C:\\TCU\\ec-comp\\lab-competition-2026\\orienteering.exe",
+        "1",
+        "20",
+        "10",
+        "--candidate-k",
+        "40"
+      ],
+      "history_csv": "generation,best_fitness\n1,0.019039\n2,0.016867\n3,0.013832\n4,0.002123\n5,0.000852\n6,0.000852\n7,0.000852\n8,0.000852\n9,0.000852\n10,0.000852\n",
+      "ga_precise_seconds": 0.051554,
+      "total_precise_seconds": 0.078946,
+      "initialization_seconds": 0.006868,
+      "generations_seconds": 0.044677
+    },
+    {
+      "seed": 2,
+      "E": 0.0064,
+      "ga_seconds": 0.05,
+      "total_seconds": 0.08,
+      "n_controls": 8,
+      "f_map": 0.0,
+      "f_dist": 0.0,
+      "f_time": 0.026,
+      "f_route": 0.0,
+      "course": {
+        "n_controls": 8,
+        "total_distance_m": 3523.2,
+        "total_gain_m": 37.2,
+        "estimated_time_min": 60.0,
+        "fitness": 0.006432,
+        "objectives": {
+          "f_map": 0.0,
+          "f_dist": 0.0,
+          "f_time": 0.026,
+          "f_route": 0.0
+        },
+        "weights": {
+          "f_map": 0.5,
+          "f_dist": 0.1,
+          "f_time": 0.25,
+          "f_route": 0.15
+        },
+        "controls": [
+          {
+            "name": "横浜キャンパス図書館",
+            "feature": "library",
+            "lat": 35.5617244,
+            "lon": 139.5752785
+          },
+          {
+            "name": "こめいろ",
+            "feature": "restaurant",
+            "lat": 35.5626447,
+            "lon": 139.5728569
+          },
+          {
+            "name": "BAR DE ESPANA Zorro",
+            "feature": "restaurant",
+            "lat": 35.5641324,
+            "lon": 139.5698356
+          },
+          {
+            "name": "JASMIN",
+            "feature": "hospital",
+            "lat": 35.5628271,
+            "lon": 139.5691914
+          },
+          {
+            "name": "しゃぶしゃぶ 木曽路",
+            "feature": "restaurant",
+            "lat": 35.5569178,
+            "lon": 139.5788174
+          },
+          {
+            "name": "相鉄ローゼン",
+            "feature": "supermarket",
+            "lat": 35.5547887,
+            "lon": 139.5779843
+          },
+          {
+            "name": "お好み焼き 杏子",
+            "feature": "restaurant",
+            "lat": 35.5554028,
+            "lon": 139.5795252
+          },
+          {
+            "name": "焼肉市場 げんかや",
+            "feature": "restaurant",
+            "lat": 35.5582658,
+            "lon": 139.578773
+          }
+        ],
+        "course_nodes": [
+          7368660689,
+          7368660671,
+          2587513272,
+          2587567965,
+          7368660723,
+          10721114732,
+          2639302690,
+          8411254516,
+          1704577713,
+          7368660689
+        ]
+      },
+      "stdout": "データを読み込み中...\n  候補数: 113件 / ノード: 2267件 / エッジ: 6860件\n  最短経路を事前計算中...\n\n遺伝的アルゴリズムを実行中...\n  個体数: 20 / 世代数: 10\n  [世代 1]  best_fitness = 0.0148864\n  [世代 2]  best_fitness = 0.0148864\n  [世代 3]  best_fitness = 0.0148864\n  [世代 4]  best_fitness = 0.0148864\n  [世代 5]  best_fitness = 0.0148864\n  [世代 6]  best_fitness = 0.0109034\n  [世代 7]  best_fitness = 0.00643235\n  [世代 8]  best_fitness = 0.00643235\n  [世代 9]  best_fitness = 0.00643235\n  [世代 10]  best_fitness = 0.00643235\n\n  → output/best_course.json に保存しました\n  → output/fitness_history.csv に保存しました\n\n========== Step 5 (C++) 完了 ==========\n巡回順（最良個体）:\n  スタート : 正門\n  9 : 横浜キャンパス図書館\n  44 : こめいろ\n  20 : BAR DE ESPANA Zorro\n  77 : JASMIN\n  6 : しゃぶしゃぶ 木曽路\n  33 : 相鉄ローゼン\n  55 : お好み焼き 杏子\n  22 : 焼肉市場 げんかや\n  ゴール   : 正門\n実行時間          : 0.05 秒\n最良解の fitness  : 0.0064\nコントロール数    : 8 件\n推定時間          : 60.0 分\n累積登り          : 37.2 m\nf_map             : 0.000\nf_dist            : 0.000\nf_time            : 0.026\nf_route           : 0.000\n==========================================\n総実行時間 : 0.08 秒\nGA詳細秒 : 0.053554\n総詳細秒 : 0.081033\nCSV秒 : 0.008568\n事前計算秒 : 0.018114\n初期個体秒 : 0.007833\n世代ループ秒 : 0.045713\n",
+      "stderr": "",
+      "E_json": 0.006432,
+      "command": [
+        "C:\\TCU\\ec-comp\\lab-competition-2026\\orienteering.exe",
+        "2",
+        "20",
+        "10",
+        "--candidate-k",
+        "40"
+      ],
+      "history_csv": "generation,best_fitness\n1,0.014886\n2,0.014886\n3,0.014886\n4,0.014886\n5,0.014886\n6,0.010903\n7,0.006432\n8,0.006432\n9,0.006432\n10,0.006432\n",
+      "ga_precise_seconds": 0.053554,
+      "total_precise_seconds": 0.081033,
+      "initialization_seconds": 0.007833,
+      "generations_seconds": 0.045713
+    },
+    {
+      "seed": 3,
+      "E": 0.0017,
+      "ga_seconds": 0.05,
+      "total_seconds": 0.07,
+      "n_controls": 8,
+      "f_map": 0.0,
+      "f_dist": 0.0,
+      "f_time": 0.007,
+      "f_route": 0.0,
+      "course": {
+        "n_controls": 8,
+        "total_distance_m": 3396.5,
+        "total_gain_m": 46.5,
+        "estimated_time_min": 60.0,
+        "fitness": 0.001653,
+        "objectives": {
+          "f_map": 0.0,
+          "f_dist": 0.0,
+          "f_time": 0.007,
+          "f_route": 0.0
+        },
+        "weights": {
+          "f_map": 0.5,
+          "f_dist": 0.1,
+          "f_time": 0.25,
+          "f_route": 0.15
+        },
+        "controls": [
+          {
+            "name": "横浜市立牛久保小学校",
+            "feature": "school",
+            "lat": 35.5593495,
+            "lon": 139.5819938
+          },
+          {
+            "name": "牛久保西すずらん公園",
+            "feature": "park",
+            "lat": 35.5578437,
+            "lon": 139.5801899
+          },
+          {
+            "name": "しゃぶしゃぶ 木曽路",
+            "feature": "restaurant",
+            "lat": 35.5569178,
+            "lon": 139.5788174
+          },
+          {
+            "name": "お好み焼き 杏子",
+            "feature": "restaurant",
+            "lat": 35.5554028,
+            "lon": 139.5795252
+          },
+          {
+            "name": "CAFE LEXCEL",
+            "feature": "cafe",
+            "lat": 35.5536904,
+            "lon": 139.5792721
+          },
+          {
+            "name": "モザイクモール港北",
+            "feature": "mall",
+            "lat": 35.5549557,
+            "lon": 139.5779363
+          },
+          {
+            "name": "牛久保西公園",
+            "feature": "park",
+            "lat": 35.5590295,
+            "lon": 139.5778765
+          },
+          {
+            "name": "ヴィーノヴィーノ",
+            "feature": "restaurant",
+            "lat": 35.5631951,
+            "lon": 139.5805751
+          }
+        ],
+        "course_nodes": [
+          7368660689,
+          1767739968,
+          1704577740,
+          10721114732,
+          8411254516,
+          10624985150,
+          2639302690,
+          7099852153,
+          1303245638,
+          7368660689
+        ]
+      },
+      "stdout": "データを読み込み中...\n  候補数: 113件 / ノード: 2267件 / エッジ: 6860件\n  最短経路を事前計算中...\n\n遺伝的アルゴリズムを実行中...\n  個体数: 20 / 世代数: 10\n  [世代 1]  best_fitness = 0.0216824\n  [世代 2]  best_fitness = 0.00165307\n  [世代 3]  best_fitness = 0.00165307\n  [世代 4]  best_fitness = 0.00165307\n  [世代 5]  best_fitness = 0.00165307\n  [世代 6]  best_fitness = 0.00165307\n  [世代 7]  best_fitness = 0.00165307\n  [世代 8]  best_fitness = 0.00165307\n  [世代 9]  best_fitness = 0.00165307\n  [世代 10]  best_fitness = 0.00165307\n\n  → output/best_course.json に保存しました\n  → output/fitness_history.csv に保存しました\n\n========== Step 5 (C++) 完了 ==========\n巡回順（最良個体）:\n  スタート : 正門\n  67 : 横浜市立牛久保小学校\n  78 : 牛久保西すずらん公園\n  6 : しゃぶしゃぶ 木曽路\n  55 : お好み焼き 杏子\n  13 : CAFE LEXCEL\n  61 : モザイクモール港北\n  69 : 牛久保西公園\n  90 : ヴィーノヴィーノ\n  ゴール   : 正門\n実行時間          : 0.05 秒\n最良解の fitness  : 0.0017\nコントロール数    : 8 件\n推定時間          : 60.0 分\n累積登り          : 46.5 m\nf_map             : 0.000\nf_dist            : 0.000\nf_time            : 0.007\nf_route           : 0.000\n==========================================\n総実行時間 : 0.07 秒\nGA詳細秒 : 0.047118\n総詳細秒 : 0.074099\nCSV秒 : 0.008610\n事前計算秒 : 0.017750\n初期個体秒 : 0.007340\n世代ループ秒 : 0.039772\n",
+      "stderr": "",
+      "E_json": 0.001653,
+      "command": [
+        "C:\\TCU\\ec-comp\\lab-competition-2026\\orienteering.exe",
+        "3",
+        "20",
+        "10",
+        "--candidate-k",
+        "40"
+      ],
+      "history_csv": "generation,best_fitness\n1,0.021682\n2,0.001653\n3,0.001653\n4,0.001653\n5,0.001653\n6,0.001653\n7,0.001653\n8,0.001653\n9,0.001653\n10,0.001653\n",
+      "ga_precise_seconds": 0.047118,
+      "total_precise_seconds": 0.074099,
+      "initialization_seconds": 0.00734,
+      "generations_seconds": 0.039772
+    },
+    {
+      "seed": 4,
+      "E": 0.0008,
+      "ga_seconds": 0.05,
+      "total_seconds": 0.08,
+      "n_controls": 8,
+      "f_map": 0.0,
+      "f_dist": 0.0,
+      "f_time": 0.003,
+      "f_route": 0.0,
+      "course": {
+        "n_controls": 8,
+        "total_distance_m": 3402.1,
+        "total_gain_m": 46.1,
+        "estimated_time_min": 60.0,
+        "fitness": 0.000784,
+        "objectives": {
+          "f_map": 0.0,
+          "f_dist": 0.0,
+          "f_time": 0.003,
+          "f_route": 0.0
+        },
+        "weights": {
+          "f_map": 0.5,
+          "f_dist": 0.1,
+          "f_time": 0.25,
+          "f_route": 0.15
+        },
+        "controls": [
+          {
+            "name": "牛久保あやめ公園",
+            "feature": "park",
+            "lat": 35.5631773,
+            "lon": 139.5775581
+          },
+          {
+            "name": "AOKI",
+            "feature": "clothes",
+            "lat": 35.5611952,
+            "lon": 139.5801688
+          },
+          {
+            "name": "横浜市立牛久保小学校",
+            "feature": "school",
+            "lat": 35.5593495,
+            "lon": 139.5819938
+          },
+          {
+            "name": "牛久保西すずらん公園",
+            "feature": "park",
+            "lat": 35.5578437,
+            "lon": 139.5801899
+          },
+          {
+            "name": "お好み焼き 杏子",
+            "feature": "restaurant",
+            "lat": 35.5554028,
+            "lon": 139.5795252
+          },
+          {
+            "name": "江戸前びっくり寿司",
+            "feature": "restaurant",
+            "lat": 35.5560047,
+            "lon": 139.577823
+          },
+          {
+            "name": "Atelier KiD",
+            "feature": "clothes",
+            "lat": 35.5622048,
+            "lon": 139.5721578
+          },
+          {
+            "name": "学生食堂",
+            "feature": "restaurant",
+            "lat": 35.561503,
+            "lon": 139.5742961
+          }
+        ],
+        "course_nodes": [
+          7368660689,
+          7368658444,
+          1303245512,
+          1767739968,
+          1704577740,
+          8411254516,
+          9983573509,
+          1704650216,
+          2616953964,
+          7368660689
+        ]
+      },
+      "stdout": "データを読み込み中...\n  候補数: 113件 / ノード: 2267件 / エッジ: 6860件\n  最短経路を事前計算中...\n\n遺伝的アルゴリズムを実行中...\n  個体数: 20 / 世代数: 10\n  [世代 1]  best_fitness = 0.00906956\n  [世代 2]  best_fitness = 0.00667633\n  [世代 3]  best_fitness = 0.00667633\n  [世代 4]  best_fitness = 0.00110055\n  [世代 5]  best_fitness = 0.00110055\n  [世代 6]  best_fitness = 0.00110055\n  [世代 7]  best_fitness = 0.000783557\n  [世代 8]  best_fitness = 0.000783557\n  [世代 9]  best_fitness = 0.000783557\n  [世代 10]  best_fitness = 0.000783557\n\n  → output/best_course.json に保存しました\n  → output/fitness_history.csv に保存しました\n\n========== Step 5 (C++) 完了 ==========\n巡回順（最良個体）:\n  スタート : 正門\n  79 : 牛久保あやめ公園\n  4 : AOKI\n  67 : 横浜市立牛久保小学校\n  78 : 牛久保西すずらん公園\n  55 : お好み焼き 杏子\n  5 : 江戸前びっくり寿司\n  19 : Atelier KiD\n  10 : 学生食堂\n  ゴール   : 正門\n実行時間          : 0.05 秒\n最良解の fitness  : 0.0008\nコントロール数    : 8 件\n推定時間          : 60.0 分\n累積登り          : 46.1 m\nf_map             : 0.000\nf_dist            : 0.000\nf_time            : 0.003\nf_route           : 0.000\n==========================================\n総実行時間 : 0.08 秒\nGA詳細秒 : 0.053194\n総詳細秒 : 0.080644\nCSV秒 : 0.008289\n事前計算秒 : 0.018381\n初期個体秒 : 0.007089\n世代ループ秒 : 0.046099\n",
+      "stderr": "",
+      "E_json": 0.000784,
+      "command": [
+        "C:\\TCU\\ec-comp\\lab-competition-2026\\orienteering.exe",
+        "4",
+        "20",
+        "10",
+        "--candidate-k",
+        "40"
+      ],
+      "history_csv": "generation,best_fitness\n1,0.009070\n2,0.006676\n3,0.006676\n4,0.001101\n5,0.001101\n6,0.001101\n7,0.000784\n8,0.000784\n9,0.000784\n10,0.000784\n",
+      "ga_precise_seconds": 0.053194,
+      "total_precise_seconds": 0.080644,
+      "initialization_seconds": 0.007089,
+      "generations_seconds": 0.046099
+    },
+    {
+      "seed": 5,
+      "E": 0.0019,
+      "ga_seconds": 0.05,
+      "total_seconds": 0.08,
+      "n_controls": 8,
+      "f_map": 0.0,
+      "f_dist": 0.0,
+      "f_time": 0.008,
+      "f_route": 0.0,
+      "course": {
+        "n_controls": 8,
+        "total_distance_m": 3459.4,
+        "total_gain_m": 41.8,
+        "estimated_time_min": 60.0,
+        "fitness": 0.001891,
+        "objectives": {
+          "f_map": 0.0,
+          "f_dist": 0.0,
+          "f_time": 0.008,
+          "f_route": 0.0
+        },
+        "weights": {
+          "f_map": 0.5,
+          "f_dist": 0.1,
+          "f_time": 0.25,
+          "f_route": 0.15
+        },
+        "controls": [
+          {
+            "name": "東京都市大学",
+            "feature": "university",
+            "lat": 35.5611321,
+            "lon": 139.5756784
+          },
+          {
+            "name": "AOKI",
+            "feature": "clothes",
+            "lat": 35.5611952,
+            "lon": 139.5801688
+          },
+          {
+            "name": "横浜市立牛久保小学校",
+            "feature": "school",
+            "lat": 35.5593495,
+            "lon": 139.5819938
+          },
+          {
+            "name": "ブックファースト",
+            "feature": "books",
+            "lat": 35.5552227,
+            "lon": 139.5777452
+          },
+          {
+            "name": "お好み焼き 杏子",
+            "feature": "restaurant",
+            "lat": 35.5554028,
+            "lon": 139.5795252
+          },
+          {
+            "name": "しゃぶしゃぶ 木曽路",
+            "feature": "restaurant",
+            "lat": 35.5569178,
+            "lon": 139.5788174
+          },
+          {
+            "name": "焼肉市場 げんかや",
+            "feature": "restaurant",
+            "lat": 35.5582658,
+            "lon": 139.578773
+          },
+          {
+            "name": "ヴィーノヴィーノ",
+            "feature": "restaurant",
+            "lat": 35.5631951,
+            "lon": 139.5805751
+          }
+        ],
+        "course_nodes": [
+          7368660689,
+          13403237136,
+          1303245512,
+          1767739968,
+          10723483823,
+          8411254516,
+          10721114732,
+          1704577713,
+          1303245638,
+          7368660689
+        ]
+      },
+      "stdout": "データを読み込み中...\n  候補数: 113件 / ノード: 2267件 / エッジ: 6860件\n  最短経路を事前計算中...\n\n遺伝的アルゴリズムを実行中...\n  個体数: 20 / 世代数: 10\n  [世代 1]  best_fitness = 0.0270419\n  [世代 2]  best_fitness = 0.0058789\n  [世代 3]  best_fitness = 0.00501866\n  [世代 4]  best_fitness = 0.00501866\n  [世代 5]  best_fitness = 0.00501866\n  [世代 6]  best_fitness = 0.00501866\n  [世代 7]  best_fitness = 0.00189089\n  [世代 8]  best_fitness = 0.00189089\n  [世代 9]  best_fitness = 0.00189089\n  [世代 10]  best_fitness = 0.00189089\n\n  → output/best_course.json に保存しました\n  → output/fitness_history.csv に保存しました\n\n========== Step 5 (C++) 完了 ==========\n巡回順（最良個体）:\n  スタート : 正門\n  63 : 東京都市大学\n  4 : AOKI\n  67 : 横浜市立牛久保小学校\n  36 : ブックファースト\n  55 : お好み焼き 杏子\n  6 : しゃぶしゃぶ 木曽路\n  22 : 焼肉市場 げんかや\n  90 : ヴィーノヴィーノ\n  ゴール   : 正門\n実行時間          : 0.05 秒\n最良解の fitness  : 0.0019\nコントロール数    : 8 件\n推定時間          : 60.0 分\n累積登り          : 41.8 m\nf_map             : 0.000\nf_dist            : 0.000\nf_time            : 0.008\nf_route           : 0.000\n==========================================\n総実行時間 : 0.08 秒\nGA詳細秒 : 0.052006\n総詳細秒 : 0.081073\nCSV秒 : 0.008572\n事前計算秒 : 0.019606\n初期個体秒 : 0.007971\n世代ループ秒 : 0.044025\n",
+      "stderr": "",
+      "E_json": 0.001891,
+      "command": [
+        "C:\\TCU\\ec-comp\\lab-competition-2026\\orienteering.exe",
+        "5",
+        "20",
+        "10",
+        "--candidate-k",
+        "40"
+      ],
+      "history_csv": "generation,best_fitness\n1,0.027042\n2,0.005879\n3,0.005019\n4,0.005019\n5,0.005019\n6,0.005019\n7,0.001891\n8,0.001891\n9,0.001891\n10,0.001891\n",
+      "ga_precise_seconds": 0.052006,
+      "total_precise_seconds": 0.081073,
+      "initialization_seconds": 0.007971,
+      "generations_seconds": 0.044025
+    },
+    {
+      "seed": 6,
+      "E": 0.0031,
+      "ga_seconds": 0.05,
+      "total_seconds": 0.08,
+      "n_controls": 8,
+      "f_map": 0.0,
+      "f_dist": 0.0,
+      "f_time": 0.012,
+      "f_route": 0.0,
+      "course": {
+        "n_controls": 8,
+        "total_distance_m": 3489.9,
+        "total_gain_m": 39.5,
+        "estimated_time_min": 60.0,
+        "fitness": 0.003052,
+        "objectives": {
+          "f_map": 0.0,
+          "f_dist": 0.0,
+          "f_time": 0.012,
+          "f_route": 0.0
+        },
+        "weights": {
+          "f_map": 0.5,
+          "f_dist": 0.1,
+          "f_time": 0.25,
+          "f_route": 0.15
+        },
+        "controls": [
+          {
+            "name": "こめいろ",
+            "feature": "restaurant",
+            "lat": 35.5626447,
+            "lon": 139.5728569
+          },
+          {
+            "name": "BAR DE ESPANA Zorro",
+            "feature": "restaurant",
+            "lat": 35.5641324,
+            "lon": 139.5698356
+          },
+          {
+            "name": "まいばすけっと",
+            "feature": "supermarket",
+            "lat": 35.5628043,
+            "lon": 139.5701188
+          },
+          {
+            "name": "しゃぶしゃぶ 木曽路",
+            "feature": "restaurant",
+            "lat": 35.5569178,
+            "lon": 139.5788174
+          },
+          {
+            "name": "牛久保西すずらん公園",
+            "feature": "park",
+            "lat": 35.5578437,
+            "lon": 139.5801899
+          },
+          {
+            "name": "横浜市立牛久保小学校",
+            "feature": "school",
+            "lat": 35.5593495,
+            "lon": 139.5819938
+          },
+          {
+            "name": "AOKI",
+            "feature": "clothes",
+            "lat": 35.5611952,
+            "lon": 139.5801688
+          },
+          {
+            "name": "牛久保あやめ公園",
+            "feature": "park",
+            "lat": 35.5631773,
+            "lon": 139.5775581
+          }
+        ],
+        "course_nodes": [
+          7368660689,
+          2587513272,
+          2587567965,
+          2555365272,
+          10721114732,
+          1704577740,
+          1767739968,
+          1303245512,
+          7368658444,
+          7368660689
+        ]
+      },
+      "stdout": "データを読み込み中...\n  候補数: 113件 / ノード: 2267件 / エッジ: 6860件\n  最短経路を事前計算中...\n\n遺伝的アルゴリズムを実行中...\n  個体数: 20 / 世代数: 10\n  [世代 1]  best_fitness = 0.00625904\n  [世代 2]  best_fitness = 0.00420453\n  [世代 3]  best_fitness = 0.00420453\n  [世代 4]  best_fitness = 0.00420453\n  [世代 5]  best_fitness = 0.00305154\n  [世代 6]  best_fitness = 0.00305154\n  [世代 7]  best_fitness = 0.00305154\n  [世代 8]  best_fitness = 0.00305154\n  [世代 9]  best_fitness = 0.00305154\n  [世代 10]  best_fitness = 0.00305154\n\n  → output/best_course.json に保存しました\n  → output/fitness_history.csv に保存しました\n\n========== Step 5 (C++) 完了 ==========\n巡回順（最良個体）:\n  スタート : 正門\n  44 : こめいろ\n  20 : BAR DE ESPANA Zorro\n  8 : まいばすけっと\n  6 : しゃぶしゃぶ 木曽路\n  78 : 牛久保西すずらん公園\n  67 : 横浜市立牛久保小学校\n  4 : AOKI\n  79 : 牛久保あやめ公園\n  ゴール   : 正門\n実行時間          : 0.05 秒\n最良解の fitness  : 0.0031\nコントロール数    : 8 件\n推定時間          : 60.0 分\n累積登り          : 39.5 m\nf_map             : 0.000\nf_dist            : 0.000\nf_time            : 0.012\nf_route           : 0.000\n==========================================\n総実行時間 : 0.08 秒\nGA詳細秒 : 0.052707\n総詳細秒 : 0.081289\nCSV秒 : 0.008603\n事前計算秒 : 0.019132\n初期個体秒 : 0.007566\n世代ループ秒 : 0.045133\n",
+      "stderr": "",
+      "E_json": 0.003052,
+      "command": [
+        "C:\\TCU\\ec-comp\\lab-competition-2026\\orienteering.exe",
+        "6",
+        "20",
+        "10",
+        "--candidate-k",
+        "40"
+      ],
+      "history_csv": "generation,best_fitness\n1,0.006259\n2,0.004205\n3,0.004205\n4,0.004205\n5,0.003052\n6,0.003052\n7,0.003052\n8,0.003052\n9,0.003052\n10,0.003052\n",
+      "ga_precise_seconds": 0.052707,
+      "total_precise_seconds": 0.081289,
+      "initialization_seconds": 0.007566,
+      "generations_seconds": 0.045133
+    },
+    {
+      "seed": 7,
+      "E": 0.0002,
+      "ga_seconds": 0.05,
+      "total_seconds": 0.07,
+      "n_controls": 8,
+      "f_map": 0.0,
+      "f_dist": 0.0,
+      "f_time": 0.001,
+      "f_route": 0.0,
+      "course": {
+        "n_controls": 8,
+        "total_distance_m": 3391.6,
+        "total_gain_m": 46.9,
+        "estimated_time_min": 60.0,
+        "fitness": 0.000245,
+        "objectives": {
+          "f_map": 0.0,
+          "f_dist": 0.0,
+          "f_time": 0.001,
+          "f_route": 0.0
+        },
+        "weights": {
+          "f_map": 0.5,
+          "f_dist": 0.1,
+          "f_time": 0.25,
+          "f_route": 0.15
+        },
+        "controls": [
+          {
+            "name": "牛久保西公園",
+            "feature": "park",
+            "lat": 35.5590295,
+            "lon": 139.5778765
+          },
+          {
+            "name": "まいばすけっと",
+            "feature": "supermarket",
+            "lat": 35.5554635,
+            "lon": 139.582406
+          },
+          {
+            "name": "モザイクモール港北",
+            "feature": "mall",
+            "lat": 35.5549557,
+            "lon": 139.5779363
+          },
+          {
+            "name": "燻製ダイニング 煙ぷらす",
+            "feature": "restaurant",
+            "lat": 35.5554542,
+            "lon": 139.5801565
+          },
+          {
+            "name": "しゃぶしゃぶ 木曽路",
+            "feature": "restaurant",
+            "lat": 35.5569178,
+            "lon": 139.5788174
+          },
+          {
+            "name": "牛久保西すずらん公園",
+            "feature": "park",
+            "lat": 35.5578437,
+            "lon": 139.5801899
+          },
+          {
+            "name": "横浜市立牛久保小学校",
+            "feature": "school",
+            "lat": 35.5593495,
+            "lon": 139.5819938
+          },
+          {
+            "name": "牛久保こすもす公園",
+            "feature": "playground",
+            "lat": 35.5621638,
+            "lon": 139.5820758
+          }
+        ],
+        "course_nodes": [
+          7368660689,
+          7099852153,
+          10721102930,
+          2639302690,
+          10721114668,
+          10721114732,
+          1704577740,
+          1767739968,
+          1303245549,
+          7368660689
+        ]
+      },
+      "stdout": "データを読み込み中...\n  候補数: 113件 / ノード: 2267件 / エッジ: 6860件\n  最短経路を事前計算中...\n\n遺伝的アルゴリズムを実行中...\n  個体数: 20 / 世代数: 10\n  [世代 1]  best_fitness = 0.0308561\n  [世代 2]  best_fitness = 0.00331553\n  [世代 3]  best_fitness = 0.00238981\n  [世代 4]  best_fitness = 0.00238981\n  [世代 5]  best_fitness = 0.000244653\n  [世代 6]  best_fitness = 0.000244653\n  [世代 7]  best_fitness = 0.000244653\n  [世代 8]  best_fitness = 0.000244653\n  [世代 9]  best_fitness = 0.000244653\n  [世代 10]  best_fitness = 0.000244653\n\n  → output/best_course.json に保存しました\n  → output/fitness_history.csv に保存しました\n\n========== Step 5 (C++) 完了 ==========\n巡回順（最良個体）:\n  スタート : 正門\n  69 : 牛久保西公園\n  31 : まいばすけっと\n  61 : モザイクモール港北\n  56 : 燻製ダイニング 煙ぷらす\n  6 : しゃぶしゃぶ 木曽路\n  78 : 牛久保西すずらん公園\n  67 : 横浜市立牛久保小学校\n  89 : 牛久保こすもす公園\n  ゴール   : 正門\n実行時間          : 0.05 秒\n最良解の fitness  : 0.0002\nコントロール数    : 8 件\n推定時間          : 60.0 分\n累積登り          : 46.9 m\nf_map             : 0.000\nf_dist            : 0.000\nf_time            : 0.001\nf_route           : 0.000\n==========================================\n総実行時間 : 0.07 秒\nGA詳細秒 : 0.047642\n総詳細秒 : 0.074751\nCSV秒 : 0.008422\n事前計算秒 : 0.017923\n初期個体秒 : 0.006609\n世代ループ秒 : 0.041024\n",
+      "stderr": "",
+      "E_json": 0.000245,
+      "command": [
+        "C:\\TCU\\ec-comp\\lab-competition-2026\\orienteering.exe",
+        "7",
+        "20",
+        "10",
+        "--candidate-k",
+        "40"
+      ],
+      "history_csv": "generation,best_fitness\n1,0.030856\n2,0.003316\n3,0.002390\n4,0.002390\n5,0.000245\n6,0.000245\n7,0.000245\n8,0.000245\n9,0.000245\n10,0.000245\n",
+      "ga_precise_seconds": 0.047642,
+      "total_precise_seconds": 0.074751,
+      "initialization_seconds": 0.006609,
+      "generations_seconds": 0.041024
+    },
+    {
+      "seed": 8,
+      "E": 0.0004,
+      "ga_seconds": 0.05,
+      "total_seconds": 0.08,
+      "n_controls": 8,
+      "f_map": 0.0,
+      "f_dist": 0.0,
+      "f_time": 0.001,
+      "f_route": 0.0,
+      "course": {
+        "n_controls": 8,
+        "total_distance_m": 3517.4,
+        "total_gain_m": 37.5,
+        "estimated_time_min": 60.0,
+        "fitness": 0.000367,
+        "objectives": {
+          "f_map": 0.0,
+          "f_dist": 0.0,
+          "f_time": 0.001,
+          "f_route": 0.0
+        },
+        "weights": {
+          "f_map": 0.5,
+          "f_dist": 0.1,
+          "f_time": 0.25,
+          "f_route": 0.15
+        },
+        "controls": [
+          {
+            "name": "Atelier KiD",
+            "feature": "clothes",
+            "lat": 35.5622048,
+            "lon": 139.5721578
+          },
+          {
+            "name": "しゃぶしゃぶ 木曽路",
+            "feature": "restaurant",
+            "lat": 35.5569178,
+            "lon": 139.5788174
+          },
+          {
+            "name": "お好み焼き 杏子",
+            "feature": "restaurant",
+            "lat": 35.5554028,
+            "lon": 139.5795252
+          },
+          {
+            "name": "相鉄ローゼン",
+            "feature": "supermarket",
+            "lat": 35.5547887,
+            "lon": 139.5779843
+          },
+          {
+            "name": "焼肉市場 げんかや",
+            "feature": "restaurant",
+            "lat": 35.5582658,
+            "lon": 139.578773
+          },
+          {
+            "name": "横浜市立牛久保小学校",
+            "feature": "school",
+            "lat": 35.5593495,
+            "lon": 139.5819938
+          },
+          {
+            "name": "AOKI",
+            "feature": "clothes",
+            "lat": 35.5611952,
+            "lon": 139.5801688
+          },
+          {
+            "name": "ヴィーノヴィーノ",
+            "feature": "restaurant",
+            "lat": 35.5631951,
+            "lon": 139.5805751
+          }
+        ],
+        "course_nodes": [
+          7368660689,
+          1704650216,
+          10721114732,
+          8411254516,
+          2639302690,
+          1704577713,
+          1767739968,
+          1303245512,
+          1303245638,
+          7368660689
+        ]
+      },
+      "stdout": "データを読み込み中...\n  候補数: 113件 / ノード: 2267件 / エッジ: 6860件\n  最短経路を事前計算中...\n\n遺伝的アルゴリズムを実行中...\n  個体数: 20 / 世代数: 10\n  [世代 1]  best_fitness = 0.00193764\n  [世代 2]  best_fitness = 0.00193764\n  [世代 3]  best_fitness = 0.00193764\n  [世代 4]  best_fitness = 0.00193764\n  [世代 5]  best_fitness = 0.00193764\n  [世代 6]  best_fitness = 0.000887744\n  [世代 7]  best_fitness = 0.000366639\n  [世代 8]  best_fitness = 0.000366639\n  [世代 9]  best_fitness = 0.000366639\n  [世代 10]  best_fitness = 0.000366639\n\n  → output/best_course.json に保存しました\n  → output/fitness_history.csv に保存しました\n\n========== Step 5 (C++) 完了 ==========\n巡回順（最良個体）:\n  スタート : 正門\n  19 : Atelier KiD\n  6 : しゃぶしゃぶ 木曽路\n  55 : お好み焼き 杏子\n  33 : 相鉄ローゼン\n  22 : 焼肉市場 げんかや\n  67 : 横浜市立牛久保小学校\n  4 : AOKI\n  90 : ヴィーノヴィーノ\n  ゴール   : 正門\n実行時間          : 0.05 秒\n最良解の fitness  : 0.0004\nコントロール数    : 8 件\n推定時間          : 60.0 分\n累積登り          : 37.5 m\nf_map             : 0.000\nf_dist            : 0.000\nf_time            : 0.001\nf_route           : 0.000\n==========================================\n総実行時間 : 0.08 秒\nGA詳細秒 : 0.048957\n総詳細秒 : 0.076756\nCSV秒 : 0.008761\n事前計算秒 : 0.018303\n初期個体秒 : 0.006878\n世代ループ秒 : 0.042072\n",
+      "stderr": "",
+      "E_json": 0.000367,
+      "command": [
+        "C:\\TCU\\ec-comp\\lab-competition-2026\\orienteering.exe",
+        "8",
+        "20",
+        "10",
+        "--candidate-k",
+        "40"
+      ],
+      "history_csv": "generation,best_fitness\n1,0.001938\n2,0.001938\n3,0.001938\n4,0.001938\n5,0.001938\n6,0.000888\n7,0.000367\n8,0.000367\n9,0.000367\n10,0.000367\n",
+      "ga_precise_seconds": 0.048957,
+      "total_precise_seconds": 0.076756,
+      "initialization_seconds": 0.006878,
+      "generations_seconds": 0.042072
+    },
+    {
+      "seed": 9,
+      "E": 0.0004,
+      "ga_seconds": 0.05,
+      "total_seconds": 0.08,
+      "n_controls": 8,
+      "f_map": 0.0,
+      "f_dist": 0.0,
+      "f_time": 0.001,
+      "f_route": 0.0,
+      "course": {
+        "n_controls": 8,
+        "total_distance_m": 3517.4,
+        "total_gain_m": 37.5,
+        "estimated_time_min": 60.0,
+        "fitness": 0.000367,
+        "objectives": {
+          "f_map": 0.0,
+          "f_dist": 0.0,
+          "f_time": 0.001,
+          "f_route": 0.0
+        },
+        "weights": {
+          "f_map": 0.5,
+          "f_dist": 0.1,
+          "f_time": 0.25,
+          "f_route": 0.15
+        },
+        "controls": [
+          {
+            "name": "Atelier KiD",
+            "feature": "clothes",
+            "lat": 35.5622048,
+            "lon": 139.5721578
+          },
+          {
+            "name": "しゃぶしゃぶ 木曽路",
+            "feature": "restaurant",
+            "lat": 35.5569178,
+            "lon": 139.5788174
+          },
+          {
+            "name": "お好み焼き 杏子",
+            "feature": "restaurant",
+            "lat": 35.5554028,
+            "lon": 139.5795252
+          },
+          {
+            "name": "相鉄ローゼン",
+            "feature": "supermarket",
+            "lat": 35.5547887,
+            "lon": 139.5779843
+          },
+          {
+            "name": "焼肉市場 げんかや",
+            "feature": "restaurant",
+            "lat": 35.5582658,
+            "lon": 139.578773
+          },
+          {
+            "name": "横浜市立牛久保小学校",
+            "feature": "school",
+            "lat": 35.5593495,
+            "lon": 139.5819938
+          },
+          {
+            "name": "AOKI",
+            "feature": "clothes",
+            "lat": 35.5611952,
+            "lon": 139.5801688
+          },
+          {
+            "name": "ヴィーノヴィーノ",
+            "feature": "restaurant",
+            "lat": 35.5631951,
+            "lon": 139.5805751
+          }
+        ],
+        "course_nodes": [
+          7368660689,
+          1704650216,
+          10721114732,
+          8411254516,
+          2639302690,
+          1704577713,
+          1767739968,
+          1303245512,
+          1303245638,
+          7368660689
+        ]
+      },
+      "stdout": "データを読み込み中...\n  候補数: 113件 / ノード: 2267件 / エッジ: 6860件\n  最短経路を事前計算中...\n\n遺伝的アルゴリズムを実行中...\n  個体数: 20 / 世代数: 10\n  [世代 1]  best_fitness = 0.0509893\n  [世代 2]  best_fitness = 0.00399499\n  [世代 3]  best_fitness = 0.00110055\n  [世代 4]  best_fitness = 0.000476421\n  [世代 5]  best_fitness = 0.000476421\n  [世代 6]  best_fitness = 0.000476421\n  [世代 7]  best_fitness = 0.000476421\n  [世代 8]  best_fitness = 0.000476421\n  [世代 9]  best_fitness = 0.000366639\n  [世代 10]  best_fitness = 0.000366639\n\n  → output/best_course.json に保存しました\n  → output/fitness_history.csv に保存しました\n\n========== Step 5 (C++) 完了 ==========\n巡回順（最良個体）:\n  スタート : 正門\n  19 : Atelier KiD\n  6 : しゃぶしゃぶ 木曽路\n  55 : お好み焼き 杏子\n  33 : 相鉄ローゼン\n  22 : 焼肉市場 げんかや\n  67 : 横浜市立牛久保小学校\n  4 : AOKI\n  90 : ヴィーノヴィーノ\n  ゴール   : 正門\n実行時間          : 0.05 秒\n最良解の fitness  : 0.0004\nコントロール数    : 8 件\n推定時間          : 60.0 分\n累積登り          : 37.5 m\nf_map             : 0.000\nf_dist            : 0.000\nf_time            : 0.001\nf_route           : 0.000\n==========================================\n総実行時間 : 0.08 秒\nGA詳細秒 : 0.050896\n総詳細秒 : 0.080229\nCSV秒 : 0.009110\n事前計算秒 : 0.019541\n初期個体秒 : 0.007545\n世代ループ秒 : 0.043345\n",
+      "stderr": "",
+      "E_json": 0.000367,
+      "command": [
+        "C:\\TCU\\ec-comp\\lab-competition-2026\\orienteering.exe",
+        "9",
+        "20",
+        "10",
+        "--candidate-k",
+        "40"
+      ],
+      "history_csv": "generation,best_fitness\n1,0.050989\n2,0.003995\n3,0.001101\n4,0.000476\n5,0.000476\n6,0.000476\n7,0.000476\n8,0.000476\n9,0.000367\n10,0.000367\n",
+      "ga_precise_seconds": 0.050896,
+      "total_precise_seconds": 0.080229,
+      "initialization_seconds": 0.007545,
+      "generations_seconds": 0.043345
+    },
+    {
+      "seed": 10,
+      "E": 0.0023,
+      "ga_seconds": 0.05,
+      "total_seconds": 0.08,
+      "n_controls": 8,
+      "f_map": 0.0,
+      "f_dist": 0.0,
+      "f_time": 0.009,
+      "f_route": 0.0,
+      "course": {
+        "n_controls": 8,
+        "total_distance_m": 3409.6,
+        "total_gain_m": 45.6,
+        "estimated_time_min": 60.0,
+        "fitness": 0.002332,
+        "objectives": {
+          "f_map": 0.0,
+          "f_dist": 0.0,
+          "f_time": 0.009,
+          "f_route": 0.0
+        },
+        "weights": {
+          "f_map": 0.5,
+          "f_dist": 0.1,
+          "f_time": 0.25,
+          "f_route": 0.15
+        },
+        "controls": [
+          {
+            "name": "AOKI",
+            "feature": "clothes",
+            "lat": 35.5611952,
+            "lon": 139.5801688
+          },
+          {
+            "name": "牛久保西公園",
+            "feature": "park",
+            "lat": 35.5590295,
+            "lon": 139.5778765
+          },
+          {
+            "name": "しゃぶしゃぶ 木曽路",
+            "feature": "restaurant",
+            "lat": 35.5569178,
+            "lon": 139.5788174
+          },
+          {
+            "name": "まいばすけっと",
+            "feature": "supermarket",
+            "lat": 35.5554635,
+            "lon": 139.582406
+          },
+          {
+            "name": "センター北広場",
+            "feature": "park",
+            "lat": 35.5544111,
+            "lon": 139.5790172
+          },
+          {
+            "name": "燻製ダイニング 煙ぷらす",
+            "feature": "restaurant",
+            "lat": 35.5554542,
+            "lon": 139.5801565
+          },
+          {
+            "name": "牛久保西すずらん公園",
+            "feature": "park",
+            "lat": 35.5578437,
+            "lon": 139.5801899
+          },
+          {
+            "name": "横浜市立牛久保小学校",
+            "feature": "school",
+            "lat": 35.5593495,
+            "lon": 139.5819938
+          }
+        ],
+        "course_nodes": [
+          7368660689,
+          1303245512,
+          7099852153,
+          10721114732,
+          10721102930,
+          8411254515,
+          10721114668,
+          1704577740,
+          1767739968,
+          7368660689
+        ]
+      },
+      "stdout": "データを読み込み中...\n  候補数: 113件 / ノード: 2267件 / エッジ: 6860件\n  最短経路を事前計算中...\n\n遺伝的アルゴリズムを実行中...\n  個体数: 20 / 世代数: 10\n  [世代 1]  best_fitness = 0.0248379\n  [世代 2]  best_fitness = 0.0248379\n  [世代 3]  best_fitness = 0.00233173\n  [世代 4]  best_fitness = 0.00233173\n  [世代 5]  best_fitness = 0.00233173\n  [世代 6]  best_fitness = 0.00233173\n  [世代 7]  best_fitness = 0.00233173\n  [世代 8]  best_fitness = 0.00233173\n  [世代 9]  best_fitness = 0.00233173\n  [世代 10]  best_fitness = 0.00233173\n\n  → output/best_course.json に保存しました\n  → output/fitness_history.csv に保存しました\n\n========== Step 5 (C++) 完了 ==========\n巡回順（最良個体）:\n  スタート : 正門\n  4 : AOKI\n  69 : 牛久保西公園\n  6 : しゃぶしゃぶ 木曽路\n  31 : まいばすけっと\n  71 : センター北広場\n  56 : 燻製ダイニング 煙ぷらす\n  78 : 牛久保西すずらん公園\n  67 : 横浜市立牛久保小学校\n  ゴール   : 正門\n実行時間          : 0.05 秒\n最良解の fitness  : 0.0023\nコントロール数    : 8 件\n推定時間          : 60.0 分\n累積登り          : 45.6 m\nf_map             : 0.000\nf_dist            : 0.000\nf_time            : 0.009\nf_route           : 0.000\n==========================================\n総実行時間 : 0.08 秒\nGA詳細秒 : 0.048077\n総詳細秒 : 0.075137\nCSV秒 : 0.008320\n事前計算秒 : 0.018118\n初期個体秒 : 0.007493\n世代ループ秒 : 0.040578\n",
+      "stderr": "",
+      "E_json": 0.002332,
+      "command": [
+        "C:\\TCU\\ec-comp\\lab-competition-2026\\orienteering.exe",
+        "10",
+        "20",
+        "10",
+        "--candidate-k",
+        "40"
+      ],
+      "history_csv": "generation,best_fitness\n1,0.024838\n2,0.024838\n3,0.002332\n4,0.002332\n5,0.002332\n6,0.002332\n7,0.002332\n8,0.002332\n9,0.002332\n10,0.002332\n",
+      "ga_precise_seconds": 0.048077,
+      "total_precise_seconds": 0.075137,
+      "initialization_seconds": 0.007493,
+      "generations_seconds": 0.040578
+    }
+  ],
+  "source_sha256": {
+    "build.bat": "27a468ce09073222b13080e7764e5e5c74ad70472faa89d3161e94ea40e997a1",
+    "const.h": "49c0dadacd815bba4bfc8fde663a84bf40923cd7c3bf4ec66e78850b6b9bfa79",
+    "csv_loader.cpp": "384f39bb60099a143010949bddbe94b5c46bece0352457f16c8ec2cb524e376a",
+    "csv_loader.h": "bb14c240b0513ada8c0f29d596cf6fa99637f72d1665b8c25c0700a6c6a1e5d7",
+    "evaluate.cpp": "0672c59da34574df10a03323d0169e4d7960e14c78021f5c6885f818b6be0ebb",
+    "evaluate.h": "8363c1ea07106af04c248f7094756bc3670b2166918ccc8f99b2371a41fea1f3",
+    "ga.cpp": "cc3db0e8a76112d389b8d24d329f9151410ac06eb5bb296de5178202de083718",
+    "ga.h": "a1b0b2ddc9e1a55ca473bd6b3611f89c39ac57e93dcd471f280d157543769672",
+    "graph.cpp": "e76feb2083934021a5b36a4d96102bced62f8d972a16e11cdab4fcaa404f0ead",
+    "graph.h": "3413b2223c2f24e870d20bfe104d1acdbc667ed7ee4222a05aa7ac713fb7294e",
+    "main.cpp": "04374341c7286e26d2a92e1ab34fa8f798ec8343c68de034c0fb369db6c31d68",
+    "test.bat": "fb56de7737b568cc1b2eb7cc8344632504b98825b470325bdeb871253d9be4e4",
+    "test_efficiency.bat": "135d8ef2a51d6fc4dc08ebfddcefd9dbe833dd4b9a2327d41469d9e67609f04a"
+  },
+  "summary": {
+    "mean": 0.00181,
+    "std": 0.001772258446164103,
+    "minimum": 0.0002,
+    "maximum": 0.0064,
+    "ga_seconds": 0.05,
+    "total_seconds": 0.078,
+    "best_count": 1
+  }
+}

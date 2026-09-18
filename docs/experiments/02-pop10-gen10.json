@@ -1,0 +1,37 @@
+{
+  "label": "02-pop10-gen10",
+  "date": "2026-09-18T01:27:32.803928+09:00",
+  "note": "局所探索あり。個体 10、世代 10。その他は 01 と同じ",
+  "repo": "C:\\TCU\\ec-comp\\lab-competition-2026",
+  "seeds": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "pop": 10,
+  "gen": 10,
+  "status": "failed",
+  "runs": [],
+  "source_sha256": {
+    "build.bat": "27a468ce09073222b13080e7764e5e5c74ad70472faa89d3161e94ea40e997a1",
+    "const.h": "49c0dadacd815bba4bfc8fde663a84bf40923cd7c3bf4ec66e78850b6b9bfa79",
+    "csv_loader.cpp": "384f39bb60099a143010949bddbe94b5c46bece0352457f16c8ec2cb524e376a",
+    "csv_loader.h": "bb14c240b0513ada8c0f29d596cf6fa99637f72d1665b8c25c0700a6c6a1e5d7",
+    "evaluate.cpp": "bb56fbb7fa84d7b269563b9f663499ed57515c3359b9434c97ff84732ad561af",
+    "evaluate.h": "2bb7c7e0b29bddaa193e1112c8efafc4e1ffe62a4d015d9b66b83272d055003a",
+    "ga.cpp": "a48dda633dd0848825d449cc40d6e72174f4f4bfb48d8d0fb0853524c8ccb41d",
+    "ga.h": "1dd5e8fa185284513cf6793a6887434f096f7aa60f07cab53711126767b8f30f",
+    "graph.cpp": "7358bcb0af29528af54c2de8493e7d9f6944c769501f97ff9c4ead09f2bcc021",
+    "graph.h": "faa3be18584f5facb768394183ef5646c7505ef2da840dad1bf5e49e94375ef1",
+    "main.cpp": "dcf6f61889c17bd7de2372ab2a1b13d5661f1f865f4d89086e4c23d53ccf6e82",
+    "test.bat": "fb56de7737b568cc1b2eb7cc8344632504b98825b470325bdeb871253d9be4e4"
+  },
+  "error": "Command '['C:\\\\TCU\\\\ec-comp\\\\lab-competition-2026\\\\orienteering.exe', '1', '10', '10']' returned non-zero exit status 143."
+}

@@ -1,0 +1,8 @@
+*.obj
+*.exe
+output/
+*.pdb
+*.o
+/orienteering
+.code-review/
+.eval-loop/
