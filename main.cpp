@@ -27,7 +27,7 @@ using namespace orienteering;
 
 namespace {
 
-// 追加(09): CSV 由来の文字列を JSON の文字列として安全に書ける形に直す。
+// CSV 由来の文字列を JSON の文字列として安全に書ける形に直す。
 // 逆斜線・二重引用符・制御文字（0x00〜0x1F）を JSON の決まりどおりに置き換える。
 // これを通さないと、地点名に二重引用符が1つあるだけで JSON が壊れ、
 // 後ろに別の "fitness" を割り込ませることもできてしまう。
@@ -64,7 +64,7 @@ void write_best_course_json(
 {
     const auto& ev = result.best_eval;
     const auto& d  = ev.decoded;
-    // 変更(09): 推定所要時間の式は evaluate.h の estimated_minutes に集約した。
+    // 推定所要時間の式は evaluate.h の estimated_minutes に集約した。
     double t_estimated = estimated_minutes(ev.total_distance, ev.total_gain);
 
     std::ofstream ofs(path);
@@ -72,8 +72,7 @@ void write_best_course_json(
         throw std::runtime_error("JSON ファイルが書き込めません: " + path);
     }
 
-    // 変更(09): 64 バイトでは大きな値（無効解のペナルティなど）が途中で切れ、
-    // 「もっともらしい別の数値」になってしまうので 400 バイトに広げる。
+    // 大きな数値も途中で切れない容量を確保する。
     auto fmt = [](double v, int p) {
         char buf[400];
         std::snprintf(buf, sizeof(buf), "%.*f", p, v);
@@ -105,7 +104,7 @@ void write_best_course_json(
     for (size_t i = 0; i < d.selected_indices.size(); ++i) {
         const auto& lm = landmarks[d.selected_indices[i]];
         ofs << "    {";
-        // 変更(09): 文字列は必ず JSON エスケープを通してから書く。
+        // 文字列は必ず JSON エスケープを通してから書く。
         ofs << "\"name\": \""    << json_escape(lm.name)    << "\", ";
         ofs << "\"feature\": \"" << json_escape(lm.feature) << "\", ";
         ofs << "\"lat\": "       << fmt(lm.lat, 7)          << ", ";
@@ -141,16 +140,7 @@ void write_fitness_history_csv(
 }
 
 // ============================================================
-// 追加(09): 実行時の設定と、その解析を1か所にまとめる。
-//
-// 以前は「種」を読むのが CSV 読み込みと事前計算のあと、「個体数・世代数」が
-// その前、オプションの走査は argv[4] からという3か所に分かれていた。
-// そのため `orienteering.exe --restarts 3` のように位置引数を省くと、
-// オプションは無視されたまま固定費をすべて払ったあとに意味の分からない
-// エラーで落ちていた。ここで argv[1] から順に見て、
-// 「-- で始まればオプション、それ以外は前から順の位置引数」と決める。
-// 既定値はすべて const.h のものを使う。
-// ============================================================
+// 実行時の設定。既定値は const.h を参照する。
 struct Settings {
     unsigned int  seed     = RANDOM_SEED;
     int           pop_size = POP_SIZE;
@@ -169,9 +159,6 @@ void print_usage(const char* program) {
         << "  オプション:\n"
         << "    --restarts R         独立再スタートの回数（1以上）\n"
         << "    --candidate-k K      追加・置換で試す近傍地点の数（0 なら全候補）\n"
-        << "    --init M             初期解の作り方（random / greedy-all / greedy-half）\n"
-        << "    --dedupe             同じ地点集合の局所探索を1回で済ませる\n"
-        << "    --first-improvement  最初に見つかった改善手をすぐ採る\n"
         << "    --quiet              世代ごとの表示を止める（既定）\n"
         << "    --verbose            世代ごとの表示に戻す\n"
         << "  例: " << program << " 42 10 20 --restarts 3\n";
@@ -211,23 +198,10 @@ bool parse_arguments(int argc, char* argv[], Settings& settings, std::string& er
         const std::string arg = argv[index];
         if (arg.rfind("--", 0) == 0) {
             std::string value;
-            if (arg == "--dedupe") {
-                settings.options.dedupe = true;
-            } else if (arg == "--first-improvement") {
-                settings.options.first_improvement = true;
-            } else if (arg == "--quiet") {
+            if (arg == "--quiet") {
                 settings.options.quiet = true;
             } else if (arg == "--verbose") {
                 settings.options.quiet = false;
-            } else if (arg == "--init") {
-                if (!next_value(arg, value)) return false;
-                if      (value == "random")      settings.options.init = InitMethod::Random;
-                else if (value == "greedy-all")  settings.options.init = InitMethod::GreedyAll;
-                else if (value == "greedy-half") settings.options.init = InitMethod::GreedyHalf;
-                else {
-                    error = "初期解の作り方は random / greedy-all / greedy-half から選んでください: " + value;
-                    return false;
-                }
             } else if (arg == "--candidate-k") {
                 if (!next_value(arg, value)) return false;
                 unsigned long long number = 0;
@@ -293,8 +267,7 @@ int main(int argc, char* argv[]) {
     // ソースは UTF-8 で記述しているため、出力側もコードページを UTF-8 に揃える。
     SetConsoleOutputCP(CP_UTF8);
 #endif
-    // 変更(09): 引数の解析は CSV 読み込みより前に1か所で済ませる。
-    // 例: orienteering.exe 1 20 20 --dedupe --first-improvement --candidate-k 20 --quiet
+    // 引数の解析は CSV 読み込みより前に1か所で済ませる。
     // 種 s, s+1, …, s+R-1 で GA を R 回走らせ、最良の解を採る。
     Settings settings;
     std::string argument_error;
@@ -311,20 +284,10 @@ int main(int argc, char* argv[]) {
     try {
         std::cout << "データを読み込み中..." << std::endl;
 
-        // 追加: 固定費（読み込みと事前計算）の内訳を取る。どこを削ると効くかを見るため。
-        using Clock = std::chrono::steady_clock;
-        auto seconds = [](Clock::time_point a, Clock::time_point b) {
-            return std::chrono::duration<double>(b - a).count();
-        };
-        const auto csv_start = Clock::now();
         auto landmarks = load_landmarks(DATA_DIR + "/landmarks.csv");
-        const auto t_landmarks = Clock::now();
         auto nodes     = load_nodes    (DATA_DIR + "/nodes.csv");
-        const auto t_nodes = Clock::now();
         auto edges     = load_edges    (DATA_DIR + "/edges.csv");
-        const auto t_edges = Clock::now();
         auto gate      = load_gate     (DATA_DIR + "/seimon.csv");
-        const auto csv_end = Clock::now();
 
         const int N = static_cast<int>(landmarks.size());
         std::cout << "  候補数: " << N
@@ -332,23 +295,18 @@ int main(int argc, char* argv[]) {
                   << "件 / エッジ: " << edges.size()
                   << "件" << std::endl;
 
-        const auto precompute_start = Clock::now();
         Graph     graph(nodes, edges);
-        const auto t_graph = Clock::now();
         long long gate_node = graph.find_nearest_node(gate.lat, gate.lon);
-        const auto t_nearest = Clock::now();
 
         // 最短経路の事前計算（ゲート + 全ランドマークの nearest_node を起点に）
         std::cout << "  最短経路を事前計算中..." << std::endl;
-        // 変更: 候補番号をそのまま表の添字にし、最後のN番を正門にする。
+        // 候補番号をそのまま表の添字にし、最後のN番を正門にする。
         std::vector<long long> sources;
         for (const auto& lm : landmarks) sources.push_back(lm.nearest_node);
         sources.push_back(gate_node);
 
         PathCache path_cache(graph, sources);
-        const auto t_dijkstra = Clock::now();
         const EvaluationTables tables(landmarks, path_cache, gate_node);
-        const auto precompute_end = Clock::now();
 
         std::cout << "\n遺伝的アルゴリズムを実行中..." << std::endl;
         std::cout << "  個体数: " << pop_size
@@ -358,16 +316,11 @@ int main(int argc, char* argv[]) {
         // 開始の種を省略すると RANDOM_SEED を使い、再スタートごとに1ずつ増やす。
         const unsigned int base_seed = settings.seed;
 
-        // 追加: 独立再スタートは、読み込みと事前計算（path_cache・tables）は1回だけで、
+        // 独立再スタートは、読み込みと事前計算（path_cache・tables）は1回だけで、
         // GA だけを種 base_seed, base_seed+1, … で走らせ、最良の解を残す。
         // restarts=1 では、指定した種・個体数・世代数・探索設定で GA を1回だけ実行する。
         auto t_start = std::chrono::high_resolution_clock::now();
         GAResult result;
-        double initialization_total = 0.0;
-        double generations_total    = 0.0;
-        // 各回の最良 E。再スタートがどれだけ効いたかを見るために残す。
-        std::vector<double> restart_fitness;
-        restart_fitness.reserve(restarts);
         for (int r = 0; r < restarts; ++r) {
             RNG rng(base_seed + static_cast<unsigned int>(r));
             if (!options.quiet && restarts > 1)
@@ -375,20 +328,14 @@ int main(int argc, char* argv[]) {
                           << "]  種 = " << (base_seed + static_cast<unsigned int>(r)) << std::endl;
             GAResult trial = run_ga(landmarks, path_cache, gate_node, tables, rng,
                                     pop_size, n_gen, options);
-            initialization_total += trial.initialization_seconds;
-            generations_total    += trial.generations_seconds;
-            restart_fitness.push_back(trial.best_eval.fitness);
             // 同点なら先の回（小さい種）を残す。再現性のため厳密比較にする。
             if (r == 0 || trial.best_eval.fitness < result.best_eval.fitness)
                 result = std::move(trial);
         }
-        // 表示する内訳は「全再スタートの合計」。best_course.json と履歴は採用した回のもの。
-        result.initialization_seconds = initialization_total;
-        result.generations_seconds    = generations_total;
         auto t_end   = std::chrono::high_resolution_clock::now();
         double elapsed = std::chrono::duration<double>(t_end - t_start).count();
 
-        // 追加(09): 全再スタートを通して有効なコースが1つも作れなかった場合は、
+        // 全再スタートを通して有効なコースが1つも作れなかった場合は、
         // 無効解のペナルティ値（実在しない巨大な数）を結果として書き出さない。
         // 黙って「成功」に見える出力を残すより、はっきり失敗させる方が安全。
         if (!result.best_eval.is_valid) {
@@ -406,7 +353,7 @@ int main(int argc, char* argv[]) {
         std::cout << "  → " << OUTPUT_DIR << "/fitness_history.csv に保存しました" << std::endl;
 
         const auto& ev = result.best_eval;
-        // 変更(09): JSON と画面で同じ式を使う（evaluate.h の estimated_minutes）。
+        // JSON と画面で同じ式を使う（evaluate.h の estimated_minutes）。
         double t_estimated = estimated_minutes(ev.total_distance, ev.total_gain);
 
         std::cout << "\n========== 最良コース ==========" << std::endl;
@@ -436,30 +383,6 @@ int main(int argc, char* argv[]) {
         const double total_elapsed = std::chrono::duration<double>(
             std::chrono::steady_clock::now() - total_start).count();
         std::cout << "総実行時間 : " << std::setprecision(2) << total_elapsed << " 秒" << std::endl;
-        // 追加: 短い処理も比較できるように、内訳だけは小数6桁で記録する。
-        std::cout << std::setprecision(6)
-                  << "GA詳細秒 : " << elapsed << '\n'
-                  << "総詳細秒 : " << total_elapsed << '\n'
-                  << "CSV秒 : " << std::chrono::duration<double>(csv_end - csv_start).count() << '\n'
-                  << "事前計算秒 : " << std::chrono::duration<double>(precompute_end - precompute_start).count() << '\n'
-                  << "初期個体秒 : " << result.initialization_seconds << '\n'
-                  << "世代ループ秒 : " << result.generations_seconds << '\n'
-                  // 初期集団（局所探索の直後）の最良評価値。初期解の質そのもの。
-                  << "初期集団E : " << result.initial_best_fitness << '\n'
-                  // 固定費の内訳。CSV秒と事前計算秒をさらに細かく分けたもの。
-                  << "地点CSV秒 : " << seconds(csv_start, t_landmarks) << '\n'
-                  << "ノードCSV秒 : " << seconds(t_landmarks, t_nodes) << '\n'
-                  << "エッジCSV秒 : " << seconds(t_nodes, t_edges) << '\n'
-                  << "正門CSV秒 : " << seconds(t_edges, csv_end) << '\n'
-                  << "グラフ構築秒 : " << seconds(precompute_start, t_graph) << '\n'
-                  << "正門探索秒 : " << seconds(t_graph, t_nearest) << '\n'
-                  << "最短経路秒 : " << seconds(t_nearest, t_dijkstra) << '\n'
-                  << "表作成秒 : " << seconds(t_dijkstra, precompute_end) << '\n'
-                  // 再スタートごとの最良E。1回で足りたのか、何回目で当たったのかを見る。
-                  << "再スタート回数 : " << restarts << '\n';
-        std::cout << "再スタートE :";
-        for (double value : restart_fitness) std::cout << ' ' << value;
-        std::cout << std::endl;
 
     } catch (const std::exception& e) {
         std::cerr << "エラー: " << e.what() << std::endl;

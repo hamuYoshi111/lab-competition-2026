@@ -13,7 +13,7 @@ namespace orienteering {
 // Graph 実装
 // ============================================================
 
-// 変更: ノードを連番化し、隣接辺を連続配置して探索用の作業領域を確保する。
+// ノードを連番化し、隣接辺を連続配置して探索用の作業領域を確保する。
 Graph::Graph(const std::vector<Node>& nodes, const std::vector<Edge>& edges) {
     node_list_ = nodes;
     node_ids_.reserve(nodes.size() + edges.size() * 2);
@@ -74,7 +74,7 @@ long long Graph::find_nearest_node(double lat, double lon) const {
 }
 
 // ============================================================
-// 追加: 連番によるダイクストラ法で作業領域を再利用し、対象の終点がすべて確定したら打ち切る。
+// 連番によるダイクストラ法で作業領域を再利用し、対象の終点がすべて確定したら打ち切る。
 //
 // 変えていないこと：取り出す順（同じ距離なら同じ並び）、距離の足す向き、
 // 親のたどり方、登りの足し算の順。したがって結果は1ビットも変わらない。
@@ -97,7 +97,7 @@ void Graph::dijkstra_indexed(size_t source, const std::vector<size_t>& target_in
 
     Visit* const visit = s.visit.data();
 
-    // 06 の早期打ち切り：目的地（正門＋候補の最寄りノード）に印を付け、
+    // 早期打ち切りのため、目的地（正門＋候補の最寄りノード）に印を付け、
     // 全部が「確定」した時点で探索をやめる。ダイクストラ法は距離の短い順に
     // 確定させるので、確定済みの距離と親はその後どれだけ探しても変わらない。
     // したがって、ここで止めても答えは1ビットも変わらない。
@@ -194,7 +194,7 @@ void Graph::dijkstra_indexed(size_t source, const std::vector<size_t>& target_in
     }
 }
 
-// 追加: ノード ID を連番に変換して、指定された終点への経路を取得する。
+// ノード ID を連番に変換して、指定された終点への経路を取得する。
 std::vector<PathInfo> Graph::dijkstra_to(long long src, const std::vector<long long>& targets) const {
     const auto source = node_indices_.find(src);
     if (source == node_indices_.end()) {
@@ -215,7 +215,7 @@ std::vector<PathInfo> Graph::dijkstra_to(long long src, const std::vector<long l
     return result;
 }
 
-// 変更: 配列による探索結果を、配布元と同じノード ID の辞書で返す。
+// 配列による探索結果を、配布元と同じノード ID の辞書で返す。
 std::unordered_map<long long, PathInfo> Graph::dijkstra_from(long long src) const {
     const auto paths = dijkstra_to(src, node_ids_);
     std::unordered_map<long long, PathInfo> result;
@@ -231,7 +231,7 @@ std::unordered_map<long long, PathInfo> Graph::dijkstra_from(long long src) cons
 // PathCache 実装
 // ============================================================
 
-// 変更: 候補間の経路を連続した表に保存し、重複する始点は計算済みの行を再利用する。
+// 候補間の経路を連続した表に保存し、重複する始点は計算済みの行を再利用する。
 PathCache::PathCache(const Graph& graph, const std::vector<long long>& sources) {
     size_ = sources.size();
     cache_.assign(size_ * size_, {PENALTY, PENALTY, false});
@@ -271,7 +271,7 @@ PathCache::PathCache(const Graph& graph, const std::vector<long long>& sources) 
     }
 }
 
-// 変更: ノード ID から表の添字を引き、対象外は到達不能として返す。
+// ノード ID から表の添字を引き、対象外は到達不能として返す。
 PathInfo PathCache::get(long long src, long long dst) const {
     const auto from = source_indices_.find(src);
     const auto to = source_indices_.find(dst);

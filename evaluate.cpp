@@ -8,7 +8,7 @@
 
 namespace orienteering {
 
-// 追加: 局所探索後の巡回順を、交叉で使える染色体へ戻す。
+// 局所探索後の巡回順を、交叉で使える染色体へ戻す。
 Chromosome encode_course(const std::vector<int>& course, int n_landmarks) {
     Chromosome chromosome(n_landmarks + MAX_CONTROLS, 0);
     std::vector<int> selected = course;
@@ -25,7 +25,7 @@ Chromosome encode_course(const std::vector<int>& course, int n_landmarks) {
     return chromosome;
 }
 
-// 追加: 候補間の経路と近接ペナルティを事前計算し、評価時に再利用する。
+// 候補間の経路と近接ペナルティを事前計算し、評価時に再利用する。
 EvaluationTables::EvaluationTables(const std::vector<Landmark>& landmarks,
     const PathCache& path_cache, long long gate_node)
 {
@@ -54,7 +54,7 @@ EvaluationTables::EvaluationTables(const std::vector<Landmark>& landmarks,
     }
 }
 
-// 追加: 事前計算した近接ペナルティを巡回順に合計して平均する。
+// 事前計算した近接ペナルティを巡回順に合計して平均する。
 double EvaluationTables::proximity(const std::vector<int>& course) const {
     const int n = static_cast<int>(course.size());
     if (n < 2) return 0.0;
@@ -67,7 +67,7 @@ double EvaluationTables::proximity(const std::vector<int>& course) const {
     return penalty / n_pairs;
 }
 
-// 追加: 事前計算表を持たない呼び出しにも、巡回順の直接評価を提供する。
+// 事前計算表を持たない呼び出しにも、巡回順の直接評価を提供する。
 double evaluate_course(const std::vector<int>& course,
     const std::vector<Landmark>& landmarks, const PathCache& path_cache,
     long long gate_node)
@@ -76,7 +76,7 @@ double evaluate_course(const std::vector<int>& course,
     return evaluate_course(course, EvaluationTables(landmarks, path_cache, gate_node));
 }
 
-// 追加: 染色体への変換を省き、事前計算表から巡回順を直接評価する。
+// 染色体への変換を省き、事前計算表から巡回順を直接評価する。
 double evaluate_course(const std::vector<int>& course, const EvaluationTables& tables) {
     if (course.size() < MIN_CONTROLS || course.size() > MAX_CONTROLS) return PENALTY;
     double distance = 0.0;
@@ -184,7 +184,7 @@ double f_dist(
 }
 
 // ============================================================
-// 追加(09): 推定所要時間（分）。JSON 出力・画面表示・貪欲初期解の3か所から呼ぶ。
+// 推定所要時間（分）。JSON 出力・画面表示・貪欲初期解の3か所から呼ぶ。
 // ============================================================
 double estimated_minutes(double total_distance, double total_gain) {
     return (total_distance / WALK_SPEED + total_gain / CLIMB_SPEED) * 60.0;
@@ -220,7 +220,7 @@ double calc_fitness(const Objectives& obj) {
 }
 
 // ============================================================
-// 変更: GA の評価では経路・近接度の事前計算表を使い、表なしの評価も維持する。
+// GA の評価では経路・近接度の事前計算表を使い、表なしの評価も維持する。
 // ============================================================
 EvalResult evaluate(
     const Chromosome&            chromosome,
@@ -248,7 +248,7 @@ EvalResult evaluate(
 
     for (size_t i = 0; i + 1 < res.decoded.course_nodes.size(); ++i) {
         const auto& selected = res.decoded.selected_indices;
-        // 通常のGAでは候補番号で直接参照する。従来APIは比較用にも残す。
+        // 表がある場合は候補番号で、ない場合は道路ノード番号で区間を参照する。
         PathInfo p = tables
             ? tables->path(i == 0 ? tables->gate_index() : selected[i - 1],
                            i == selected.size() ? tables->gate_index() : selected[i])

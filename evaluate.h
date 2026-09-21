@@ -37,7 +37,7 @@ struct EvalResult {
     DecodedCourse  decoded;
 };
 
-// 追加: 候補番号0～N-1と正門Nで引く表。探索中はハッシュ検索や三角関数を使わない。
+// 候補番号0～N-1と正門Nで引く表。探索中はハッシュ検索や三角関数を使わない。
 class EvaluationTables {
 public:
     EvaluationTables(const std::vector<Landmark>& landmarks,
@@ -65,10 +65,10 @@ DecodedCourse decode(
 // ============================================================
 double f_map(int n_controls);
 
-// 追加: 巡回順から染色体を作る。順序パートは候補番号順の各地点の巡回順位。
+// 巡回順から染色体を作る。順序パートは候補番号順の各地点の巡回順位。
 Chromosome encode_course(const std::vector<int>& course, int n_landmarks);
 
-// 追加: 近傍探索用。デコードを省き、既存の目的関数で直接評価する。
+// 近傍探索用。デコードを省き、既存の目的関数で直接評価する。
 double evaluate_course(const std::vector<int>& course,
     const std::vector<Landmark>& landmarks, const PathCache& path_cache,
     long long gate_node);
@@ -79,7 +79,7 @@ double f_dist(
     const std::vector<int>&      selected_indices,
     const std::vector<Landmark>& landmarks);
 
-// 追加(09): 推定所要時間（分）。距離と登りから同じ式で求める場所を1か所にまとめる。
+// 推定所要時間（分）。距離と登りから同じ式で求める場所を1か所にまとめる。
 // 注意: f_time は配布コードのまま「(距離/速さ)*60 + (登り/速さ)*60」の順で足しており、
 // 丸めの回数が1回違う。値をそろえるために式を差し替えると評価値が最後の1ビットで
 // 変わるため、f_time の中身はあえてこの関数に寄せていない。
@@ -95,7 +95,7 @@ double f_route(double total_gain);
 double calc_fitness(const Objectives& obj);
 
 // ============================================================
-// 変更: GA からの評価では事前計算表を受け取り、表なしの呼び出しも維持する。
+// GA からの評価では事前計算表を受け取り、表なしの呼び出しも維持する。
 // ============================================================
 EvalResult evaluate(
     const Chromosome&            chromosome,

@@ -40,7 +40,7 @@ public:
 
 private:
     friend class PathCache;
-    // 追加: ノード ID を連番に変換した辺を持ち、配列で探索する。
+    // ノード ID を連番に変換した辺を持ち、配列で探索する。
     struct IndexedEdge {
         size_t to;
         double length;
@@ -49,9 +49,7 @@ private:
     // 優先度つきキューに入れる (距離, ノード番号)。取り出し順は変えていない。
     using State = std::pair<double, size_t>;
 
-    // 追加: 05 の高速化で、探索ごとに作業用の配列と山（ヒープ）を作り直すのをやめ、
-    // 一度確保したものを使い回す。「今回の探索で触ったか」は世代番号 epoch で判定し、
-    // 毎回 2267 要素を 0 で埋め直す手間を省く。計算の中身と順序は変えていない。
+    // 探索用の領域は使い回し、世代番号 epoch で今回の探索で触ったかを判定する。
     // 1ノード分の作業用データをひとまとめにする。ばらばらの配列に分けると
     // 1回の更新でメモリの離れた4か所を触ることになり、キャッシュに乗りにくい。
     struct Visit {
@@ -59,7 +57,7 @@ private:
         double       parent_gain;
         size_t       parent;
         unsigned int stamp;         // 何回目の探索で到達したか
-        // 06 の早期打ち切り用：今回の探索で「まだ確定していない目的地」の印。
+        // 今回の探索で「まだ確定していない目的地」の印。
         // stamp のうしろの余り（詰め物）に入るので、1件あたりの大きさは変わらない。
         unsigned int target_stamp;
     };
@@ -69,7 +67,7 @@ private:
         unsigned int       epoch = 0;
     };
 
-    // 変更: ID順に連番を付け、同距離の取り出し順も元のID順に保つ。
+    // ID順に連番を付け、同距離の取り出し順も元のID順に保つ。
     std::vector<long long> node_ids_;
     std::unordered_map<long long, size_t> node_indices_;
     std::vector<std::vector<IndexedEdge>> adj_;
@@ -90,10 +88,10 @@ private:
 // ============================================================
 class PathCache {
 public:
-    // 変更: sourcesの順番を行・列に使う。通常は全候補の後ろに正門を置く。
+    // sourcesの順番を行・列に使う。通常は全候補の後ろに正門を置く。
     PathCache(const Graph& graph, const std::vector<long long>& sources);
 
-    // 追加: 表は (行数 × 列数) の1本の配列に持つ。行ごとの vector より読み出しが速い。
+    // 表は (行数 × 列数) の1本の配列に持つ。行ごとの vector より読み出しが速い。
     const PathInfo& at(size_t src_index, size_t dst_index) const {
         return cache_[src_index * size_ + dst_index];
     }
